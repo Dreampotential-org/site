@@ -1,0 +1,20 @@
+.first_title{
+    font-size: 3rem;
+    color: #fff;
+    padding: 2.18rem 4vw;
+    margin: 1rem 0;
+}
+.sub_text{
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 0rem 4vw;
+    margin-bottom: 30px;
+}
+.iframe_section{
+    margin-left: 4%;    
+    /* background-color: 'red'; */
+}

@@ -1,0 +1,130 @@
+.partners-title{
+    margin-bottom: 4%;
+}
+
+.logo-partners{
+    width: 100%;
+}
+.logo-section{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+}
+.partners-logo-section{
+    padding: 6% 10%;
+}
+.partners-logo-section:hover, .partners-onceAt-logo-section:hover,.partners-neighbormade-logo-section:hover,
+ .partners-NoScroll-logo-section:hover,.partners-SanFrancisco-logo-section:hover,.partners-dp-logo-section:hover,
+ .partners-ChiropractorTech-logo-section:hover{
+    background-color: #af4d55;
+    cursor: pointer;
+}
+.partners-neighbormade-logo-section{
+    padding: 6% 6%;
+}
+.partners-onceAt-logo-section{
+    padding: 2% 10%;
+    margin:auto;
+}
+.partners-NoScroll-logo-section{
+    padding: 3% 13%;
+}
+.partners-SanFrancisco-logo-section{
+    padding: 2% 12%;
+}
+.partners-ChiropractorTech-logo-section{
+    padding: 3% 8%;
+}
+.partners-dp-logo-section{
+    padding: 6% 7%;
+}
+.repicture-logo{
+    width: 100%;
+}
+.onceAt-logo{
+    width: 80%;
+}
+h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 2px solid #fff; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    color: #fff;
+ } 
+ 
+ .select-partners-title span { 
+     background:#260f43; 
+     padding:0 3%; 
+     font-weight: bold;
+ }
+.select-partners-title{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 6%;
+    text-align: center;
+    font-weight: 600;
+    width: 100%; 
+    text-align: center; 
+    border-style: solid;
+    border-width: 1px;
+    line-height: 0.1em;   
+}
+.partners-title{
+    padding: 0 20%;
+}
+@media screen and (max-width:768px) {
+    /* .logo-partners {
+        width: 80%;
+    } */
+    .partners-logo-section{
+        padding: 9% 14%;
+    }
+    .partners-onceAt-logo-section{
+        padding: 2% 15%;
+    }
+    .partners-NoScroll-logo-section{
+        padding: 3% 18%;
+    }
+    .partners-neighbormade-logo-section{
+        padding: 8% 10%;
+    }
+    .partners-dp-logo-section{
+        padding: 8% 12%;
+    }
+    .partners-SanFrancisco-logo-section {
+        padding: 2% 15%;
+    }
+    .partners-ChiropractorTech-logo-section1{
+        display: none;
+    }
+}
+@media screen and (max-width:500px) {
+    .partners-title{
+        padding:0 20px
+    }
+    .partners-logo-section{
+        padding: 14% 25%;
+    }
+    .partners-onceAt-logo-section{
+        padding: 7% 27% 7% 35%;
+    }
+    .partners-neighbormade-logo-section{
+        padding: 15% 16%;
+    }
+    .partners-NoScroll-logo-section{
+        padding: 9% 37%;
+    }
+    .partners-logo-section{
+        padding: 18% 25%;
+    }
+    .partners-SanFrancisco-logo-section{
+        padding: 10% 35%;
+    }
+    .partners-ChiropractorTech-logo-section {
+        padding: 10% 25%;
+    }
+    .partners-dp-logo-section {
+        padding: 17% 19%;
+    }
+}

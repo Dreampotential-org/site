@@ -1,0 +1,24 @@
+.App {
+  height: 100%;
+  background-color: #260f43;
+  /* padding: 30px; */
+  /* background-image: url("./assets/Hero-Graphic-01.png"); */
+}
+.back{
+  background: url("./assets/Hero-Graphic-01.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background: linear-gradient(to bottom, var(#411c71), var(#260f43)); */
+  /* height: 100vh; */
+}
+.iframe {
+  width: 100%;
+  height: 450px;
+  max-width: 900px;
+}
+@media screen and (max-width:555px) {
+  .back{
+    background-position: initial;
+  }
+}

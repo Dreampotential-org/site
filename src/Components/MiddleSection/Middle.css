@@ -1,0 +1,35 @@
+.middle_section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.btns{
+    width: max-content;
+    background-color: #533779;
+    border: none;
+}
+.btns:hover{
+    background-color: #533779;
+}
+.btn:focus{
+    border-color: transparent;
+    box-shadow:none;
+    background-color: #533779;
+}
+.div-center{
+    text-align: center;
+}
+.middle_card{
+    width: 25rem;
+    margin-top: 8%;
+}
+.text{
+    font-size: 20px;
+    color: #fff;
+}
+@media screen and (max-width:768px) {
+    .middle_card{
+        width: 15rem;
+        margin-top: 8%;
+    }
+}

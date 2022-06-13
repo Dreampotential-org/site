@@ -1,0 +1,94 @@
+.footer {
+    background-color: #5a289b99;
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+}
+
+.dream {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.email {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.email:hover{
+    color: #fff;
+}
+.mobile_email{
+    display: none;
+}
+.footer_join_buttton {
+    font-size: 19px;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 2rem;
+    cursor: pointer;
+    list-style:none
+}
+
+/* .join {
+    width: max-content;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #aaa;
+} */
+
+
+/* .main-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-div {
+    padding-top: 50px;
+} */
+
+/* .padd{
+    padding: 25px;
+} */
+
+@media screen and (max-width:768px) {
+    .dream {
+        font-size: 15px;
+    }
+    .email {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width:500px) {
+    .footer{
+        padding: 5% 4%;
+    }
+    .email {
+       display: none;
+    }
+    .mobile_email{
+        display: block;
+        font-size: 12px;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .footer_join_buttton {
+        font-size: 17px;
+        padding: 2px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: auto 0;
+        list-style:none
+    }
+    .mobile_email:hover{
+        color: #fff;
+    }
+}

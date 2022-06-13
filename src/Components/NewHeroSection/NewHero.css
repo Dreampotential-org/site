@@ -1,0 +1,86 @@
+.hero-background{
+    /* height: 100vh; */
+    width: 100%;
+    background-color: #020817;
+}
+
+.frame{
+    width: 100%;
+}
+
+.middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-around; */
+}
+
+@media screen and (max-width:768px){
+    .middle{
+        display: block;
+    }
+}
+
+.Layer_1{
+    width: 100%;
+}
+
+.text-one{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.text-second{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 45px;
+}
+.text-para{
+    color: #fff;
+    font-size:18px;
+    text-align: justify;
+}
+
+
+
+@media screen and (max-width:768px){
+    .text-one{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .text-second{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .left-text{
+        text-align: left;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+    .text-para{
+        color: #fff;
+        font-size: 19px;
+        text-align: left;
+    }
+}
+
+.btn-join{
+    background-color: #265CF6;
+    border-radius: 10px;
+   
+    width: 189px;
+    height: 49.82px;
+    left: 161px;
+    top: 425px;
+}
+
+@media screen and (min-width:769px) and (max-width:1440px) {
+    .left-text{
+        text-align: left;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
