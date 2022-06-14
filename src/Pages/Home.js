@@ -8,6 +8,7 @@ import Select_Partners from '../Components/Select_Partners/Select_Partners';
 import GetInTouch from '../Components/GetInTouch/GetInTouch';
 import Footer from '../Components/Footer/Footer';
 import NewHero from '../Components/NewHeroSection/NewHero';
+import Iframe from '../Components/Iframe/Iframe';
 
 const Home = () => {
   const aboutSection = useRef(null);
@@ -27,6 +28,7 @@ const Home = () => {
         </div> */}
         <NewHero/>
         <Select_Partners />
+        <Iframe/>
         <div className="section section2" ref={aboutSection}>
           <GetInTouch />
         </div>

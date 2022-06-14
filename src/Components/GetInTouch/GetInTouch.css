@@ -30,6 +30,8 @@
     border: none;
     margin-top: 0;
     color: #fff;
+    height:40px;
+    width: 100%;
 }
 
 .btn-connect{
@@ -67,5 +69,9 @@ h1{
     outline: 0;
     box-shadow:none;
     color: #fff;
+}
+
+.err-msg{
+    color: red;
 }
 
