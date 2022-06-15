@@ -1,0 +1,31 @@
+.box{
+    background: aliceblue;
+    height: 136px;
+    border-radius: 10px;
+}
+
+.logo-section-div{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+}
+
+
+.title-select{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.text-content{
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+}

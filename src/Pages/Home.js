@@ -9,6 +9,11 @@ import GetInTouch from '../Components/GetInTouch/GetInTouch';
 import Footer from '../Components/Footer/Footer';
 import NewHero from '../Components/NewHeroSection/NewHero';
 import Iframe from '../Components/Iframe/Iframe';
+import MyCarousel from '../Components/Carousel/Carousel';
+import CardSection from '../Components/CardSection/CardSection';
+import Select from '../Components/Select/Select';
+import Lorem from '../Components/Lorem/Lorem';
+import NineSection from '../Components/NineSection/NineSection';
 
 const Home = () => {
   const aboutSection = useRef(null);
@@ -27,10 +32,15 @@ const Home = () => {
           <Middle onClick={scrollDown}/>
         </div> */}
         <NewHero/>
-        <Select_Partners />
-        <Iframe/>
+        {/* <MyCarousel/> */}
+        <CardSection/>
+        <Select/>
+        <Lorem/>
+        {/* <NineSection/> */}
+        {/* <Select_Partners /> */}
+        {/* <Iframe/> */}
         <div className="section section2" ref={aboutSection}>
-          <GetInTouch />
+          {/* <GetInTouch /> */}
         </div>
         <Footer onClick={scrollDown}/>
       </div>

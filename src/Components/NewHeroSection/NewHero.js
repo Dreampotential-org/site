@@ -1,6 +1,9 @@
 import React from 'react'
 import './NewHero.css'
-import Frame from "../../assets/Frame_resized.png";
+// import Frame from "../../assets/Frame_resized.png";
+import Frame from "../../assets/Landsvg.svg";
+
+
 import Layer_1 from "../../assets/Layer_1.png";
 import NewNav from '../Nav/Nav';
 
