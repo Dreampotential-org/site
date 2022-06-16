@@ -13,7 +13,7 @@ import MyCarousel from '../Components/Carousel/Carousel';
 import CardSection from '../Components/CardSection/CardSection';
 import Select from '../Components/Select/Select';
 import Lorem from '../Components/Lorem/Lorem';
-import NineSection from '../Components/NineSection/NineSection';
+import GetIn from '../Components/GetIn/GetIn';
 
 const Home = () => {
   const aboutSection = useRef(null);
@@ -36,7 +36,7 @@ const Home = () => {
         <CardSection/>
         <Select/>
         <Lorem/>
-        {/* <NineSection/> */}
+        <GetIn/>
         {/* <Select_Partners /> */}
         {/* <Iframe/> */}
         <div className="section section2" ref={aboutSection}>

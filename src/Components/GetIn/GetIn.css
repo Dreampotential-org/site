@@ -1,0 +1,79 @@
+.left{
+    background-color: #5B03F6;
+    height: 700px;
+}
+
+.right{
+    background-color: #E6E7E8;
+    /* height: 700px; */
+}
+
+.div-center{
+    position: absolute;
+    text-align: -webkit-center;
+    top: 230px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+@media screen and (min-width:768px) {
+    .div-center{
+        text-align: -webkit-center;
+    }
+}
+
+.circle{
+    background: #ADA7F8;
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.circle-msg{
+    padding: 22px 11px 0px 10px;
+
+}
+
+.label{
+    text-align: left;
+    float: left;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form-getInTouch{
+    text-align: -webkit-center;
+    /* margin-top: 15%; */
+}
+
+.input-container-getIn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    margin: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.connect{
+    background: #265CF6;
+    width: 75%;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}

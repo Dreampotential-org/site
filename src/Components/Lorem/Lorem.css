@@ -1,3 +1,8 @@
+.lorem{
+    background-color: #fff;
+}
+
+
 .side-1{
     background-color: #ADA7F8;
     margin: 10px auto;
@@ -8,4 +13,25 @@
     background-color: #5B03F6;
     margin: 10px auto;
     height: 322px;
+}
+
+.title-select-lorem{
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.text-content-lorem{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
 }
