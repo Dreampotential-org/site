@@ -64,6 +64,10 @@
     .email {
         font-size: 11px;
     }
+    .mobile_email{
+        padding-top: 10px;
+    }
+    
 }
 @media screen and (max-width:500px) {
     .footer{
@@ -91,4 +95,26 @@
     .mobile_email:hover{
         color: #fff;
     }
+}
+
+
+
+
+.logos{
+  padding-left: 18px;
+}
+h5{
+    color: #fff;
+}
+.icons{
+    padding-left: 25px;
+}
+
+.follow{
+    
+    width: 100%;
+    text-align: center;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    color: #fff;
 }

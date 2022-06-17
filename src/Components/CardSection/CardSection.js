@@ -39,9 +39,9 @@ const CardSection = ({onHandleclick}) => {
 
   return (
     <>
-      <div className="pricing">
+      <div className="">
         <Container>
-          <div className="row pt-5 pb-5">
+          <div className="row pb-5">
             {/* <h1 className="pb-5">Pricing Tiers</h1> */}
             <div className="card-section">
               <div className="column">

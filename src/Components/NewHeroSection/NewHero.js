@@ -4,7 +4,7 @@ import './NewHero.css'
 import Frame from "../../assets/Landsvg.svg";
 
 
-import Layer_1 from "../../assets/Layer_1.png";
+import Layer_1 from "../../assets/Layer_2.png";
 import NewNav from '../Nav/Nav';
 
 const NewHero = () => {

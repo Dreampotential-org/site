@@ -68,3 +68,9 @@
 .iframe_control{
     margin-top: 3%;
 }
+
+@media screen and (max-width:768px) {
+    .iframe_control{
+        width: 100%;
+    }
+}
