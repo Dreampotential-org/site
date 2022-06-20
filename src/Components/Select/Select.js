@@ -38,8 +38,9 @@ const Select = () => {
 
   return (
     <>
+    <div className="select-back">
       <div className="container">
-        <h1 className="title-select mt-5">Select Partners</h1>
+        <h1 className="title-select pt-5">Select Partners</h1>
         <p className="text-content mt-5">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
@@ -55,7 +56,7 @@ const Select = () => {
         />
 
         <div className="container">
-          <div className="row custom mt-5">
+          <div className="row custom pt-5 pb-3">
             <div className="col">
               <div
                 className="box"
@@ -167,7 +168,7 @@ const Select = () => {
             </div>
           </div>
 
-          <div className="row custom">
+          <div className="row custom pb-5">
             <div className="col">
               <div
                 className="box"
@@ -256,6 +257,7 @@ const Select = () => {
           </div>
         </div>
       </div>
+    </div>
     </>
   );
 };

@@ -6,7 +6,7 @@ const Lorem = () => {
     <>
     <div className='lorem'>
       <div class="container">
-        <div className='mt-5'>
+        <div className='pt-5'>
             <h1 className='title-select-lorem pt-5'>Lorem Ipsum</h1>
             <p className='text-content-lorem mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
             <p className='text-content-lorem pb-5'>Lorem Ipsum and more recently with desktop .</p>

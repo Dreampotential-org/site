@@ -6,6 +6,12 @@
   } */
 
   /* Float four columns side by side */
+
+.card-back{
+  background-color: #fff;
+}
+
+  
 .column {
     /* float: left; */
     width: 25%;
@@ -66,10 +72,10 @@
   /* Style the counter cards */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 20px 10px 10px 10px;
+    border-radius: 20px!important ;
     text-align: center;
     /* background-color: #f1f1f1; */
-    background-color: #5B03F6;
+    background-color: transparent!important;
   }
 
   /* .pricing{
@@ -196,4 +202,89 @@
   p{
     margin: 10px 0px;
   }
+}
+
+.circle-image{
+  background: #DB525C;
+  border-radius: 50px;
+  height: 80px;
+  width: 80px;
+  margin: auto;
+}
+
+.circle-msg-img{
+  padding-top: 30px;
+  width:50%;
+}
+
+.circle-image-icon2{
+  background-color: #F7941D;
+  border-radius: 50px;
+  height: 80px;
+  width: 80px;
+  margin: auto;
+}
+
+.circle-msg-img2{
+  padding-top: 20px;
+  width: 50%;
+}
+
+.icon2-footer{
+  background-color: #F7941D!important;
+}
+
+.icon3-footer{
+  background-color: 
+  #956ABF!important;
+}
+
+.back-color{
+  background-color: #fff;
+}
+
+.footer-text{
+  color: #000000;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media screen and (max-width:768px) {
+  .footer-text{
+    font-size: 15px;
+  }
+}
+
+.card-footer{
+  background-color:#DB525C
+}
+
+.text-muted-footer{
+  color: #fff;
+  font-size: 20px;
+}
+
+.circle-image-icon3{
+  background-color: #956ABF;
+  border-radius: 50px;
+  height: 80px;
+  width: 80px;
+  margin: auto;
+}
+
+.card1{
+  margin: 25px;
+}
+
+.card2{
+  margin: 25px;
+}
+
+.card3{
+  margin: 25px;
+}
+
+.arrow{
+  float: right;
+  padding-top: 7px;
 }

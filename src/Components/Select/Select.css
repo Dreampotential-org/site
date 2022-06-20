@@ -1,3 +1,7 @@
+.select-back{
+    background-color: #F4F3F3;
+}
+
 .box{
     /* border: 1px solid #fff;
     padding: 50px;
@@ -9,6 +13,7 @@
     border-radius: 10px;
     border: 1px solid #fff;
     height: 136px;
+    background-color: #5B03F6;
 }
 
 @media screen and (max-width:768px) {
@@ -25,6 +30,7 @@
 
 
 .title-select{
+    color: #000000;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -35,7 +41,7 @@
 }
 
 .text-content{
-    color: #fff;
+    color: #000000;
     font-size: 19px;
     font-style: normal;
     font-weight: 400;

@@ -121,7 +121,7 @@ const GetIn = () => {
               
               <div className="input-container-getIn">
                 <label className="label">Name* </label>
-                <input
+                <inputk
                   style={{ height: "40px" }}
                   type="text"
                   name="name"

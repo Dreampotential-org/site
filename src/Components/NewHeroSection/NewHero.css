@@ -28,8 +28,9 @@
 .text-one{
     font-style: normal;
     font-weight: 900;
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 70px;
+    line-height: 80px;
+    text-transform: none;
 }
 
 .text-second{
@@ -43,6 +44,13 @@
     font-size:18px;
     text-align: justify;
     margin: 0 auto;
+}
+
+.text-sub-para{
+    width: 66%;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
 }
 
 
@@ -61,18 +69,22 @@
         padding-left: 28px;
         padding-right: 28px;
     }
-    .text-para{
+    .text-sub-para{
+        width: 100%;
         color: #fff;
-        font-size: 19px;
-        text-align: left;
-        margin: 0 auto;
+        font-size: 18px;
+        margin: 0;
     }
 }
 
+.btn-join:hover{
+    background: #5B03F6;
+}
+
 .btn-join{
-    background-color: #265CF6;
-    border-radius: 10px;
-   
+    background: #5B03F6;
+    border-radius: 100px;
+    border: none;
     width: 189px;
     height: 49.82px;
     left: 161px;

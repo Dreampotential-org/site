@@ -6,6 +6,9 @@ import './CardSection.css'
 import Icon1 from "../../assets/Icon1.png";
 import Icon2 from "../../assets/Icon2.png";
 import Icon3 from "../../assets/Icon3.png";
+import Arrow from "../../assets/right_arrow.png";
+import Sailboat from "../../assets/Sailboat.png";
+import { Card,CardGroup } from 'react-bootstrap'
 
 // import Curve from '../../Assets/Curve.png'
 // import Icon from '../../Assets/icon.png'
@@ -39,91 +42,73 @@ const CardSection = ({onHandleclick}) => {
 
   return (
     <>
-      <div className="">
+      <div className="card-back">
         <Container>
           <div className="row pb-5">
-            {/* <h1 className="pb-5">Pricing Tiers</h1> */}
-            <div className="card-section">
-              <div className="column">
-                <div className="card card-1">
-                  <div>
-                    <img className="img-title-icon1" src={Icon1} alt="img" />
-                  </div>
-                  {PricingTiersList1.map((val,index) => {
-                    return (
-                      <div className="icon-text" key={index}>
-                        <p>{val.title}</p>
-                      </div>
-                    );
-                  })}
-                  <div className="mt-5">
-                    <button 
-                      onClick={scrollToBottom}
-                      className="btn btn-outline custom-btn">
-                      Build Vision
-                    </button>
-                  </div>
+           
+          <CardGroup>
+            
+            <Card  className='card1'>
+          
+              <Card.Body className="back-color" >
+                <Card.Title>
+                <div className="circle-image mt-4">
+                    <img className="circle-msg-img" src={Icon1} alt=""/>
                 </div>
-              </div>
-
-              <div className="column">
-                <div className="card card-2">
-                  <div className='mt-5'>
-                    <img className="img-title" src={Icon2} alt="img" />
-                    {/* <h3 className="title">$ 100/mo</h3> */}
-                  </div>
-                 
-                   {PricingTiersList2.map((val,index) => {
-                    return (
-                      <div className="icon-text" key={index}>
-                        {/* <img className="img-wid" src={Icon} alt="" /> */}
-                        <p>{val.title}</p>
-                      </div>
-                    );
-                  })}
-                  <div className="">
-                    <button
-                      onClick={scrollToBottom}
-                      type="button"
-                      className="btn-outline custom-btn-2"
-                    >
-                      Apply Accelerator Program
-                    </button>
-                  </div>
+                </Card.Title>
+                <Card.Text className='footer-text mb-4'>
+                Bring your Vision we manifest your projects.
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer className='card-footer'>
+                <small className="text-muted-footer">Build Vision</small>
+                <img className="arrow" src={Arrow} alt=""/>
+              </Card.Footer>
+            </Card>
+            <Card className='card2'>
+              {/* <Card.Img variant="top" src={Icon2} /> */}
+              <Card.Body className="back-color">
+                <Card.Title>
+                <div className="circle-image-icon2 mt-4">
+                <img className="circle-msg-img2" src={Icon2} alt=""/>
                 </div>
-              </div>
-
-              <div className="column">
-                <div className="card card-3">
-                  <div>
-                    <img className="img-title" src={Icon3} alt="img" />
-                    {/* <h3 className="title">Contact Us</h3> */}
-                  </div>
-
-                  {PricingTiersList3.map((val,index) => {
-                    return (
-                      <div className="icon-text" key={index}>
-                        {/* <img className="img-wid" src={Icon} alt="" /> */}
-                        <p>{val.title}</p>
-                      </div>
-                    );
-                  })}
-
-                  
-                  <div className="mt-4">
-                    <button
-                      onClick={scrollToBottom}
-                      type="button"
-                      className="btn btn-outline custom-btn"
-                    >
-                      GET IN TOUCH
-                    </button>
-                  </div>
+                </Card.Title>
+                <Card.Text className='footer-text mb-4'>
+                Dream Potential is an accelerator program and technology collective.{' '}
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer className='icon2-footer'>
+                <small className="text-muted-footer">Apply Accelerator program</small>
+                <img className="arrow" src={Arrow} alt=""/>
+              </Card.Footer>
+            </Card>
+            <Card className='card3'>
+              {/* <Card.Img variant="top" src={Icon3} /> */}
+              <Card.Body className="back-color">
+                <Card.Title>
+                <div className="circle-image-icon3 mt-4">
+                <img className="circle-msg-img" src={Icon3} alt=""/>
                 </div>
-              </div>
-            </div>
+                </Card.Title>
+                <Card.Text className='footer-text mb-4'>
+                Not sure what how to enhance your organization or business.
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer className='icon3-footer'>
+                <small className="text-muted-footer">Get in Touch</small>
+                <img className="arrow" src={Arrow} alt=""/>
+              </Card.Footer>
+            </Card>
+          </CardGroup>
+
+          </div>
+
+         
+          <div className="row mt-5 pb-5">
+              <img className="" src={Sailboat} alt=""/>
           </div>
         </Container>
+        
       </div>
     </>
   );

@@ -12,7 +12,7 @@ const NewNav = ({ onClick }) => {
   return (
    <>
    <Container fluid className=''>
-          <Navbar collapseOnSelect expand="lg" bg="#3F1B6E" variant="dark" fluid="md">
+          <Navbar collapseOnSelect expand="lg" bg="#3F1B6E" variant="dark" fluid="md" fixed="top" >
             <div className='top'>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <div className='icon-name'>
