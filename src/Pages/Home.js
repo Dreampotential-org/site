@@ -14,6 +14,10 @@ import CardSection from '../Components/CardSection/CardSection';
 import Select from '../Components/Select/Select';
 import Lorem from '../Components/Lorem/Lorem';
 import GetIn from '../Components/GetIn/GetIn';
+import FourthSection from '../Components/FourthSection/FourthSection';
+import FifthSection from '../Components/FifthSection/FifthSection';
+import CircleSection from '../Components/CircleSection/CircleSection';
+import JoinUs from '../Components/JoinUs/JoinUs';
 
 const Home = () => {
   const aboutSection = useRef(null);
@@ -35,6 +39,10 @@ const Home = () => {
         {/* <MyCarousel/> */}
         <CardSection/>
         <Select/>
+        <FourthSection/>
+        <FifthSection/>
+        <CircleSection/>
+        <JoinUs/>
         <Lorem/>
         <GetIn/>
         {/* <Select_Partners /> */}

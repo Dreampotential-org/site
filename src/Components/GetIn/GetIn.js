@@ -97,7 +97,7 @@ const GetIn = () => {
           <div className="left col-md-6">
             <div className="div-center">
                 <div className="position-relative">
-                    <div className="circle">
+                    <div className="circle-logo">
                         <img className="circle-msg" src={msg} alt=""/>
                     </div> 
                     <h1>Get In Touch</h1>
@@ -121,7 +121,7 @@ const GetIn = () => {
               
               <div className="input-container-getIn">
                 <label className="label">Name* </label>
-                <inputk
+                <input
                   style={{ height: "40px" }}
                   type="text"
                   name="name"

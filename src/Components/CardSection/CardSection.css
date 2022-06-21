@@ -153,6 +153,11 @@
  
 }
 
+.card-border{
+  display: flex;
+  justify-content: center;
+}
+
 .card-1{
   height: 340px;
     /* width: 320px; */
@@ -167,6 +172,7 @@
     text-transform: uppercase;
     border-radius: 10px;
     box-sizing: border-box;
+    
 }
 
 .card-2{
@@ -245,7 +251,7 @@
 
 .footer-text{
   color: #000000;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
 }
 

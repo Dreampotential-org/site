@@ -23,7 +23,7 @@
     }
 }
 
-.circle{
+.circle-logo{
     background: #ADA7F8;
     border-radius: 50px;
     height: 100px;
@@ -79,5 +79,21 @@ input[type="password"] {
 
 .err-msg{
     color: red;
+    margin: 0 auto;
+}
+.title-select{
+    color: #fff;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+}
+.text-content{
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
     margin: 0 auto;
 }

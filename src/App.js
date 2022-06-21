@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Labs from "./Pages/Labs";
 import Education from "./Pages/Education";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
   return (

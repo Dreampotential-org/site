@@ -1,0 +1,55 @@
+.fourth-back{
+    background-color: #fff;
+}
+
+.lorem-title{
+    color: #000;
+    text-align: left;
+}
+
+.lorem-text{
+    color: #000;
+    font-size: 20px;
+    margin: 0!important;
+    width: 415px;
+}
+
+.bottom-left{
+    padding-left: 5%;
+}
+
+
+.right-img{
+    position: absolute;
+    left: 15%;
+}
+
+
+@media screen and (max-width:768px) {
+    .right-img{
+        position: relative;
+        left:0;
+    }
+    .lorem-text{
+        font-size: 18px;
+        width: 100%;
+    }
+    .lorem-title{
+        font-size: 20px;
+    }
+}
+
+
+/* .container-w3 { 
+    height: 200px;
+    position: relative;
+  } */
+  
+  /* .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  } */

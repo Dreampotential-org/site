@@ -1,0 +1,43 @@
+.circle-back{
+    background-color: #fff;
+}
+
+.circle {
+    height: 220px;
+    width: 220px;
+    background-color: #ADA7F8;
+    border-radius: 50%;
+    display: inline-block;
+    
+  }
+
+  .circle-2 {
+    height: 220px;
+    width: 220px;
+    background-color:  #1B0839;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+ 
+
+  .circle-row{
+    display: flex;
+    text-align: center;
+  }
+
+  .lorem-circle-text{
+    font-size: 20px;
+    color: #000;
+    margin: 15px 60px;
+  }
+
+  @media screen and (max-width:768px) {
+    .circle-row{
+        display: block;
+      }
+      .lorem-circle-text{
+        margin: 0 auto;
+      }
+    
+  }

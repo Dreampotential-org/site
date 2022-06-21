@@ -8,7 +8,8 @@ import Icon2 from "../../assets/Icon2.png";
 import Icon3 from "../../assets/Icon3.png";
 import Arrow from "../../assets/right_arrow.png";
 import Sailboat from "../../assets/Sailboat.png";
-import { Card,CardGroup } from 'react-bootstrap'
+import { Card,CardGroup } from 'react-bootstrap';
+
 
 // import Curve from '../../Assets/Curve.png'
 // import Icon from '../../Assets/icon.png'
@@ -44,11 +45,11 @@ const CardSection = ({onHandleclick}) => {
     <>
       <div className="card-back">
         <Container>
-          <div className="row pb-5">
+          <div className="row pb-5 card-border">
            
-          <CardGroup>
+          {/* <CardGroup> */}
             
-            <Card  className='card1'>
+            <Card  className='card1' style={{ width: '18rem' }}>
           
               <Card.Body className="back-color" >
                 <Card.Title>
@@ -64,8 +65,9 @@ const CardSection = ({onHandleclick}) => {
                 <small className="text-muted-footer">Build Vision</small>
                 <img className="arrow" src={Arrow} alt=""/>
               </Card.Footer>
+              
             </Card>
-            <Card className='card2'>
+            <Card className='card2' style={{ width: '18rem' }}>
               {/* <Card.Img variant="top" src={Icon2} /> */}
               <Card.Body className="back-color">
                 <Card.Title>
@@ -82,7 +84,7 @@ const CardSection = ({onHandleclick}) => {
                 <img className="arrow" src={Arrow} alt=""/>
               </Card.Footer>
             </Card>
-            <Card className='card3'>
+            <Card className='card3' style={{ width: '18rem' }}>
               {/* <Card.Img variant="top" src={Icon3} /> */}
               <Card.Body className="back-color">
                 <Card.Title>
@@ -99,7 +101,7 @@ const CardSection = ({onHandleclick}) => {
                 <img className="arrow" src={Arrow} alt=""/>
               </Card.Footer>
             </Card>
-          </CardGroup>
+          {/* </CardGroup> */}
 
           </div>
 

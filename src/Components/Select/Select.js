@@ -40,14 +40,14 @@ const Select = () => {
     <>
     <div className="select-back">
       <div className="container">
-        <h1 className="title-select pt-5">Select Partners</h1>
-        <p className="text-content mt-5">
+        <h1 className="title-selectPartners pt-5">Select Partners</h1>
+        {/* <p className="text-content mt-5">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
         </p>
         <p className="text-content">
           Lorem Ipsum and more recently with desktop .
-        </p>
+        </p> */}
 
         <CenteredModal
           show={modalShow}

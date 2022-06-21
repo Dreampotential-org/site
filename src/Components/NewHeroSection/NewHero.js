@@ -31,7 +31,7 @@ const NewHero = () => {
         
 
             <div className="container">
-              <div className="row pt-5">
+              <div className="row pt-5 pb-5">
                 <div className="col-md-6 pt-5">
                   <p className='text-one'>Bring us your dreams.We’ll make them a reality.</p>
                   <p className='text-sub-para mt-4'>
