@@ -2,6 +2,18 @@
     background-color: #F4F3F3;
 }
 
+.custom{
+    width: 25%;
+}
+
+.custom-div-top{
+    width: 25%;
+}
+
+.custom-div-bottom{
+    width: 50%;
+}
+
 .box{
     /* border: 1px solid #fff;
     padding: 50px;
@@ -14,6 +26,10 @@
     border: 1px solid #fff;
     height: 136px;
     background-color: #5B03F6;
+}
+
+.box-div{
+    width: 50%;
 }
 
 @media screen and (max-width:768px) {
@@ -40,7 +56,7 @@
     text-transform: capitalize;
 }
 
-.text-content{
+.text-content-selectPartners{
     color: #000000;
     font-size: 19px;
     font-style: normal;

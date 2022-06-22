@@ -12,6 +12,8 @@ import DP from "../../assets/DP-Logos-03.svg";
 import IAMLogo from "../../assets/I-AM-Logo-04.svg";
 import Viaduct from "../../assets/Viaduct-Logo-05.svg";
 import CenteredModal from "../CenteredModal/CenteredModal";
+import Marquee from "react-fast-marquee";
+
 
 const Select = () => {
   const [modalShow, setModalShow] = React.useState(false);
@@ -41,13 +43,13 @@ const Select = () => {
     <div className="select-back">
       <div className="container">
         <h1 className="title-selectPartners pt-5">Select Partners</h1>
-        {/* <p className="text-content mt-5">
+        <p className="text-content-selectPartners mt-5">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
         </p>
-        <p className="text-content">
+        <p className="text-content-selectPartners">
           Lorem Ipsum and more recently with desktop .
-        </p> */}
+        </p>
 
         <CenteredModal
           show={modalShow}
@@ -55,10 +57,12 @@ const Select = () => {
           modalcontent={modalcontent}
         />
 
-        <div className="container">
-          <div className="row custom pt-5 pb-3">
+        
+        
+          <Marquee direction="right" gradient={false} >
+          <div className="row custom-div-top pt-5 pb-5">
             <div className="col">
-              <div
+            <div
                 className="box"
                 onClick={() =>
                   partnersClick(
@@ -79,7 +83,7 @@ const Select = () => {
               </div>
             </div>
             <div className="col">
-              <div
+            <div
                 className="box"
                 onClick={() =>
                   partnersClick(
@@ -101,7 +105,7 @@ const Select = () => {
               </div>
             </div>
             <div className="col">
-              <div
+            <div
                 className="box"
                 onClick={() =>
                   partnersClick(
@@ -118,15 +122,11 @@ const Select = () => {
                   )
                 }
               >
-                <img
-                  className="img-fluid common-img"
-                  src={IAMLogo}
-                  alt="icon"
-                />
+                <img className="common-img" src={IAMLogo} alt="icon" />
               </div>
             </div>
             <div className="col">
-              <div
+            <div
                 className="box"
                 onClick={() =>
                   partnersClick(
@@ -139,11 +139,15 @@ const Select = () => {
                   )
                 }
               >
-                <img className="img-fluid logo-Once" src={OnceAt} alt="icon" />
+                <img
+                  className="img-fluid common-img"
+                  src={OnceAt}
+                  alt="icon"
+                />
               </div>
             </div>
             <div className="col">
-              <div
+            <div
                 className="box"
                 onClick={() =>
                   partnersClick(
@@ -159,16 +163,14 @@ const Select = () => {
                   )
                 }
               >
-                <img
-                  className="img-fluid logo-Neigh"
-                  src={Neighbormade}
-                  alt="icon"
-                />
+                <img className="img-fluid common-img" src={Neighbormade} alt="icon" />
               </div>
             </div>
           </div>
+          </Marquee>
 
-          <div className="row custom pb-5">
+          <Marquee  gradient={false} >
+          <div className="row custom-div-bottom pb-5">
             <div className="col">
               <div
                 className="box"
@@ -255,7 +257,8 @@ const Select = () => {
               </div>
             </div>
           </div>
-        </div>
+          </Marquee>
+        {/* </div> */}
       </div>
     </div>
     </>

@@ -11,98 +11,86 @@ import Sailboat from "../../assets/Sailboat.png";
 import { Card,CardGroup } from 'react-bootstrap';
 
 
-// import Curve from '../../Assets/Curve.png'
-// import Icon from '../../Assets/icon.png'
-const PricingTiersList1=[
-   {
-    title:'Bring your Vision we manifest your projects.'
-   },
-
-];
-const PricingTiersList2=[
-    {
-     title:'Dream Potential is an accelerator program and technology collective.'
-    },
-
- ];
- const PricingTiersList3=[
-    {
-     title:'Not sure what how to enhance your organization or business.'
-    },
-  
- ]
-
  
-const CardSection = ({onHandleclick}) => {
+const CardSection = () => {
 
 
-  const scrollToBottom = () => {
-    onHandleclick();
-  }
 
 
   return (
     <>
       <div className="card-back">
         <Container>
-          <div className="row pb-5 card-border">
-           
-          {/* <CardGroup> */}
-            
-            <Card  className='card1' style={{ width: '18rem' }}>
+
+
+        {/* <div class="row">
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+        </div> */}
+
           
-              <Card.Body className="back-color" >
-                <Card.Title>
+          <div className="pb-5 pt-5 card-border">
+            <Card  className='card_section' style={{ width: '18rem' }}>
+          
+              <Card.Body className="back-color " >
+                <Card.Title className='pb-4'>
                 <div className="circle-image mt-4">
                     <img className="circle-msg-img" src={Icon1} alt=""/>
                 </div>
                 </Card.Title>
-                <Card.Text className='footer-text mb-4'>
+                <Card.Text className='footer-text mb-5 pt-3'>
                 Bring your Vision we manifest your projects.
                 </Card.Text>
               </Card.Body>
-              <Card.Footer className='card-footer'>
+              <Card.Footer className='card-footer pt-4'>
                 <small className="text-muted-footer">Build Vision</small>
                 <img className="arrow" src={Arrow} alt=""/>
               </Card.Footer>
               
             </Card>
-            <Card className='card2' style={{ width: '18rem' }}>
-              {/* <Card.Img variant="top" src={Icon2} /> */}
-              <Card.Body className="back-color">
-                <Card.Title>
-                <div className="circle-image-icon2 mt-4">
-                <img className="circle-msg-img2" src={Icon2} alt=""/>
-                </div>
-                </Card.Title>
-                <Card.Text className='footer-text mb-4'>
-                Dream Potential is an accelerator program and technology collective.{' '}
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer className='icon2-footer'>
-                <small className="text-muted-footer">Apply Accelerator program</small>
-                <img className="arrow" src={Arrow} alt=""/>
-              </Card.Footer>
+            <Card  className='card_section' style={{ width: '18rem' }}>
+          
+          <Card.Body className="back-color" >
+            <Card.Title>
+            <div className="circle-image circle-image-icon2 mt-4">
+            <img className="circle-msg-img2" src={Icon2} alt=""/>
+            </div>
+            </Card.Title>
+            <Card.Text className='footer-text mt-5 mb-5'>
+            Dream Potential is an accelerator program and technology collective.{' '}
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer className='card-footer icon2-footer'>
+            <small className="text-muted-footer">Apply Accelerator <br/> program</small>
+            <img className="arrow" src={Arrow} alt=""/>
+          </Card.Footer>
+          
             </Card>
-            <Card className='card3' style={{ width: '18rem' }}>
-              {/* <Card.Img variant="top" src={Icon3} /> */}
-              <Card.Body className="back-color">
-                <Card.Title>
-                <div className="circle-image-icon3 mt-4">
-                <img className="circle-msg-img" src={Icon3} alt=""/>
-                </div>
-                </Card.Title>
-                <Card.Text className='footer-text mb-4'>
-                Not sure what how to enhance your organization or business.
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer className='icon3-footer'>
-                <small className="text-muted-footer">Get in Touch</small>
-                <img className="arrow" src={Arrow} alt=""/>
-              </Card.Footer>
+            <Card  className='card_section' style={{ width: '18rem' }}>
+          
+          <Card.Body className="back-color" >
+            <Card.Title>
+            <div className="circle-image circle-image-icon3 mt-4">
+            <img className="circle-msg-img" src={Icon3} alt=""/>
+            </div>
+            </Card.Title>
+            <Card.Text className='footer-text mb-4 pt-3'>
+            Not sure what how to enhance your organization or business.     
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer className='card-footer icon3-footer pt-4'>
+            <small className="text-muted-footer">Build Vision</small>
+            <img className="arrow" src={Arrow} alt=""/>
+          </Card.Footer>
+          
             </Card>
-          {/* </CardGroup> */}
-
           </div>
 
          
