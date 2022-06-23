@@ -6,6 +6,9 @@ import Select_Partners from '../Components/Select_Partners/Select_Partners';
 import GetInTouch from '../Components/GetInTouch/GetInTouch';
 import Footer from '../Components/Footer/Footer';
 import TextSection from '../Components/TextSection/TextSection';
+import NewNav from '../Components/Nav/Nav';
+import Select from '../Components/Select/Select';
+import GetIn from '../Components/GetIn/GetIn';
 
 const Labs = () => {
     const aboutSection = useRef(null);
@@ -19,7 +22,8 @@ const Labs = () => {
         <>
             <div className="App">
                 <div className="back">
-                    <NavbarSection onClick={scrollDown} />
+                    {/* <NavbarSection onClick={scrollDown} /> */}
+                    <NewNav/>
                     <TextSection
                         title='Dream Education'
                         description={[
@@ -28,9 +32,11 @@ const Labs = () => {
                         ]} />
                     {/* <div style={{ height: 300 }}></div> */}
                 </div>
-                <Select_Partners />
+                {/* <Select_Partners /> */}
+                <Select/>
+                <GetIn/>
                 <div className="section section2" ref={aboutSection}>
-                    <GetInTouch />
+                    {/* <GetInTouch /> */}
                 </div>
                 <Footer onClick={scrollDown} />
             </div>

@@ -24,28 +24,6 @@ const Footer = ({onClick}) => {
       
         </div>
       </div>
-
-      {/* <div class="container">
-        <div class="row">
-          <div class="col">
-          <h5>DREAM POTENTIAL</h5>
-          </div>
-          <div class="col">
-          <h5>hello@dreampotential.org</h5>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div className='col-md-12'>
-           <h5>Follow us on</h5>
-            <div className=''>
-              <img  src={twitter} alt="" />
-              <img  src={In} alt="" />
-              <img  src={facebook} alt="" />
-              <img  src={instagram} alt="" />
-            </div>
-           </div>
-          </div>
-        </div>
-      </div> */}
     </>
   )
 }

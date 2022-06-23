@@ -14,8 +14,8 @@ const FifthSection = () => {
         <div className='container'>
             <div className='pt-5'>
                 <h1 className='title-select-fifth pt-5'>Lorem Ipsum</h1>
-                <p className='text-content-lorem mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-                <p className='text-content-lorem pb-5'>Lorem Ipsum and more recently with desktop .</p>
+                <p className='text-content-fifth mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+                <p className='text-content-fifth pb-5'>Lorem Ipsum and more recently with desktop .</p>
             </div>
             <div className='row'>
                 <div className='col-md-6 mar'>

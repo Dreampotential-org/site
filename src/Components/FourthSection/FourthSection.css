@@ -3,11 +3,15 @@
 }
 
 .lorem-title{
+    font-family: 'Poppins';
+    font-style: normal;
     color: #000;
     text-align: left;
 }
 
 .lorem-text{
+    font-family: 'Poppins';
+    font-style: normal;
     color: #000;
     font-size: 20px;
     margin: 0!important;
@@ -38,18 +42,3 @@
         font-size: 20px;
     }
 }
-
-
-/* .container-w3 { 
-    height: 200px;
-    position: relative;
-  } */
-  
-  /* .center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  } */

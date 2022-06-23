@@ -1,12 +1,11 @@
-import React ,{useRef, useState ,useEffect} from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./GetIn.css";
-import msg from '../../assets/msg.png'
+import msg from "../../assets/msg.png";
 import { leadCreateApi } from "../../services/helper";
 import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 const GetIn = () => {
-
   const [valuesregi, setValuesregi] = useState({
     name: "",
     email: "",
@@ -30,95 +29,79 @@ const GetIn = () => {
     setErrorCreate(validateregi(valuesregi));
     //console.log('valuesregi'+JSON.stringify(valuesregi))
     // toast.success("Created successfully !");
-  
-      let errorCreate = {};
-      if (!valuesregi.name) {
-                errorCreate.name = "Name is required";
-                console.log('valuesregi dsdads'+JSON.stringify(errorCreate.name))
-      } else if (!/^[a-zA-Z]/.test(valuesregi.name)) {
-        errorCreate.name = "Name is invalid";
-      }
-      if (!valuesregi.email) {
-        errorCreate.email = "Email address is required";
-      } else if (!/\S+@\S+\.\S+/.test(valuesregi.email)) {
-        errorCreate.email = "Email address is invalid";
-      }
-      if (!valuesregi.phone) {
-        errorCreate.phone = "phone number is required";
-      } else if (!/\S+@\S+\.\S+/.test(valuesregi.email)) {
-        errorCreate.phone = "phone number is invalid";
-      }
-     
-      else{
+
+    let errorCreate = {};
+    if (!valuesregi.name) {
+      errorCreate.name = "Name is required";
+      console.log("valuesregi dsdads" + JSON.stringify(errorCreate.name));
+    } else if (!/^[a-zA-Z]/.test(valuesregi.name)) {
+      errorCreate.name = "Name is invalid";
+    }
+    if (!valuesregi.email) {
+      errorCreate.email = "Email address is required";
+    } else if (!/\S+@\S+\.\S+/.test(valuesregi.email)) {
+      errorCreate.email = "Email address is invalid";
+    }
+    if (!valuesregi.phone) {
+      errorCreate.phone = "phone number is required";
+    } else if (!/\S+@\S+\.\S+/.test(valuesregi.email)) {
+      errorCreate.phone = "phone number is invalid";
+    } else {
       const payload = {
         name: valuesregi.name,
         email: valuesregi.email,
         phone: valuesregi.phone,
         website: valuesregi.website,
       };
-  
-      leadCreateApi(payload)
-          .then((res) => {
-            // console.log("response==>"+JSON.stringify(res))
-            if (res?.status == 201) {
-              toast.success("information submitted successfully !");
-              setValuesregi({
-                name: "",
-                email: "",
-                phone: "",
-                website: "",
-              });
-            } else {
-              toast.error("all fields is required");
-            }
-          })
-          .catch((err) => {
-            toast.error("email is required !"+err);
-          });
-      }  
-    }
 
+      leadCreateApi(payload)
+        .then((res) => {
+          // console.log("response==>"+JSON.stringify(res))
+          if (res?.status == 201) {
+            toast.success("information submitted successfully !");
+            setValuesregi({
+              name: "",
+              email: "",
+              phone: "",
+              website: "",
+            });
+          } else {
+            toast.error("all fields is required");
+          }
+        })
+        .catch((err) => {
+          toast.error("email is required !" + err);
+        });
+    }
+  };
 
   return (
     <>
       <div class="container">
         <div className="mt-5 mb-5">
-            <h1 className="title-select mt-5">Lorem Ipsum</h1>
-            <p className="text-content mt-5">
+          <h1 className="title-select mt-5">Lorem Ipsum</h1>
+          <p className="text-content mt-5">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
-            </p>
-            <p className="text-content">
+          </p>
+          <p className="text-content">
             Lorem Ipsum and more recently with desktop .
-            </p>
+          </p>
         </div>
 
         <div className="row  pb-5">
           <div className="left col-md-6">
             <div className="div-center">
-                <div className="position-relative">
-                    <div className="circle-logo">
-                        <img className="circle-msg" src={msg} alt=""/>
-                    </div> 
-                    <h1>Get In Touch</h1>
+              <div className="position-relative">
+                <div className="circle-logo">
+                  <img className="circle-msg" src={msg} alt="" />
                 </div>
+                <h1>Get In Touch</h1>
+              </div>
             </div>
           </div>
           <div className="right col-md-6">
             <form className="form-getInTouch mt-5">
-              {/* <div className="input-container-getIn">
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label className="label">First Name*</label>
-                    <input type="text" class="form-control"  style={{ height: "40px" }} />
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label className="label">Last Name*</label>
-                    <input type="email" class="form-control"  style={{ height: "40px" }}/>
-                  </div>
-                </div>
-              </div> */}
-              
               <div className="input-container-getIn">
                 <label className="label">Name* </label>
                 <input
@@ -128,13 +111,11 @@ const GetIn = () => {
                   onChange={onChangeregi}
                   value={valuesregi.name}
                 />
-                    {errorCreate.name && (
-                        <p className="err-msg">
-                          {errorCreate.name}
-                        </p>
-                        )}
+                {errorCreate.name && (
+                  <p className="err-msg">{errorCreate.name}</p>
+                )}
               </div>
-              
+
               <div className="input-container-getIn">
                 <label className="label">Email* </label>
                 <input
@@ -145,11 +126,9 @@ const GetIn = () => {
                   value={valuesregi.email}
                   required
                 />
-                 {errorCreate.email && (
-                        <p className="err-msg">
-                          {errorCreate.email}
-                        </p>
-                        )}
+                {errorCreate.email && (
+                  <p className="err-msg">{errorCreate.email}</p>
+                )}
               </div>
               <div className="input-container-getIn">
                 <label className="label">Phone Number*</label>
@@ -161,11 +140,9 @@ const GetIn = () => {
                   value={valuesregi.phone}
                   required
                 />
-                   {errorCreate.phone && (
-                        <p className="err-msg">
-                          {errorCreate.phone}
-                        </p>
-                        )}
+                {errorCreate.phone && (
+                  <p className="err-msg">{errorCreate.phone}</p>
+                )}
               </div>
               <div className="input-container-getIn">
                 <label className="label">Website*</label>
@@ -179,7 +156,11 @@ const GetIn = () => {
                 />
               </div>
               <div className="button-container pb-5">
-                <button className="mt-5 connect" type="submit" onClick={handleSubmit}>
+                <button
+                  className="mt-5 connect"
+                  type="submit"
+                  onClick={handleSubmit}
+                >
                   {" "}
                   Connect
                 </button>
@@ -193,9 +174,8 @@ const GetIn = () => {
   );
 };
 
-
 function validateregi(valuesregi) {
-  console.log("valuesregi :- "+JSON.stringify(valuesregi))
+  console.log("valuesregi :- " + JSON.stringify(valuesregi));
   let errorCreate = {};
   if (!valuesregi.name) {
     errorCreate.name = "Name is required";
@@ -206,8 +186,8 @@ function validateregi(valuesregi) {
     errorCreate.email = "Email address is required";
   } else if (!/\S+@\S+\.\S+/.test(valuesregi.email)) {
     errorCreate.email = "Email address is invalid";
-    }
-    return errorCreate;
   }
+  return errorCreate;
+}
 
 export default GetIn;

@@ -11,5 +11,19 @@
 }
 
 .title-select-fifth{
+    font-family: 'Poppins';
+    font-style: normal;
     color: #000;
+    font-size: 35px;
+}
+
+.text-content-fifth{
+    font-family: 'Poppins';
+    font-style: normal;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
 }

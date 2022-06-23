@@ -15,10 +15,6 @@
 }
 
 .box{
-    /* border: 1px solid #fff;
-    padding: 50px;
-    height: 136px;
-    border-radius: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +43,7 @@
 
 .title-selectPartners{
     color: #000000;
-    /* font-family: 'Poppins'; */
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -58,9 +54,11 @@
 
 .text-content-selectPartners{
     color: #000000;
+    font-family: 'Poppins';
+    font-style: normal;
     font-size: 19px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
     margin: 0 auto;
 }
@@ -102,6 +100,9 @@
     }
     .common-img{
         width: 35%;
+    }
+    .title-selectPartners{
+        font-size: 35px;
     }
 }
 
