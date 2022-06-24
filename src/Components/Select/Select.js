@@ -12,6 +12,8 @@ import IAMLogo from "../../assets/I-AM-Logo-04.svg";
 import Viaduct from "../../assets/Viaduct-Logo-05.svg";
 import CenteredModal from "../CenteredModal/CenteredModal";
 import Marquee from "react-fast-marquee";
+import RePictureVideo from "../../assets/videos/RePicture.mp4";
+import dreamReader from "../../assets/videos/dreamReader.mp4";
 
 const Select = () => {
   const [modalShow, setModalShow] = React.useState(false);
@@ -20,16 +22,18 @@ const Select = () => {
     discription: [],
     buttonText: "",
     videoURL: "",
+    link:"",
   });
   const [discription, setDiscription] = React.useState([]);
 
-  const partnersClick = (title, discription, buttonText, videoURL, iframe) => {
+  const partnersClick = (title, discription, buttonText, videoURL, iframe,link) => {
     setModalcontent({
       title: title,
       discription: discription,
       buttonText: buttonText,
       videoURL: videoURL,
       iframe: iframe,
+      link:link
     });
     setModalShow(true);
     // setTitle(title)
@@ -67,7 +71,9 @@ const Select = () => {
                         `EXPLORE SCIENCE, TECHNOLOGY, ENGINEERING AND CULTURE PROJECTS GOING ON ALL AROUND THE WORLD REPICTURE`,
                       ],
                       "",
-                      "https://agentstat.com/video/GETSTAT-7-11.10.2020.mp4"
+                      RePictureVideo,
+                      '',
+                      "http://repicture.com/"
                     )
                   }
                 >
@@ -89,7 +95,9 @@ const Select = () => {
                         `Pick right Agent every time`,
                       ],
                       "",
-                      "https://agentstat.com/video/GETSTAT-7-11.10.2020.mp4"
+                      "https://agentstat.com/video/GETSTAT-7-11.10.2020.mp4",
+                      "",
+                      "https://agentstat.com/"
                     )
                   }
                 >
@@ -113,7 +121,9 @@ const Select = () => {
                       ],
                       "",
                       "",
-                      "https://www.youtube.com/watch?v=_debXPUnJkQ"
+                      "https://www.youtube.com/embed/_debXPUnJkQ",
+                      "https://useiam.com/"
+                      
                     )
                   }
                 >
@@ -130,7 +140,9 @@ const Select = () => {
                         `We live in a beautiful world, surrounded by amazing people pursuing wonderful interests. OnceAt is our honest attempt to connect you with your ever changing surroundings. Create and participate in meaningful conversations. Live life in the moment as the world itself is of flickering temporary nature.`,
                       ],
                       "",
-                      ""
+                      "",
+                      "",
+                      "https://www.onceat.com/"
                     )
                   }
                 >
@@ -154,7 +166,9 @@ const Select = () => {
                         `Building robust communities through positive actions.`,
                       ],
                       "",
-                      ""
+                      "",
+                      "",
+                      "https://www.neighbormade.co/"
                     )
                   }
                 >
@@ -181,7 +195,7 @@ const Select = () => {
                         `Science based to increase your stamina using latest Natural Language processing techniques.`,
                       ],
                       "",
-                      "https://agentstat.com/video/GETSTAT-7-11.10.2020.mp4"
+                      dreamReader
                     )
                   }
                 >
@@ -218,7 +232,7 @@ const Select = () => {
                         `How is your body alignment?`,
                         `Get your instant frame analysis and receive a free posture report in 60 seconds.`,
                       ],
-                      "Free AI Posture Report"
+                      "Free AI Posture Report",
                     )
                   }
                 >
