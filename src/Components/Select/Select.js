@@ -59,7 +59,7 @@ const Select = () => {
             modalcontent={modalcontent}
           />
 
-          <Marquee direction="right" gradient={false}>
+          {/* <Marquee direction="right" gradient={false}> */}
             <div className="row custom-div-top pt-5 pb-5">
               <div className="col">
                 <div
@@ -180,9 +180,9 @@ const Select = () => {
                 </div>
               </div>
             </div>
-          </Marquee>
+          {/* </Marquee> */}
 
-          <Marquee gradient={false}>
+          {/* <Marquee gradient={false}> */}
             <div className="row custom-div-bottom pb-5">
               <div className="col">
                 <div
@@ -274,7 +274,7 @@ const Select = () => {
                 </div>
               </div>
             </div>
-          </Marquee>
+          {/* </Marquee> */}
         </div>
       </div>
     </>

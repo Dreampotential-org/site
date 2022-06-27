@@ -10,7 +10,7 @@ import Arrow from "../../assets/right_arrow.png";
 import Sailboat from "../../assets/Sailboat.png";
 import { Card, CardGroup } from "react-bootstrap";
 
-const CardSection = () => {
+const CardSection = ({ onClick }) => {
   return (
     <>
       <div className="card-back">
@@ -27,8 +27,8 @@ const CardSection = () => {
                   Bring your Vision we manifest your projects.
                 </Card.Text>
               </Card.Body>
-              <Card.Footer className="card-footer pt-4">
-                <small className="text-muted-footer">Build Vision</small>
+              <Card.Footer className="card-footer pt-4" onClick={onClick}>
+                <small className="text-muted-footer"  >Build Vision</small>
                 <img className="arrow" src={Arrow} alt="" />
               </Card.Footer>
             </Card>
@@ -44,8 +44,8 @@ const CardSection = () => {
                   collective.{" "}
                 </Card.Text>
               </Card.Body>
-              <Card.Footer className="card-footer icon2-footer">
-                <small className="text-muted-footer">
+              <Card.Footer className="card-footer icon2-footer" onClick={onClick}>
+                <small className="text-muted-footer"  >
                   Apply Accelerator <br /> program
                 </small>
                 <img className="arrow" src={Arrow} alt="" />
@@ -62,8 +62,8 @@ const CardSection = () => {
                   Not sure what how to enhance your organization or business.
                 </Card.Text>
               </Card.Body>
-              <Card.Footer className="card-footer icon3-footer pt-4">
-                <small className="text-muted-footer">Build Vision</small>
+              <Card.Footer className="card-footer icon3-footer pt-4" onClick={onClick}>
+                <small className="text-muted-footer">Get In Touch</small>
                 <img className="arrow" src={Arrow} alt="" />
               </Card.Footer>
             </Card>

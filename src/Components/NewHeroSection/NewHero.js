@@ -3,11 +3,11 @@ import "./NewHero.css";
 import Layer_1 from "../../assets/Layer_2.png";
 import NewNav from "../Nav/Nav";
 
-const NewHero = () => {
+const NewHero = ({onClick}) => {
   return (
     <>
       <div className="hero-background">
-        <NewNav />
+        <NewNav onClick={onClick}/>
         <div className="container">
           <div className="row pt-5 pb-5">
             <div className="col-md-6 pt-5">
@@ -15,11 +15,10 @@ const NewHero = () => {
                 Bring us your dreams.We’ll make them a reality.
               </p>
               <p className="text-sub-para mt-4">
-                We serve conscious entrepreneurs in their ambitions to make
-                meaningful impact in education, e-commerce and media.
+                We serve conscious entrepreneurs in their ambitions to make meaningful impact in education, e-commerce and media.
               </p>
               <div className="mt-5">
-                <button type="button" className="btn-join btn-primary">
+                <button type="button" className="btn-join btn-primary" onClick={onClick}>
                   JOIN US
                 </button>
               </div>

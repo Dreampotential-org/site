@@ -1,7 +1,7 @@
 import React from 'react'
 import './JoinUs.css'
 
-const JoinUs = () => {
+const JoinUs = ({onClick}) => {
   return (
     <>
         <div className='container'>
@@ -11,7 +11,7 @@ const JoinUs = () => {
                 <p className='text-content-joinus pb-5'>Lorem Ipsum and more recently with desktop .</p>
             </div>
             <div className='joinus-btn pb-5'>
-                <button type="button" className="btn-join btn-primary">JOIN US</button>
+                <button type="button" className="btn-join btn-primary" onClick={onClick}>JOIN US</button>
             </div>
         </div>
     </>

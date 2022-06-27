@@ -42,6 +42,7 @@
     font-size:18px;
     text-align: justify;
     margin: 0 auto;
+    
 }
 
 .text-sub-para{
@@ -51,6 +52,7 @@
     color: #fff;
     font-size: 18px;
     margin: 0;
+    text-transform: none;
 }
 
 

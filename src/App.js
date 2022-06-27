@@ -4,6 +4,8 @@ import Home from "./Pages/Home";
 import Labs from "./Pages/Labs";
 import Education from "./Pages/Education";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Desktop10 from "./Components/Desktop10/Desktop10";
+import Desktop11 from "./Components/Desktop-11/Desktop11";
 
 export default function App() {
   return (
@@ -13,6 +15,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="labs" element={<Labs />} />
           <Route path="education" element={<Education />} />
+          {/* <Route path="desktop10" element={<Desktop10 />} />
+          <Route path="desktop11" element={<Desktop11 />} /> */}
       </Routes>
     </BrowserRouter>
   );

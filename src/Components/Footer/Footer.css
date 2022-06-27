@@ -1,8 +1,10 @@
 .footer {
     background-color: #5a289b99;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     padding: 4%;
+    
 }
 
 .dream {

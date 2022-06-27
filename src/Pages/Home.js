@@ -35,15 +35,15 @@ const Home = () => {
           <Hero  onClick={scrollDown}/>
           <Middle onClick={scrollDown}/>
         </div> */}
-        <NewHero/>
+        <NewHero onClick={scrollDown}/>
         {/* <MyCarousel/> */}
-        <CardSection/>
+        <CardSection onClick={scrollDown}/>
         <Select/>
-        <FourthSection/>
+        <FourthSection onClick={scrollDown}/>
         <FifthSection/>
         <CircleSection/>
-        <JoinUs/>
-        <Lorem/>
+        <JoinUs onClick={scrollDown}/>
+        <Lorem />
         <GetIn/>
         {/* <Select_Partners /> */}
         {/* <Iframe/> */}

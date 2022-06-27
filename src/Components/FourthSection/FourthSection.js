@@ -3,7 +3,7 @@ import "./FourthSection.css";
 import Man from "../../assets/Man.png";
 import Man2 from "../../assets/Man2.png";
 
-const FourthSection = () => {
+const FourthSection = ({onClick}) => {
   return (
     <>
       <div className="fourth-back">
@@ -22,7 +22,7 @@ const FourthSection = () => {
                 </p>
 
                 <div className="mt-5">
-                  <button type="button" className="btn-join btn-primary">
+                  <button type="button" className="btn-join btn-primary" onClick={onClick}>
                     JOIN US
                   </button>
                 </div>
@@ -39,7 +39,7 @@ const FourthSection = () => {
                   desktop .
                 </p>
                 <div className="mt-5">
-                  <button type="button" className="btn-join btn-primary">
+                  <button type="button" className="btn-join btn-primary" onClick={onClick}>
                     JOIN US
                   </button>
                 </div>

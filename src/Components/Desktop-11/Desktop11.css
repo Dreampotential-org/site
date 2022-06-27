@@ -1,0 +1,25 @@
+.desktop-text-11{
+    background:#956ABF;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight:700;
+    font-size: 15px;
+}
+
+.desktop11-right{
+    display: flex;
+    align-items: center;
+}
+
+.back-img{
+    background-color: blueviolet;;
+}
+
+p{
+    font-size: 25px;
+    margin: 0 auto;
+    color: #000;
+}
