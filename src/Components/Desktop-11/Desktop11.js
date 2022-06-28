@@ -13,158 +13,47 @@ const Desktop11 = () => {
         <div className='container mt-5 pt-5'>
           <div className='row mt-5'>
             <div className='col-md-4'>
-              <div class="">
                   <div className='desktop-text-11'>Socket-Link API</div>
-              </div>
-              <div class="mt-3">
-                  <div className='desktop-text-11'>Conference-Base</div>
-              </div>
-              <div class="mt-3">
-                  <div className='desktop-text-11'>Teacher-UI</div>
-              </div>
-              <div class="mt-3">
-                  <div className='desktop-text-11'>Chrome extension-base</div>
-              </div>
+                  <div className='desktop-text-11 mt-3'>Conference-Base</div>
+                  <div className='desktop-text-11 mt-3'>Teacher-UI</div>
+                  <div className='desktop-text-11 mt-3'>Chrome extension-base</div>
             </div>
+
             <div className='col-md-8'>
+                  <p className='desktop11-text'>Real time messaging multiple conference room platform.</p>
+                  
               <div className='desktop11-right'>
-                <div className='back-img'>
-                  <img src={clock} alt=""/>
-                </div>
-                <div>
-                  <p style={{fontSize:"25px",margin: "0 auto"}}>Real time messaging multiple conference room platform.</p>
-                </div>
-              </div>
-              <div className='desktop11-right'>
-                <div className='mt-3'>
+                <div className='col-md-1'>
                   <img src={stream_meeting} alt=""/>
                 </div>
-                <div>
-                  <p style={{fontSize:"25px",margin: "0 auto"}}>Stream Meeting</p>
-                </div>
+                <div className='col-md-11'>
+                  <p className='desktop11-text'>Stream Meeting</p>
+                  </div>
               </div>
-              <div className='desktop11-right'>
-                <div className='mt-3'>
+
+              <div className='desktop11-right pt-1'>
+                <div className='col-md-1'>
                   <img src={Setting} alt=""/>
                 </div>
-                <div>
-                  <p style={{fontSize:"25px",margin: "0 auto"}}>Configurable Slots and Slot time</p>
+                <div className='col-md-11'>
+                  <p className='desktop11-text'>Configurable Slots and Slot time</p>
                 </div>
               </div>
-              <div className='desktop11-right'>
-                <div className='mt-3'>
+
+              <div className='desktop11-right pt-2'>
+                <div className='col-md-1'>
                   <img src={Circle} alt=""/>
                 </div>
-                <div>
-                  <p style={{fontSize:"25px",margin: "0 auto"}}>save save to Socket-Link Library to easily navigate</p>
+                <div className='col-md-11'>
+                  <p className='desktop11-text'>save save to Socket-Link Library to easily navigate</p>
                 </div>
               </div> 
+
             </div>
           </div>
 
 
-          <div className='row mt-5'>
-            <div className='col-md-4'>
-              <div class="">
-                  <div className='desktop-text-11'>Socket-Link API</div>
-              </div>
-              <div class="mt-3">
-                  <div className='desktop-text-11'>Conference-Base</div>
-              </div>
-              <div class="mt-3">
-                  <div className='desktop-text-11'>Teacher-UI</div>
-              </div>
-              <div class="mt-3">
-                  <div className='desktop-text-11'>Chrome extension-base</div>
-              </div>
-            </div>
-            <div className='col-md-8'>
-              <div className='desktop11-right'>
-                <div className='back-img'>
-                  <img src={clock} alt=""/>
-                </div>
-                <div>
-                  <p style={{fontSize:"25px",margin: "0 auto"}}>Real time messaging multiple conference room platform.</p>
-                </div>
-              </div>
-              <div className='desktop11-right'>
-                <div className='mt-3'>
-                  <img src={stream_meeting} alt=""/>
-                </div>
-                <div>
-                  <p style={{fontSize:"25px",margin: "0 auto"}}>Stream Meeting</p>
-                </div>
-              </div>
-              <div className='desktop11-right'>
-                <div className='mt-3'>
-                  <img src={Setting} alt=""/>
-                </div>
-                <div>
-                  <p style={{fontSize:"25px",margin: "0 auto"}}>Configurable Slots and Slot time</p>
-                </div>
-              </div>
-              <div className='desktop11-right'>
-                <div className='mt-3'>
-                  <img src={Circle} alt=""/>
-                </div>
-                <div>
-                  <p style={{fontSize:"25px",margin: "0 auto"}}>save save to Socket-Link Library to easily navigate</p>
-                </div>
-              </div> 
-            </div>
-          </div>
 
-
-          <div className='row mt-5'>
-            <div className='col-md-4'>
-              <div class="">
-                  <div className='desktop-text-11'>Socket-Link API</div>
-              </div>
-              <div class="mt-3">
-                  <div className='desktop-text-11'>Conference-Base</div>
-              </div>
-              <div class="mt-3">
-                  <div className='desktop-text-11'>Teacher-UI</div>
-              </div>
-              <div class="mt-3">
-                  <div className='desktop-text-11'>Chrome extension-base</div>
-              </div>
-            </div>
-            <div className='col-md-8'>
-              <div className='desktop11-right'>
-                <div className='back-img'>
-                  <img src={clock} alt=""/>
-                </div>
-                <div>
-                  <p style={{fontSize:"25px",margin: "0 auto"}}>Real time messaging multiple conference room platform.</p>
-                </div>
-              </div>
-              <div className='desktop11-right'>
-                <div className='mt-3'>
-                  <img src={stream_meeting} alt=""/>
-                </div>
-                <div>
-                  <p style={{fontSize:"25px",margin: "0 auto"}}>Stream Meeting</p>
-                </div>
-              </div>
-              <div className='desktop11-right'>
-                <div className='mt-3'>
-                  <img src={Setting} alt=""/>
-                </div>
-                <div>
-                  <p style={{fontSize:"25px",margin: "0 auto"}}>Configurable Slots and Slot time</p>
-                </div>
-              </div>
-              <div className='desktop11-right'>
-                <div className='mt-3'>
-                  <img src={Circle} alt=""/>
-                </div>
-                <div>
-                  <p style={{fontSize:"25px",margin: "0 auto"}}>save save to Socket-Link Library to easily navigate</p>
-                </div>
-              </div> 
-            </div>
-          </div>
 
         </div>
     </>

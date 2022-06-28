@@ -42,10 +42,10 @@ const NewNav = ({ onClick }) => {
               </Link>
               {/* <Link to="/desktop10" className="nav-item-text">
                 Desktop10
-              </Link>
-              <Link to="/desktop11" className="nav-item-text">
-                Desktop11
               </Link> */}
+              <Link to="/desktop11" className="nav-item-text">
+                Design
+              </Link>
               <Nav.Link href="#deets">
                 <button
                   type="button"

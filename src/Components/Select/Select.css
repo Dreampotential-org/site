@@ -32,6 +32,12 @@
     .custom{
         display: block;
     }
+    .custom-div-top{
+        display: block;
+    }
+    .custom-div-bottom{
+        display: block;
+    }
 }
 
 .logo-section-div{

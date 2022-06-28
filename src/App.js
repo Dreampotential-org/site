@@ -15,8 +15,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="labs" element={<Labs />} />
           <Route path="education" element={<Education />} />
-          {/* <Route path="desktop10" element={<Desktop10 />} />
-          <Route path="desktop11" element={<Desktop11 />} /> */}
+          <Route path="desktop10" element={<Desktop10 />} />
+          <Route path="desktop11" element={<Desktop11 />} />
       </Routes>
     </BrowserRouter>
   );
