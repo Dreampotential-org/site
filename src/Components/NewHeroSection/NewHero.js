@@ -1,6 +1,6 @@
 import React from "react";
 import "./NewHero.css";
-import Layer_1 from "../../assets/Layer_2.png";
+import Layer_1 from "../../assets/Rocket_Header.svg";
 import NewNav from "../Nav/Nav";
 
 const NewHero = ({onClick}) => {

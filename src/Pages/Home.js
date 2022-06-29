@@ -18,6 +18,8 @@ import FourthSection from '../Components/FourthSection/FourthSection';
 import FifthSection from '../Components/FifthSection/FifthSection';
 import CircleSection from '../Components/CircleSection/CircleSection';
 import JoinUs from '../Components/JoinUs/JoinUs';
+import Products from '../Components/Products/Services';
+import Services from '../Components/Products/Services';
 
 const Home = () => {
   const aboutSection = useRef(null);
@@ -38,6 +40,7 @@ const Home = () => {
         <NewHero onClick={scrollDown}/>
         {/* <MyCarousel/> */}
         <CardSection onClick={scrollDown}/>
+        <Services/>
         <Select/>
         <FourthSection onClick={scrollDown}/>
         <FifthSection/>

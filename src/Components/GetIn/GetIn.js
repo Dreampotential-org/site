@@ -96,7 +96,7 @@ const GetIn = () => {
                 <div className="circle-logo">
                   <img className="circle-msg" src={msg} alt="" />
                 </div>
-                <h1>Get In Touch</h1>
+                <h1 className="get-in-text pt-2">Get In Touch</h1>
               </div>
             </div>
           </div>

@@ -1,0 +1,63 @@
+/* .product-left{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .product-right{
+    background-color: bisque;
+} */
+
+/* .desktop11-text{
+    margin: 0 auto;
+} */
+h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 25px;
+    color:#000000;
+}
+
+.product-back{
+    background-color: #fff;
+}
+
+.product-box{
+    background-color: gray;
+    height: 100%;
+}
+
+.teacher-ui-text{
+    font-size: 21px;
+    line-height: 30px;
+    font-family: 'Poppins';
+}
+
+.teacher-ui-text{
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Poppins';
+    text-transform: capitalize;
+    color: #000000;
+    font-weight: 600;
+}
+
+.conference-text{
+    font-size: 21px;
+    line-height: 30px;
+    font-family: 'Poppins';
+    color: #000000;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.social-text{
+    font-size: 21px;
+    line-height: 30px;
+    font-family: 'Poppins';
+    color: #000000;
+    font-weight: 600;
+}

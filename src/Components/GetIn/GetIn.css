@@ -135,3 +135,12 @@ input[type="password"] {
         font-size: 30px;
     }
 }
+
+.get-in-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 25px;
+    color: #fff;
+}
