@@ -23,8 +23,8 @@ const NewHero = ({onClick}) => {
                 </button>
               </div>
             </div>
-            <div class="col-md-6 pt-5">
-              <img className="Layer_1" src={Layer_1} alt="Frame" />
+            <div class="Layer_1 col-md-6 pt-5">
+              {/* <img className="Layer_1" src={Layer_1} alt="Frame" /> */}
             </div>
           </div>
         </div>

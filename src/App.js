@@ -6,6 +6,7 @@ import Education from "./Pages/Education";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Desktop10 from "./Components/Desktop10/Desktop10";
 import Desktop11 from "./Components/Desktop-11/Desktop11";
+import LogIn from "./Components/LogIn/LogIn";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="education" element={<Education />} />
           <Route path="desktop10" element={<Desktop10 />} />
           <Route path="desktop11" element={<Desktop11 />} />
+          <Route path="LogIn" element={<LogIn />} />
       </Routes>
     </BrowserRouter>
   );

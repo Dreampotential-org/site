@@ -4,7 +4,12 @@
 }
 
 .logo-icon{
-    width: 10%;
+    width: 40%;
+}
+
+.icon-name{
+    background-image: url("../../assets/svg/dreampotential_Logo-01.svg");
+    background-repeat: no-repeat;
 }
 
 .nav-bg{
@@ -62,6 +67,7 @@
 @media screen and (max-width:768px) {
     .logo-icon{
         width: 10%;
+        display: none;
     }
     .top{
         display: flex;

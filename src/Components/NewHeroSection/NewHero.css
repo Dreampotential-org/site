@@ -19,9 +19,9 @@
     }
 }
 
-.Layer_1{
+/* .Layer_1{
     width: 100%;
-}
+} */
 
 .text-one{
     font-style: normal;
@@ -136,4 +136,9 @@
     .text-sub-para{
         font-size: 15px;
     }
+}
+
+.Layer_1{
+    background-image: url("../../assets/svg/Rocket_No_Background.svg");
+    background-repeat: no-repeat;
 }

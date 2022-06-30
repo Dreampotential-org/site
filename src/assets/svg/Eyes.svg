@@ -1,0 +1,15 @@
+<svg id="ePZ9di3RIgV1" xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+viewBox="0 0 55 27" shape-rendering="geometricPrecision" 
+text-rendering="geometricPrecision">
+<style><![CDATA[#ePZ9di3RIgV2_ts {animation: ePZ9di3RIgV2_ts__ts 3000ms linear 1 normal forwards}@keyframes ePZ9di3RIgV2_ts__ts { 0% {transform: translate(27.5px,13.5px) scale(1,1)} 16.666667% {transform: translate(27.5px,13.5px) scale(1,1)} 23.333333% {transform: translate(27.5px,13.5px) scale(1,0.069103)} 30% {transform: translate(27.5px,13.5px) scale(1,1)} 56.666667% {transform: translate(27.5px,13.5px) scale(1,1)} 63.333333% {transform: translate(27.5px,13.5px) scale(1,0.069103)} 70% {transform: translate(27.5px,13.5px) scale(1,1)} 100% {transform: translate(27.5px,13.5px) scale(1,1)}}]]>
+</style>
+<g id="ePZ9di3RIgV2_ts" transform="translate(27.5,13.5) scale(1,1)">
+<g transform="translate(-27.5,-13.5)" clip-path="url(#ePZ9di3RIgV6)"><g>
+<path d="M1.39709,15.8897C8.36743,23.0509,17.6411,27,27.4962,27s19.1288-3.9414,26.0992-11.1103l.7476-.7681c.876-.9.876-2.3509,0-3.2509l-.7476-.7681C46.6326,3.94138,37.3589,0,27.5038,0s-19.13637,3.94138-26.10671,11.1103l-.740081.7681c-.876012.9-.876012,2.3509,0,3.2509l.740081.7681v-.0077ZM27.5038,3.44483c5.392,0,9.7796,4.50776,9.7796,10.05517s-4.3876,10.0474-9.7796,10.0474-9.7872-4.5077-9.7872-10.0474s4.3952-10.05517,9.7872-10.05517v0ZM52.7647,13.5l-.7477.7681c-5.0975,5.2371-11.5014,8.6353-18.4642,9.8845c3.5569-2.1414,5.9584-6.106,5.9584-10.6448s-2.3939-8.51125-5.9509-10.65263c6.9553,1.2569,13.3592,4.64742,18.4492,9.88453l.7476.7603h.0076ZM2.97542,12.7319C8.07291,7.50259,14.4769,4.10431,21.4321,2.84741C17.8752,4.98879,15.4813,8.95345,15.4813,13.5s2.3939,8.5034,5.9584,10.6448c-6.9553-1.2569-13.35924-4.6474-18.45673-9.8845l-.74763-.7681.74763-.7681-.00755.0078Z" fill="#d91d1d"/>
+<path d="M27.5038,21.2509c4.161,0,7.5367-3.4681,7.5367-7.7431s-3.3757-7.75865-7.5367-7.75865-7.5519,3.48362-7.5519,7.75865s3.3908,7.7431,7.5519,7.7431Z" fill="#d91d1d"/></g>
+<clipPath id="ePZ9di3RIgV6">
+<rect width="55" height="27" rx="0" ry="0" fill="#fff"/>
+</clipPath>
+</g></g>
+</svg>

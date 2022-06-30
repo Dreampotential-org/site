@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Container, Button } from "react-bootstrap";
 import Icon from "../../assets/dreampotential.png";
-import logo from "../../assets/DP-Icon-01.png";
+import logo from "../../assets/White.png";
 import { Link } from "react-router-dom";
 
 const NewNav = ({ onClick }) => {
@@ -26,7 +26,7 @@ const NewNav = ({ onClick }) => {
             <div className="icon-name">
             <Link to="/">
               <img className="logo-icon" src={logo} alt="icon" />
-              <img className="logo-name" src={Icon} alt="icon" />
+              {/* <img className="logo-name" src={Icon} alt="icon" /> */}
             </Link>  
             </div>
           </div>
@@ -40,9 +40,9 @@ const NewNav = ({ onClick }) => {
               <Link to="/education" className="nav-item-text">
                 EDUCATIONS
               </Link>
-              {/* <Link to="/desktop10" className="nav-item-text">
-                Desktop10
-              </Link> */}
+              <Link to="/LogIn" className="nav-item-text">
+                LOG IN
+              </Link>
               <Link to="/desktop11" className="nav-item-text">
                 Design
               </Link>

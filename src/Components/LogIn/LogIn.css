@@ -1,0 +1,72 @@
+.login-top{
+    text-align: center;
+}
+
+.label-login{
+    color: #000;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: none;
+}
+
+input[type="text"],
+input[type="password"] {
+    height: 45px !important;
+    border-color: #5B03F6;
+    border-radius: 5px;
+}
+
+.input-container-LogIn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+}
+
+.forgot-pass{
+    color: #000;
+}
+.login-left{
+    height: 775px;
+    background-color: #5B03F6;
+}
+.login-right{
+    height: 775px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.already{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+    text-transform: none;
+    margin: 0 auto;
+}
+
+.connect-Google{
+    border: 1px solid blue;
+    border-radius: 50px;
+    width: 75%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.login-footer{
+    color: #000;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:768px) {
+    .login-footer{
+        font-size: 13px;
+    }
+}
+

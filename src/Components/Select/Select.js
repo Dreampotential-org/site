@@ -147,7 +147,7 @@ const Select = () => {
                   }
                 >
                   <img
-                    className="img-fluid common-img"
+                    className="img-fluid common-img-OnceAt"
                     src={OnceAt}
                     alt="icon"
                   />

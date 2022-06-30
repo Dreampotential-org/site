@@ -74,6 +74,10 @@
     width: 50%;
 }
 
+.common-img-OnceAt{
+    width: 50%;
+}
+
 .logo-Once{
     width: 30%;
 }
@@ -109,6 +113,9 @@
     }
     .title-selectPartners{
         font-size: 35px;
+    }
+    .common-img-OnceAt{
+        width: 18%;
     }
 }
 
