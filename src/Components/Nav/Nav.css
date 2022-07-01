@@ -7,10 +7,10 @@
     width: 40%;
 }
 
-.icon-name{
+/* .icon-name{
     background-image: url("../../assets/svg/dreampotential_Logo-01.svg");
     background-repeat: no-repeat;
-}
+} */
 
 .nav-bg{
     background-color:  #260f43;
@@ -63,11 +63,15 @@
     padding-top: 15px;
 }
 
+@media screen and (max-width:525px) {
+    .logo-icon{
+        width: 80%;
+    }
+}
 
 @media screen and (max-width:768px) {
     .logo-icon{
-        width: 10%;
-        display: none;
+        width: 50%;
     }
     .top{
         display: flex;

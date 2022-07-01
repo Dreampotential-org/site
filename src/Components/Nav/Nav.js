@@ -41,7 +41,10 @@ const NewNav = ({ onClick }) => {
                 EDUCATIONS
               </Link>
               <Link to="/LogIn" className="nav-item-text">
-                LOG IN
+                LOGIN
+              </Link>
+              <Link to="/desktop11" className="nav-item-text">
+                ABOUTUS
               </Link>
               <Link to="/desktop11" className="nav-item-text">
                 Design

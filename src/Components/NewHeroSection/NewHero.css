@@ -77,6 +77,9 @@
         font-size: 18px;
         margin: 0;
     }
+    .Layer_1{
+        background-size: 100% 100%;
+    }
 }
 
 .btn-join:hover{
@@ -118,6 +121,10 @@
     .text-one{
         font-size: 56px;
         line-height: 65px;
+    }
+    .Layer_1{
+        height: 300px;
+        background-size: cover;
     }
 }
 

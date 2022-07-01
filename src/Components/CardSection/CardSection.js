@@ -19,8 +19,8 @@ const CardSection = ({ onClick }) => {
             <Card className="card_section" style={{ width: "18rem" }}>
               <Card.Body className="back-color ">
                 <Card.Title className="pb-4">
-                  <div className="circle-image mt-4">
-                    <img className="circle-msg-img" src={Icon1} alt="" />
+                  <div className="circle-image position-relative mt-4">
+                    <div className="circle-msg-img"></div>
                   </div>
                 </Card.Title>
                 <Card.Text className="footer-text mb-5 pt-3">
@@ -34,9 +34,10 @@ const CardSection = ({ onClick }) => {
             </Card>
             <Card className="card_section" style={{ width: "18rem" }}>
               <Card.Body className="back-color">
-                <Card.Title>
-                  <div className="circle-image circle-image-icon2 mt-4">
-                    <img className="circle-msg-img2" src={Icon2} alt="" />
+              <Card.Title className="pb-4">
+                  <div className="circle-image-cloud position-relative mt-4">
+                    {/* <img className="circle-msg-img" src={Icon1} alt="" /> */}
+                    <div className="circle-msg-img-cloud"></div>
                   </div>
                 </Card.Title>
                 <Card.Text className="footer-text mt-5 mb-5">
@@ -54,8 +55,8 @@ const CardSection = ({ onClick }) => {
             <Card className="card_section" style={{ width: "18rem" }}>
               <Card.Body className="back-color">
                 <Card.Title>
-                  <div className="circle-image circle-image-icon3 mt-4">
-                    <img className="circle-msg-img" src={Icon3} alt="" />
+                <div className="circle-image-people position-relative mt-4">
+                    <div className="circle-msg-img-people"></div>
                   </div>
                 </Card.Title>
                 <Card.Text className="footer-text mb-4 pt-3">
@@ -68,10 +69,11 @@ const CardSection = ({ onClick }) => {
               </Card.Footer>
             </Card>
           </div>
-
-          <div className="row mt-5 pb-5">
-            <img className="" src={Sailboat} alt="" />
-          </div>
+            <div className="Sailboat">
+             </div>
+          {/* <div className="row"> */}
+            {/* <img className="" src={Sailboat} alt="" /> */}
+      
         </Container>
       </div>
     </>

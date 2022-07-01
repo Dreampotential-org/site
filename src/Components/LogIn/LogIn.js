@@ -2,6 +2,8 @@ import React from 'react'
 import NewNav from '../Nav/Nav'
 import "./LogIn.css"
 import logo from "../../assets/logo_login.png";
+import msg from "../../assets/msg-icon.png";
+import lock from "../../assets/Secure_Security_Lock-2.png";
 const LogIn = () => {
   return (
     <>
@@ -19,39 +21,65 @@ const LogIn = () => {
             <div className='login-top pt-5'>
                 <img src={logo} alt="logo"/>
                 <p className='label-login'>Sign up to Dreampotential</p>
-                <p className='already'>Already a member ? Log in</p>
+                <p className='already'>Already a member ? <span><a href=''>Log in</a></span></p>
             </div>
 
           <form className="form-getInTouch">
 
-            <div className="input-container-LogIn">
-              <label className="label">Name* </label>
-              <input
+            <div className="input-container-LogIn mt-4">
+              {/* <label className="label">Name* </label> */}
+              {/* <input
                 className='input-border'
                 style={{ height: "40px" }}
                 type="text"
                 name="name"
                 placeholder='Email address or username'
-              />
+              /> */}
+
+
+            {/* <div>
+                <span><img src={msg} alt="logo"/></span>
+                <input />
+                <span><img src={lock} alt="logo"/></span>
+            </div> */}
+
+        <div class="right-inner-addon input-container">
+            <i class="fa fa-search">
+              <img src={msg} alt="logo"/>
+            </i>
+            <input type="text"
+                   class="form-control placeholder-text" 
+                   placeholder="Email address or username" />
+        </div>
+            
              
             </div>
 
-            <div className="input-container-LogIn">
-              <label className="label">Email* </label>
-              <input
+            <div className="input-container-LogIn mt-4">
+              {/* <label className="label">Email* </label> */}
+              {/* <input
                 className='input-border'
                 style={{ height: "40px" }}
                 type="password"
                 name="email"
                 placeholder='Password'
-              />
+              /> */}
               
+              <div class="right-inner-addon input-container">
+                  <i class="fa fa-search">
+                    <img src={lock} alt="logo"/>
+                  </i>
+                  <input type="password"
+                        class="form-control placeholder-text" 
+                        placeholder="Password" />
+              </div>
+
             </div>
             <p className='forgot-pass'>Forgot Password ?</p>
 
             <div className="button-container">
               <button
-                className="connect"
+                className="connect mt-5"
                 type="submit"
               >
                 {" "}
@@ -67,8 +95,8 @@ const LogIn = () => {
               </button>
             </div>
             <div className='pt-5'>
-                <p className='login-footer'> By signing in you agree to our Terms of Service </p>
-                <p className='login-footer'> and Privacy Policy. Don't have an account? Sign Up</p>
+                <p className='login-footer'> By signing in you agree to our <span><a href=''>Terms of Service</a></span> </p>
+                <p className='login-footer'> and <span><a href=''>Privacy Policy.</a></span> Don't have an account? <span><a href=''>Sign Up</a></span></p>
             </div>
           </form>
         </div>

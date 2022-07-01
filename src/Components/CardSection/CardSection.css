@@ -128,6 +128,9 @@
     display: block;
     text-align: -webkit-center;
   }
+  .Sailboat{
+    height: 250px !important;
+  }
 }
 
 
@@ -138,16 +141,70 @@
 }
 
 .circle-image{
-  background: #DB525C;
+  /* background: #DB525C; */
+  border-radius: 50px;
+  height: 80px;
+  width: 80px;
+  margin: auto;
+ 
+}
+
+.circle-msg-img-people{
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  padding-top: 30px;
+  /* width:50%; */
+  background-image: url("../../assets/svg/People.svg");
+  background-repeat: no-repeat;
+}
+
+.circle-image-cloud{
   border-radius: 50px;
   height: 80px;
   width: 80px;
   margin: auto;
 }
 
-.circle-msg-img{
+.Sailboat{
+  background-image: url("../../assets/svg/ShipLatest.svg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 600px;
+  background-position: center;
+}
+
+.circle-image-people{
+  border-radius: 50px;
+  height: 80px;
+  width: 80px;
+  margin: auto;
+}
+
+.circle-msg-img-cloud{
+  position: absolute;
+  top: 22px;
+  left: 10px;
+  bottom: 0;
+  right: 0;
   padding-top: 30px;
-  width:50%;
+  /* width:50%; */
+  background-image: url("../../assets/svg/Cloud.svg");
+  background-repeat: no-repeat;
+}
+
+.circle-msg-img{
+  position: absolute;
+  top: 22px;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  padding-top: 30px;
+  /* width:50%; */
+  background-image: url("../../assets/svg/Eyes.svg");
+  background-repeat: no-repeat;
 }
 
 .circle-image-icon2{
@@ -158,9 +215,11 @@
   margin: auto;
 }
 
-.circle-msg-img2{
+.cloud-img{
   padding-top: 20px;
   width: 50%;
+  background-image: url("../../assets/svg/Cloud.svg");
+  background-repeat: no-repeat;
 }
 
 .icon2-footer{
