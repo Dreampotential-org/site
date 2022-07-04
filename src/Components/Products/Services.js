@@ -6,22 +6,24 @@ import Circle from "../../assets/Circle.png";
 import Conference_base from "../../assets/Conference_base.png";
 import teacher_ui_logo from "../../assets/teacher-ui-logo.png";
 import chrome_extension from "../../assets/chrome-extension.png";
-
+import Socket_Link from "../../assets/Socket_Link.png"; 
+import right_arrow from "../../assets/right_arrow.png"; 
 const Services = () => {
   return (
     <>
         
         <div className='product-back'>
         <div className='container'>
-        <h1>Services</h1>
+        <h1 className="services-title">Services</h1>
+        <h1 className='We my-5'>We create software solutions that make jobs easier</h1>
             <div className='row'>
                 <div className='col-md-6 product-left mt-5'>
                     <div className='product-box'>
 
                     </div>
                 </div>
-                <div className='col-md-6 product-right mt-5'>
-                    <h3>Socket-Link API</h3>
+                <div className='col-md-6 mt-5'>
+                    <h3 className="services-title">Socket-Link API</h3>
                     <h4 className='social-text'>Real time messaging multiple conference room platform.</h4>
 
                     <div className='desktop11-right'>
@@ -61,22 +63,23 @@ const Services = () => {
             <div className='row py-5'>
                
                 <div className='col-md-6 product-right'>
-                    <h3>Conference-Base</h3>
-                        <div>
-                            <img src={Conference_base} alt=""/>
-                        </div>
+                    <div>
+                        <h3 className="services-title">Socket-Link API</h3>
                         <div className='my-4'>
-                            <p className='conference-text'>Powerful secure video conference solution to power your business</p>
+                            <p className='conference-text'>Stream Meetings</p>
+                            <p className='conference-text py-4'>Allows multiple conference room</p>
+                            <p className='conference-text'>Save to Socket Link library for easy access</p>
+                            <p className='conference-text py-4'>Get a configurable slots and slot time</p>
                         </div>
-
-                    <button type="button" className="btn-join btn-primary ">
-                    GO TO APP
-                    </button>
-
+                        <button type="button" className="btn-join btn-primary ">
+                            LEARN MORE
+                            <img style={{ marginLeft:15}} src={right_arrow} alt=""/>
+                        </button>
+                    </div>
                 </div>
                 <div className='col-md-6 product-left mt-5'>
-                    <div className='product-box'>
-
+                    <div>
+                    <img style={{width:'100%'}} src={Socket_Link} alt=""/>
                     </div>
                 </div>
             </div>
@@ -87,8 +90,8 @@ const Services = () => {
 
                     </div>
                 </div>
-                <div className='col-md-6 product-right mt-5'>
-                    <h3>Teacher-UI</h3>
+                <div className='col-md-6 mt-5'>
+                    <h3 className="services-title">Teacher-UI</h3>
                     <h3 className='teacher-ui-text'>Is a learning management system which can also connect money you can track user real time their possitino on the map and update in realtime what is on the screen</h3>
 
                     <div className='desktop11-right'>
@@ -110,8 +113,8 @@ const Services = () => {
 
             <div className='row py-5'>
                
-               <div className='col-md-6 product-right'>
-                   <h3>Chrome-Extension-Base</h3>
+               <div className='col-md-6'>
+                   <h3 className="services-title">Chrome-Extension-Base</h3>
                        <div>
                            <img src={chrome_extension} alt=""/>
                        </div>

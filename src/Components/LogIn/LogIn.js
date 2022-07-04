@@ -17,13 +17,11 @@ const LogIn = () => {
           </div>
         </div>
         <div className="login-right col-md-6">
-
             <div className='login-top pt-5'>
                 <img src={logo} alt="logo"/>
                 <p className='label-login'>Sign up to Dreampotential</p>
                 <p className='already'>Already a member ? <span><a href=''>Log in</a></span></p>
             </div>
-
           <form className="form-getInTouch">
 
             <div className="input-container-LogIn mt-4">

@@ -40,8 +40,11 @@ const NewNav = ({ onClick }) => {
               <Link to="/education" className="nav-item-text">
                 EDUCATIONS
               </Link>
-              <Link to="/LogIn" className="nav-item-text">
+              {/* <Link to="/LogIn" className="nav-item-text">
                 LOGIN
+              </Link> */}
+              <Link to="/signup" className="nav-item-text">
+                SIGNUP
               </Link>
               <Link to="/desktop11" className="nav-item-text">
                 ABOUTUS

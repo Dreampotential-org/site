@@ -5,10 +5,16 @@
     align-items: center;
 } */
 
-/* .product-right{
-    background-color: bisque;
-} */
+.product-right{
+    display: grid;
+    /* justify-content: right; */
+    align-items: center;
 
+}
+
+.services-title{
+    font-size: 45px;
+}
 /* .desktop11-text{
     margin: 0 auto;
 } */
@@ -60,4 +66,22 @@ h1{
     font-family: 'Poppins';
     color: #000000;
     font-weight: 600;
+}
+
+
+
+@media screen and (max-width:768px){
+    .conference-text {
+        font-size: 18px;
+    }
+    .We{
+        font-size: 20px;
+    }
+    .social-text{
+        font-size: 18px;
+    }
+    .services-title{
+        font-size: 30px;
+    }
+
 }

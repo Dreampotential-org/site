@@ -15,6 +15,7 @@ const CardSection = ({ onClick }) => {
     <>
       <div className="card-back">
         <Container>
+          <h1 className="pt-5">Empower Every Team</h1>
           <div className="pb-5 pt-5 card-border">
             <Card className="card_section" style={{ width: "18rem" }}>
               <Card.Body className="back-color ">

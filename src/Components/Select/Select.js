@@ -44,13 +44,9 @@ const Select = () => {
     <>
       <div className="select-back">
         <div className="container">
-          <h1 className="title-selectPartners pt-5">Select Partners</h1>
+          <h1 className="title-selectPartners pt-5">Trusted By</h1>
           <p className="text-content-selectPartners mt-5">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p className="text-content-selectPartners">
-            Lorem Ipsum and more recently with desktop .
+            We have access to 3500 offices spaces wide. 
           </p>
 
           <CenteredModal
