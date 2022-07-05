@@ -20,6 +20,7 @@ import CircleSection from '../Components/CircleSection/CircleSection';
 import JoinUs from '../Components/JoinUs/JoinUs';
 import Products from '../Components/Products/Services';
 import Services from '../Components/Products/Services';
+import TitleandText from '../Components/TitleandText/TitleandText';
 
 const Home = () => {
   const aboutSection = useRef(null);
@@ -39,6 +40,7 @@ const Home = () => {
         </div> */}
         <NewHero onClick={scrollDown}/>
         {/* <MyCarousel/> */}
+        <TitleandText/>
         <CardSection onClick={scrollDown}/>
         <Services/>
         <Select/>

@@ -1,4 +1,5 @@
 import React from "react";
+import TitleandText from "../TitleandText/TitleandText";
 import "./CircleSection.css";
 
 const CircleSection = () => {
@@ -8,7 +9,12 @@ const CircleSection = () => {
         <div className="container pt-5">
 
         
-               <h1>Lorem</h1>
+        <TitleandText
+            title="Lorem Ipsum"
+            content="Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
+            subcontent="Lorem Ipsum And More Recently With Desktop"
+          />
+          
                 <div class="row mt-5">
                     <div className="circle-row">
                     <div class="col">

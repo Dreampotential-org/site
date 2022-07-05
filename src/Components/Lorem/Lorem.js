@@ -4,16 +4,20 @@ import group_img from "../../assets/group-img.png";
 import laptop_img from "../../assets/laptop-img.png";
 import laptop from "../../assets/laptop.png";
 import network_img from "../../assets/network-img.png";
+import TitleandText from '../TitleandText/TitleandText';
 
 const Lorem = () => {
   return (
     <>
     <div className='lorem'>
       <div class="container">
-        <div className='pt-5'>
-            <h1 className='title-select-lorem'>Lorem Ipsum</h1>
-            <p className='text-content-lorem mt-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-            <p className='text-content-lorem pb-5'>Lorem Ipsum and more recently with desktop .</p>
+        <div className='py-5'>
+            <TitleandText
+              title="Lorem Ipsum"
+              content="Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
+              subcontent="Lorem Ipsum And More Recently With Desktop"
+            />
+            
         </div>
             <div class="row">
                 <div class="side-1 col-md-8">

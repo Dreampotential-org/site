@@ -14,6 +14,7 @@ import CenteredModal from "../CenteredModal/CenteredModal";
 import Marquee from "react-fast-marquee";
 import RePictureVideo from "../../assets/videos/RePicture.mp4";
 import dreamReader from "../../assets/videos/dreamReader.mp4";
+import TitleandText from "../TitleandText/TitleandText";
 
 const Select = () => {
   const [modalShow, setModalShow] = React.useState(false);
@@ -43,11 +44,13 @@ const Select = () => {
   return (
     <>
       <div className="select-back">
-        <div className="container">
-          <h1 className="title-selectPartners pt-5">Trusted By</h1>
+        <div className="container pt-5">
+          {/* <h1 className="title-selectPartners pt-5">Trusted By</h1>
           <p className="text-content-selectPartners mt-5">
             We have access to 3500 offices spaces wide. 
-          </p>
+          </p> */}
+
+          <TitleandText title="Trusted By" content="We have access to 3500 offices spaces wide."/>
 
           <CenteredModal
             show={modalShow}

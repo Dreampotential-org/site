@@ -2,12 +2,19 @@ import React from "react";
 import "./FourthSection.css";
 import Man from "../../assets/Man.png";
 import Man2 from "../../assets/Man2.png";
+import TitleandText from "../TitleandText/TitleandText";
 
 const FourthSection = ({onClick}) => {
   return (
     <>
       <div className="fourth-back">
         <div className="container pt-5">
+          <TitleandText
+            title="Lorem Ipsum"
+            content="Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
+            subcontent="Lorem Ipsum And More Recently With Desktop"
+          />
+          
           <div className="row pt-5">
             <div className="col-md-6">
               <img className="img-fluid" src={Man} alt="icon" />

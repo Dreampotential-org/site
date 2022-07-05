@@ -1,0 +1,23 @@
+/* .TitleandText{
+    background-color: #fff;
+} */
+
+.component-title-text{
+    color: #000000;
+    font-size: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.component-text-content{
+    color: #000;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+}

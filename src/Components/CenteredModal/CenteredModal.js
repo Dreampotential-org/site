@@ -4,7 +4,7 @@ import './CenteredModal.css'
 import Video from "../../assets/videos/RePicture.mp4";
 import ChiropractorTechPic from "../../assets/ChiropractorTechPic.png";
 const CenteredModal = (props) => {
-    console.log(props)
+    // console.log(props)
     return (
         <Modal
             {...props}

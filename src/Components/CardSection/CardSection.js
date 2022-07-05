@@ -9,13 +9,22 @@ import Icon3 from "../../assets/Icon3.png";
 import Arrow from "../../assets/right_arrow.png";
 import Sailboat from "../../assets/Sailboat.png";
 import { Card, CardGroup } from "react-bootstrap";
+import TitleandText from "../TitleandText/TitleandText";
 
 const CardSection = ({ onClick }) => {
   return (
     <>
       <div className="card-back">
         <Container>
-          <h1 className="pt-5">Empower Every Team</h1>
+          {/* <h1 className="pt-5">Empower Every Team</h1> */}
+          <div className="row pt-5">
+            <TitleandText
+              title="Lorem Ipsum"
+              content="Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
+              subcontent="Lorem Ipsum And More Recently With Desktop"
+              
+            />
+          </div>
           <div className="pb-5 pt-5 card-border">
             <Card className="card_section" style={{ width: "18rem" }}>
               <Card.Body className="back-color ">
@@ -29,13 +38,13 @@ const CardSection = ({ onClick }) => {
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="card-footer pt-4" onClick={onClick}>
-                <small className="text-muted-footer"  >Build Vision</small>
+                <small className="text-muted-footer">Build Vision</small>
                 <img className="arrow" src={Arrow} alt="" />
               </Card.Footer>
             </Card>
             <Card className="card_section" style={{ width: "18rem" }}>
               <Card.Body className="back-color">
-              <Card.Title className="pb-4">
+                <Card.Title className="pb-4">
                   <div className="circle-image-cloud position-relative mt-4">
                     {/* <img className="circle-msg-img" src={Icon1} alt="" /> */}
                     <div className="circle-msg-img-cloud"></div>
@@ -46,8 +55,11 @@ const CardSection = ({ onClick }) => {
                   collective.{" "}
                 </Card.Text>
               </Card.Body>
-              <Card.Footer className="card-footer icon2-footer" onClick={onClick}>
-                <small className="text-muted-footer"  >
+              <Card.Footer
+                className="card-footer icon2-footer"
+                onClick={onClick}
+              >
+                <small className="text-muted-footer">
                   Apply Accelerator <br /> program
                 </small>
                 <img className="arrow" src={Arrow} alt="" />
@@ -56,7 +68,7 @@ const CardSection = ({ onClick }) => {
             <Card className="card_section" style={{ width: "18rem" }}>
               <Card.Body className="back-color">
                 <Card.Title>
-                <div className="circle-image-people position-relative mt-4">
+                  <div className="circle-image-people position-relative mt-4">
                     <div className="circle-msg-img-people"></div>
                   </div>
                 </Card.Title>
@@ -64,17 +76,18 @@ const CardSection = ({ onClick }) => {
                   Not sure what how to enhance your organization or business.
                 </Card.Text>
               </Card.Body>
-              <Card.Footer className="card-footer icon3-footer pt-4" onClick={onClick}>
+              <Card.Footer
+                className="card-footer icon3-footer pt-4"
+                onClick={onClick}
+              >
                 <small className="text-muted-footer">Get In Touch</small>
                 <img className="arrow" src={Arrow} alt="" />
               </Card.Footer>
             </Card>
           </div>
-            <div className="Sailboat">
-             </div>
+          <div className="Sailboat"></div>
           {/* <div className="row"> */}
-            {/* <img className="" src={Sailboat} alt="" /> */}
-      
+          {/* <img className="" src={Sailboat} alt="" /> */}
         </Container>
       </div>
     </>

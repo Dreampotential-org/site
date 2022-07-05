@@ -4,6 +4,7 @@ import msg from "../../assets/msg.png";
 import { leadCreateApi } from "../../services/helper";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import TitleandText from "../TitleandText/TitleandText";
 
 const GetIn = () => {
   const [valuesregi, setValuesregi] = useState({
@@ -79,14 +80,13 @@ const GetIn = () => {
     <>
       <div class="container">
         <div className="mt-5 mb-5">
-          <h1 className="title-select mt-5">Lorem Ipsum</h1>
-          <p className="text-content mt-5">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p className="text-content">
-            Lorem Ipsum and more recently with desktop .
-          </p>
+            <TitleandText
+              title="Lorem Ipsum"
+              content="Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
+              subcontent="Lorem Ipsum And More Recently With Desktop"
+              style={{ color: '#fff' }}
+            />
+            
         </div>
 
         <div className="row  pb-5">

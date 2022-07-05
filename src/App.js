@@ -8,6 +8,7 @@ import Desktop10 from "./Components/Desktop10/Desktop10";
 import Desktop11 from "./Components/Desktop-11/Desktop11";
 import LogIn from "./Components/LogIn/LogIn";
 import SignUp from "./Components/SignUp/SignUp";
+import ScrollArrow from "./Components/ScrollToTop/ScrollToTop";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="LogIn" element={<LogIn />} />
           <Route path="signup" element={<SignUp />} />
       </Routes>
+      <ScrollArrow/>
     </BrowserRouter>
   );
 }

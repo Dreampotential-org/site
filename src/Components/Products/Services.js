@@ -8,14 +8,16 @@ import teacher_ui_logo from "../../assets/teacher-ui-logo.png";
 import chrome_extension from "../../assets/chrome-extension.png";
 import Socket_Link from "../../assets/Socket_Link.png"; 
 import right_arrow from "../../assets/right_arrow.png"; 
+import TitleandText from '../TitleandText/TitleandText';
 const Services = () => {
   return (
     <>
         
         <div className='product-back'>
         <div className='container'>
-        <h1 className="services-title">Services</h1>
-        <h1 className='We my-5'>We create software solutions that make jobs easier</h1>
+        {/* <h1 className="services-title">Services</h1>
+        <h1 className='We my-5'>We create software solutions that make jobs easier</h1> */}
+        <TitleandText title="Services" content="We create software solutions that make jobs easier"/>
             <div className='row'>
                 <div className='col-md-6 product-left mt-5'>
                     <div className='product-box'>

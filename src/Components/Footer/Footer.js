@@ -15,11 +15,11 @@ const Footer = ({onClick}) => {
         </div> */}
         {/* <a href="mailto:hello@dreampotential.org" className='email'>hello@dreampotential.org</a> */}
         <div>
-          <h3 className='follow'>follow us on</h3>
+          <h3 className='follow'>Follow us on</h3>
        
           <a href='https://twitter.com/' target="_blabk"><img  src={twitter} alt="" /></a>
           <a href='https://linkedin.com/' target="_blabk"><img className='logos' src={In} alt="" /></a>
-          <a href='https://facebook.com/' target="_blabk"><img className='logos' src={facebook} alt="" /></a>
+          <a href='https://www.facebook.com/dreampotential.org' target="_blabk"><img className='logos' src={facebook} alt="" /></a>
           <a href='https://instagram.com/' target="_blabk"><img className='logos' src={instagram} alt="" /></a>
       
         </div>

@@ -6,9 +6,19 @@ import Nav from "react-bootstrap/Nav";
 import { Container, Button } from "react-bootstrap";
 import Icon from "../../assets/dreampotential.png";
 import logo from "../../assets/White.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const NewNav = ({ onClick }) => {
+
+  const [isSelected, setIsSelected] = useState("");
+  const handleSelection = (text) => {
+    console.log("============================>" + text);
+    setIsSelected(text);
+  };
+
+
   return (
     <>
       <Container fluid className="">
@@ -34,33 +44,76 @@ const NewNav = ({ onClick }) => {
             <Nav className="me-auto">
             </Nav>
             <Nav className="nav-center">
-              <Link to="/labs" className="nav-item-text">
-                LABS
-              </Link>
-              <Link to="/education" className="nav-item-text">
+              <NavLink to="/labs" className="nav-item-text">
+                    <div
+                    className={
+                      isSelected === "LABS" ? "label-div active" : "label-div"
+                    }
+                    onClick={() => handleSelection("LABS")}
+                  >
+                    <label className="txtLabel1"> LABS </label>
+                  </div>
+              </NavLink>
+              <NavLink to="/education"  className="nav-item-text">
+                    <div
+                    className={
+                      isSelected === "EDUCATIONS " ? "label-div active" : "label-div"
+                    }
+                    onClick={() => handleSelection("EDUCATIONS")}
+                  >
+                    <label className="txtLabel1"> EDUCATIONS </label>
+                  </div>
+              </NavLink>
+              {/* <Link to="/education" className="nav-item-text">
                 EDUCATIONS
-              </Link>
+              </Link> */}
               {/* <Link to="/LogIn" className="nav-item-text">
                 LOGIN
               </Link> */}
-              <Link to="/signup" className="nav-item-text">
-                SIGNUP
-              </Link>
-              <Link to="/desktop11" className="nav-item-text">
-                ABOUTUS
-              </Link>
-              <Link to="/desktop11" className="nav-item-text">
+              {/* <NavLink to="/signup" className="nav-item-text">
+                 <div
+                    className={
+                      isSelected === "SIGNUP " ? "label-div active" : "label-div"
+                    }
+                    onClick={() => handleSelection("SIGNUP")}
+                  >
+                    <label className="txtLabel1"> SIGNUP </label>
+                  </div>
+              </NavLink> */}
+              <NavLink to="/desktop11" className="nav-item-text">
+                 <div
+                    className={
+                      isSelected === "ABOUTUS " ? "label-div active" : "label-div"
+                    }
+                    onClick={() => handleSelection("ABOUTUS")}
+                  >
+                    <label className="txtLabel1"> ABOUTUS </label>
+                  </div>
+              </NavLink>
+              {/* <Link to="/desktop11" className="nav-item-text">
                 Design
-              </Link>
-              <Nav.Link href="#deets">
+              </Link> */}
+
+              <NavLink to="/signup" className="nav-item-text">
+                <div
+                  className={
+                    isSelected === "SIGNUP" ? "label-div active" : "label-div"
+                  }
+                  onClick={() => handleSelection("SIGNUP")}
+                >
+                  <div className="txtLabel1"> SIGN UP </div>
+                </div>
+              </NavLink>
+
+              {/* <NavLink to="/signup" className="nav-item-button">
                 <button
                   type="button"
                   onClick={onClick}
-                  className="join btn-primary mt-4"
+                  className="join btn-primary "
                 >
                   SIGN UP
                 </button>
-              </Nav.Link>
+              </NavLink> */}
             </Nav>
           </Navbar.Collapse>
         </Navbar>

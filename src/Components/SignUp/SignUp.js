@@ -15,7 +15,7 @@ const SignUp = () => {
             <div className='container'>
                 <div class="row">
                     <div class="col-md-4 offset-md-4">
-                        <div className='sign-up-back mt-5 pt-5'>
+                        <div className='sign-up-back mt-5 pt-5 pb-5'>
                             <div className="signup-right mt-5 pt-5 ">
 
                             <div className='login-top'>
