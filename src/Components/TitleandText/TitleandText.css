@@ -3,21 +3,31 @@
 } */
 
 .component-title-text{
-    color: #000000;
-    font-size: 40px;
-    font-family: 'Poppins';
+    color:#25305A;
+    font-size: 45px;
+    /* font-family: 'Poppins'; */
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
     margin: 0 auto;
 }
 
 .component-text-content{
-    color: #000;
-    font-size: 20px;
-    font-family: 'Poppins';
+    color:#25305A;
+    font-size: 35px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
     margin: 0 auto;
+    text-transform: none;
+
+}
+
+@media screen and (max-width:425px) {
+    .component-title-text{
+        font-size: 32px;
+    }
+    .component-text-content{
+        font-size: 25px;
+    }   
 }

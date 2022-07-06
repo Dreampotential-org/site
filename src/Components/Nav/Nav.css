@@ -13,7 +13,8 @@
 } */
 
 .nav-bg{
-    background-color:  #260f43;
+    /* background-color:  #260f43; */
+    background: linear-gradient(100.54deg, #0F2455 2.77%, #0A1736 21.93%, #060D20 60.12%, #422246 101.5%);
 }
 
 

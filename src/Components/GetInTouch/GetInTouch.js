@@ -88,7 +88,7 @@ const GetInTouch = (props) => {
         <div className="line"></div>
       </div>
       <div className="form-section">
-        <h1 className="mt-5">Get in Touch</h1>
+        {/* <h1 className="mt-5">Get in Touch</h1> */}
 
 
         <form className="touch_form mt-2">

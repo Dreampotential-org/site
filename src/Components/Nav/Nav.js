@@ -101,7 +101,7 @@ const NewNav = ({ onClick }) => {
                   }
                   onClick={() => handleSelection("SIGNUP")}
                 >
-                  <div className="txtLabel1"> SIGN UP </div>
+                  <div className="txtLabel1"> SIGNUP </div>
                 </div>
               </NavLink>
 

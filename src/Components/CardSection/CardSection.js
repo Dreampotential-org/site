@@ -19,10 +19,7 @@ const CardSection = ({ onClick }) => {
           {/* <h1 className="pt-5">Empower Every Team</h1> */}
           <div className="row pt-5">
             <TitleandText
-              title="Lorem Ipsum"
-              content="Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
-              subcontent="Lorem Ipsum And More Recently With Desktop"
-              
+              title="Empower Every Team"    
             />
           </div>
           <div className="pb-5 pt-5 card-border">
@@ -50,7 +47,7 @@ const CardSection = ({ onClick }) => {
                     <div className="circle-msg-img-cloud"></div>
                   </div>
                 </Card.Title>
-                <Card.Text className="footer-text mt-5 mb-5">
+                <Card.Text className="footer-text">
                   Dream Potential is an accelerator program and technology
                   collective.{" "}
                 </Card.Text>

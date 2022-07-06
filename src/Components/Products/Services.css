@@ -13,19 +13,32 @@
 }
 
 .services-title{
-    font-size: 45px;
+    color: #25305A;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0 auto;
 }
 /* .desktop11-text{
     margin: 0 auto;
 } */
-h1{
+/* h1{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 25px;
     color:#000000;
+} */
+
+.img-icon{
+    display: flex;
+    /* padding: 15px; */
 }
+
+/* .img-icon-text{
+    padding-left: 10px;
+} */
 
 .product-back{
     background-color: #fff;
@@ -58,6 +71,7 @@ h1{
     color: #000000;
     margin: 0 auto;
     font-weight: 600;
+    padding-left: 10px;
 }
 
 .social-text{
@@ -81,7 +95,28 @@ h1{
         font-size: 18px;
     }
     .services-title{
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .abc{
+        font-size: 25px;
     }
 
+}
+
+@media screen and (max-width:425px){
+    .abc{
+        font-size: 25px!important;
+    }
+    .services-title{
+        font-size: 20px;
+    }
+}
+
+.abc{
+    color: #25305A;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto
 }

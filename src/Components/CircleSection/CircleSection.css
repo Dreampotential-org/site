@@ -19,10 +19,10 @@
     display: inline-block;
   }
 
- h1{
+ /* h1{
   font-family: 'Poppins';
   font-style: normal;
- }
+ } */
 
   .circle-row{
     display: flex;

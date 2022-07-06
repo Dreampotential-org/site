@@ -18,6 +18,13 @@ App {
     left: 48%;
     color: #000;
   }
+
+  @media screen and (max-width:768px) {
+    .scrollTop {
+      left: 43%;
+    }
+  }
+
   
   .scrollTop:hover{
     opacity: 1;

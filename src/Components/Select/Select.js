@@ -50,7 +50,9 @@ const Select = () => {
             We have access to 3500 offices spaces wide. 
           </p> */}
 
-          <TitleandText title="Trusted By" content="We have access to 3500 offices spaces wide."/>
+          <TitleandText 
+          className="select-title"
+          title="Trusted By" content="We have access to 3500 offices spaces wide."/>
 
           <CenteredModal
             show={modalShow}

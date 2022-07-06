@@ -21,11 +21,21 @@
     border-radius: 10px;
     border: 1px solid #fff;
     height: 136px;
-    background-color: #5B03F6;
+    background-color: #0C1C43;;
 }
 
 .box-div{
     width: 50%;
+}
+
+.select-title{
+    color: #000;
+    font-size: 25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
 }
 
 @media screen and (max-width:768px) {

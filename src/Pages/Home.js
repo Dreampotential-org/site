@@ -42,13 +42,14 @@ const Home = () => {
         {/* <MyCarousel/> */}
         <TitleandText/>
         <CardSection onClick={scrollDown}/>
-        <Services/>
         <Select/>
-        <FourthSection onClick={scrollDown}/>
-        <FifthSection/>
-        <CircleSection/>
-        <JoinUs onClick={scrollDown}/>
-        <Lorem />
+        <Services/>
+      
+        {/* <FourthSection onClick={scrollDown}/> */}
+        {/* <FifthSection/> */}
+        {/* <CircleSection/> */}
+        {/* <JoinUs onClick={scrollDown}/> */}
+        {/* <Lorem /> */}
         <GetIn/>
         {/* <Select_Partners /> */}
         {/* <Iframe/> */}

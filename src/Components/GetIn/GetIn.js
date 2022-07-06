@@ -82,7 +82,7 @@ const GetIn = () => {
         <div className="mt-5 mb-5">
             <TitleandText
               title="Lorem Ipsum"
-              content="Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
+              // content="Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
               subcontent="Lorem Ipsum And More Recently With Desktop"
               style={{ color: '#fff' }}
             />
