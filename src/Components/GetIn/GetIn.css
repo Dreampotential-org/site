@@ -1,11 +1,14 @@
 .left{
     background-color: #5B03F6;
-    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 700px; */
 }
 
-.right{
+/* .right{
     background-color: #E6E7E8;
-}
+} */
 
 .div-center{
     position: absolute;
@@ -42,22 +45,22 @@
     text-align: left;
     float: left;
     font-family: 'Poppins';
-    color: #000;
+    color: #fff;
     font-weight: bold;
     font-size: 18px;
 }
 
 .form-getInTouch{
-    text-align: -webkit-center;
+    /* text-align: -webkit-center; */
     /* margin-top: 15%; */
 }
 
 .input-container-getIn{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center;
     width: 75%;
-    margin: 20px;
+    margin: 20px; */
 }
 
 input[type="text"],
@@ -67,13 +70,21 @@ input[type="password"] {
 }
 
 .connect{
-    background: #5B03F6;
+    /* background: #5B03F6;
     width: 75%;
     padding: 10px;
     border-radius: 30px;
     border: none;
     color: #fff;
     font-weight: 700;
+    font-size: 20px; */
+    background: #f79f00;
+    /* width: 75%; */
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    /* font-weight: 700; */
     font-size: 20px;
 }
 
@@ -134,13 +145,44 @@ input[type="password"] {
         font-weight: 700;
         font-size: 30px;
     }
+    .get-in-text{
+        font-size: 25px!important;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width:375px) {
+.get-in-text{
+    font-size: 22px!important;
+    line-height: 20px;
+}
 }
 
 .get-in-text{
-    font-family: 'Poppins';
-    font-style: normal;
+    /* font-family: 'Poppins'; */
+    /* font-style: normal; */
     font-weight: 700;
     font-size: 40px;
-    line-height: 25px;
+    line-height: 35px;
     color: #fff;
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .get-in-text{ 
+        font-size: 27px;
+    }
+}
+
+.getIn-div{
+    background-color: #5B03F6;
+}
+
+.member{
+    background: #5B03F6;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 30px;
+    border: 1px solid #fff;
+    font-weight: 700;
 }

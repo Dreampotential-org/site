@@ -78,31 +78,30 @@ const GetIn = () => {
 
   return (
     <>
-      <div class="container">
-        <div className="mt-5 mb-5">
-            <TitleandText
-              title="Lorem Ipsum"
-              // content="Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
-              subcontent="Lorem Ipsum And More Recently With Desktop"
-              style={{ color: '#fff' }}
-            />
-            
-        </div>
+    <div className="getIn-div">
+      <div class="container pb-5">
 
-        <div className="row  pb-5">
+
+        <div className="row">
           <div className="left col-md-6">
-            <div className="div-center">
-              <div className="position-relative">
-                <div className="circle-logo">
-                  <img className="circle-msg" src={msg} alt="" />
-                </div>
-                <h1 className="get-in-text pt-2">Get In Touch</h1>
+            <div className="mt-5">
+              <div className="mt-5">
+                <h1 className="get-in-text pt-2">Let Dreampotential help</h1>
+                <h1 className="get-in-text pt-2">you grow your business</h1>
               </div>
+              <button
+                  className="mt-5 member"
+                  type="submit"
+                  onClick={handleSubmit}
+                >
+                  Be A Member
+                </button>
             </div>
           </div>
           <div className="right col-md-6">
             <form className="form-getInTouch mt-5">
               <div className="input-container-getIn">
+              <h1 className="get-in-text pt-3">Get In Touch</h1>
                 <label className="label">Name* </label>
                 <input
                   style={{ height: "40px" }}
@@ -155,7 +154,7 @@ const GetIn = () => {
                   required
                 />
               </div>
-              <div className="button-container pb-5">
+              {/* <div className="button-container pb-5"> */}
                 <button
                   className="mt-5 connect"
                   type="submit"
@@ -165,11 +164,12 @@ const GetIn = () => {
                   Connect
                 </button>
                 <ToastContainer />
-              </div>
+              {/* </div> */}
             </form>
           </div>
         </div>
       </div>
+    </div>  
     </>
   );
 };
