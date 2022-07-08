@@ -19,3 +19,17 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+.form-getInTouch-sign{
+    text-align: -webkit-center;
+}
+
+.connect-create-btn{
+    background: #5B03F6;
+    width: 75%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+}

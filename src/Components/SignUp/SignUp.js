@@ -24,7 +24,7 @@ const SignUp = () => {
                                 <p className='already'>Already a member ? <span><a href=''>Log in</a></span></p>
                             </div>
 
-                            <form className="form-getInTouch">
+                            <form className="form-getInTouch-sign">
 
                             <div className="input-container-LogIn mt-4">
 
@@ -57,7 +57,7 @@ const SignUp = () => {
 
                             <div className="button-container">
                             <button
-                                className="connect mt-5"
+                                className="connect-create-btn mt-5"
                                 type="submit"
                             >
                                 {" "}

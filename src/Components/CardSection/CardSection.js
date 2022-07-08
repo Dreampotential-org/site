@@ -34,10 +34,12 @@ const CardSection = ({ onClick }) => {
                   Bring your Vision we manifest your projects.
                 </Card.Text>
               </Card.Body>
-              <Card.Footer className="card-footer pt-4" onClick={onClick}>
+              <a href="https://teacher.dreampotential.org/slide_1.html?lesson_id=22">
+              <Card.Footer className="card-footer pt-4" >
                 <small className="text-muted-footer">Build Vision</small>
                 <img className="arrow" src={Arrow} alt="" />
               </Card.Footer>
+              </a>
             </Card>
             <Card className="card_section" style={{ width: "18rem" }}>
               <Card.Body className="back-color">

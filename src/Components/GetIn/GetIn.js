@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import "./GetIn.css";
-import msg from "../../assets/msg.png";
+import bulb from "../../assets/bulb.png";
 import { leadCreateApi } from "../../services/helper";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -86,22 +86,23 @@ const GetIn = () => {
           <div className="left col-md-6">
             <div className="mt-5">
               <div className="mt-5">
+              <img src={bulb} alt=""/>
                 <h1 className="get-in-text pt-2">Let Dreampotential help</h1>
                 <h1 className="get-in-text pt-2">you grow your business</h1>
               </div>
               <button
                   className="mt-5 member"
                   type="submit"
-                  onClick={handleSubmit}
+                 
                 >
-                  Be A Member
+                  Be A Member !
                 </button>
             </div>
           </div>
           <div className="right col-md-6">
             <form className="form-getInTouch mt-5">
               <div className="input-container-getIn">
-              <h1 className="get-in-text pt-3">Get In Touch</h1>
+              <h1 className="get-in-text pt-5">Get In Touch</h1>
                 <label className="label">Name* </label>
                 <input
                   style={{ height: "40px" }}

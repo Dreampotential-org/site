@@ -1,0 +1,30 @@
+.labs-back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.lab-div{
+    width: 600px;
+    text-align: center;
+}
+
+.labs-title{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+.labs-text{
+    color: #fff;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 18px;
+}

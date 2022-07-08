@@ -15,8 +15,8 @@ const FifthSection = () => {
         <div className='container pt-5'>
         <TitleandText
             title="Lorem Ipsum"
-            content="Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
-            subcontent="Lorem Ipsum And More Recently With Desktop"
+            // content="Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry."
+            // subcontent="Lorem Ipsum And More Recently With Desktop"
           />
           
             <div className='row pt-5'>

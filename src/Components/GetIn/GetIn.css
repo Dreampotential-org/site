@@ -2,7 +2,7 @@
     background-color: #5B03F6;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     /* height: 700px; */
 }
 
@@ -80,7 +80,7 @@ input[type="password"] {
     font-size: 20px; */
     background: #f79f00;
     /* width: 75%; */
-    padding: 10px;
+    padding: 10px 50px;
     border-radius: 10px;
     border: none;
     color: #fff;
@@ -120,6 +120,7 @@ input[type="password"] {
     .left{
         background-color: #5B03F6;
         height: 200px;
+        justify-content: center;
     }
     .div-center {
         position: absolute;
@@ -178,8 +179,8 @@ input[type="password"] {
 
 .member{
     background: #5B03F6;
-    width: 100%;
-    padding: 15px;
+    /* width: 100%; */
+    padding: 5px 20px;
     border-radius: 10px;
     color: #fff;
     font-size: 30px;

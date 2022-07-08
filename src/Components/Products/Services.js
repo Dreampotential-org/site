@@ -64,7 +64,7 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <button type="button" className="btn-join btn-primary ">
+                <button type="button" className="btn-learn-more btn-primary ">
                   LEARN MORE
                   <img style={{ marginLeft: 15 }} src={right_arrow} alt="" />
                 </button>
@@ -97,7 +97,7 @@ const Services = () => {
                   </div>
                 </div>
                 </div>
-                <button type="button" className="btn-join btn-primary ">
+                <button type="button" className="btn-learn-more btn-primary ">
                   LEARN MORE
                   <img style={{ marginLeft: 15 }} src={right_arrow} alt="" />
                 </button>
@@ -139,7 +139,7 @@ const Services = () => {
                   </div>
                 </div>
                 </div>
-                <button type="button" className="btn-join btn-primary ">
+                <button type="button" className="btn-learn-more btn-primary ">
                   LEARN MORE
                   <img style={{ marginLeft: 15 }} src={right_arrow} alt="" />
                 </button>
@@ -173,7 +173,7 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <button type="button" className="btn-join btn-primary ">
+                <button type="button" className="btn-learn-more btn-primary ">
                   LEARN MORE
                   <img style={{ marginLeft: 15 }} src={right_arrow} alt="" />
                 </button>
