@@ -21,6 +21,7 @@ import JoinUs from '../Components/JoinUs/JoinUs';
 import Products from '../Components/Products/Services';
 import Services from '../Components/Products/Services';
 import TitleandText from '../Components/TitleandText/TitleandText';
+import MemberShipCard from '../Components/MemberShipCard/MemberShipCard';
 
 const Home = () => {
   const aboutSection = useRef(null);
@@ -42,6 +43,7 @@ const Home = () => {
         {/* <MyCarousel/> */}
         <TitleandText/>
         <CardSection onClick={scrollDown}/>
+        <MemberShipCard/>
         <Select/>
         <Services/>
       

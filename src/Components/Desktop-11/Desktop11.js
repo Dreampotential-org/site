@@ -6,7 +6,7 @@ import Setting from "../../assets/Setting.png";
 import Circle from "../../assets/Circle.png";
 import NewNav from '../Nav/Nav';
 
-const Desktop11 = () => {
+const AboutUs = () => {
   return (
     <>
     <NewNav/>
@@ -60,4 +60,4 @@ const Desktop11 = () => {
   )
 }
 
-export default Desktop11
+export default AboutUs

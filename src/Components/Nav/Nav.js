@@ -80,7 +80,7 @@ const NewNav = ({ onClick }) => {
                     <label className="txtLabel1"> SIGNUP </label>
                   </div>
               </NavLink> */}
-              <NavLink to="/desktop11" className="nav-item-text">
+              <NavLink to="/aboutus" className="nav-item-text">
                  <div
                     className={
                       isSelected === "ABOUTUS " ? "label-div active" : "label-div"
