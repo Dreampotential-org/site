@@ -8,22 +8,29 @@ import Icon2 from "../../assets/Icon2.png";
 import Icon3 from "../../assets/Icon3.png";
 import Arrow from "../../assets/right_arrow.png";
 import Sailboat from "../../assets/Sailboat.png";
-import { Card, CardGroup } from "react-bootstrap";
+import { Card, CardGroup, Modal, Button } from "react-bootstrap";
 import TitleandText from "../TitleandText/TitleandText";
+import { useState } from "react";
 
 const CardSection = ({ onClick }) => {
+  const [show, setShow] = useState(false);
+
+  const modalClose = () => setShow(false);
+  const modalShow = () => setShow(true);
   return (
     <>
       <div className="card-back">
         <Container>
           {/* <h1 className="pt-5">Empower Every Team</h1> */}
           <div className="row pt-5">
-            <TitleandText
-              title="Empower Every Team"    
-            />
+            <TitleandText title="Empower Every Team" />
           </div>
           <div className="pb-5 pt-5 card-border">
-            <Card className="card_section" style={{ width: "18rem" }}>
+            <Card
+              onClick={modalShow}
+              className="card_section"
+              style={{ width: "18rem" }}
+            >
               <Card.Body className="back-color ">
                 <Card.Title className="pb-4">
                   <div className="circle-image position-relative mt-4">
@@ -34,14 +41,12 @@ const CardSection = ({ onClick }) => {
                   Bring your Vision we manifest your projects.
                 </Card.Text>
               </Card.Body>
-              <a href="https://teacher.dreampotential.org/slide_1.html?lesson_id=22">
-              <Card.Footer className="card-footer pt-4" >
+              <Card.Footer className="card-footer pt-4">
                 <small className="text-muted-footer">Build Vision</small>
                 <img className="arrow" src={Arrow} alt="" />
               </Card.Footer>
-              </a>
             </Card>
-            <Card className="card_section" style={{ width: "18rem" }}>
+            <Card onClick={modalShow} className="card_section" style={{ width: "18rem" }}>
               <Card.Body className="back-color">
                 <Card.Title className="pb-4">
                   <div className="circle-image-cloud position-relative mt-4">
@@ -64,7 +69,7 @@ const CardSection = ({ onClick }) => {
                 <img className="arrow" src={Arrow} alt="" />
               </Card.Footer>
             </Card>
-            <Card className="card_section" style={{ width: "18rem" }}>
+            <Card onClick={modalShow} className="card_section" style={{ width: "18rem" }}>
               <Card.Body className="back-color">
                 <Card.Title>
                   <div className="circle-image-people position-relative mt-4">
@@ -77,7 +82,7 @@ const CardSection = ({ onClick }) => {
               </Card.Body>
               <Card.Footer
                 className="card-footer icon3-footer pt-4"
-                onClick={onClick}
+                // onClick={onClick}
               >
                 <small className="text-muted-footer">Get In Touch</small>
                 <img className="arrow" src={Arrow} alt="" />
@@ -88,6 +93,15 @@ const CardSection = ({ onClick }) => {
           {/* <div className="row"> */}
           {/* <img className="" src={Sailboat} alt="" /> */}
         </Container>
+        <Modal show={show} onHide={modalClose}>
+          <Modal.Header className="header" closeButton> </Modal.Header>
+
+          {/* <Modal.Body> */}
+          <iframe className="iframe_control" src="https://teacher.dreampotential.org/slide_1.html?lesson_id=1" height="640" width="800" title="Iframe Example"></iframe>
+          {/* </Modal.Body> */}
+
+        
+        </Modal>
       </div>
     </>
   );

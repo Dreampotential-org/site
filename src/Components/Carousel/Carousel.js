@@ -1,10 +1,19 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import ReactCardCarousel from "react-card-carousel";
-import { Button } from "react-bootstrap";
+import { Modal,Button } from "react-bootstrap";
 import Icon1 from "../../assets/Icon1.png";
 
 class MyCarousel extends Component {
+  constructor(){ 
+    super(); 
+    this.state={ 
+      show:false 
+    } 
+  } 
+  handleModal(){ 
+    this.setState({show:!this.state.show}) 
+  }
   static get CONTAINER_STYLE() {
     return {
       position: "relative",
@@ -46,6 +55,7 @@ class MyCarousel extends Component {
     };
   }
 
+ 
   render() {
     return (
       <div style={MyCarousel.CONTAINER_STYLE}>
@@ -58,7 +68,7 @@ class MyCarousel extends Component {
             <div>
                 <p style={{color:'#fff'}}>Bring your vison we manifest your projects.</p>
             </div>
-            <Button>Build vision</Button>
+            <Button >Build vision</Button>
           </div>
           <div style={MyCarousel.CARD_STYLE}>
             {/* <div style={MyCarousel.CARD_STYLE_Heading}>Heading</div> */}
@@ -77,6 +87,14 @@ class MyCarousel extends Component {
             Fifth Card
           </div>
         </ReactCardCarousel>
+        <Modal show={this.state.show} onHide={()=>this.handleModal()}> 
+          <Modal.Header closeButton>This is a Modal Heading</Modal.Header> 
+          <Modal.Body>This is a Modal Body</Modal.Body> 
+          <Modal.Footer> 
+            <Button onClick={()=>this.handleModal()}>Close</Button> 
+            <Button onClick={()=>this.handleModal()}>Save</Button> 
+          </Modal.Footer> 
+        </Modal> 
       </div>
     );
   }
