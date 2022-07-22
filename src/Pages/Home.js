@@ -43,7 +43,7 @@ const Home = () => {
         {/* <MyCarousel/> */}
         <TitleandText/>
         <CardSection onClick={scrollDown}/>
-        <MemberShipCard/>
+        {/* <MemberShipCard/> */}
         <Select/>
         <Services/>
       

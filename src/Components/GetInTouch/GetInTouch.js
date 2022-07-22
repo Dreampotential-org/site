@@ -63,7 +63,7 @@ const GetInTouch = (props) => {
           .then((res) => {
             // console.log("response==>"+JSON.stringify(res))
             if (res?.status == 201) {
-              toast.success("information submitted successfully !");
+              toast.success("Information submitted successfully !");
               setValuesregi({
                 name: "",
                 email: "",
@@ -75,7 +75,7 @@ const GetInTouch = (props) => {
             }
           })
           .catch((err) => {
-            toast.error("email is required !"+err);
+            toast.error("Email is required !"+err);
           });
       }  
     }

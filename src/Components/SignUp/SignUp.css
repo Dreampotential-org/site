@@ -3,16 +3,38 @@
      /* height: 100vh;  */
     /* background-color: white;  */
 }
-
+.main-section{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15%;
+    /* bottom: 0; */
+    background: #1b0839;
+    padding-bottom: 2% ;
+}
+.signup-logo{
+    padding-top: 5% ;
+    text-align: center;
+}
 .signup-right{
-    height: 775px;
+    /* height: 775px; */
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     border-radius: 25px;
     background-color: #fff;
+    width: 28%;
+    margin:0 auto;
+}
+
+.forgot-pass{
+    color: #000;
+    text-align: right;
+    /* padding-right: 12%; */
+    margin: 0;
 }
 
 .signUp-bg{
     background-color: #1b0839;
+    height: 100vh;
 }
 
 .google-icon{
@@ -23,13 +45,49 @@
 .form-getInTouch-sign{
     text-align: -webkit-center;
 }
+.signup-err-msg{
+    color: red;
+    margin: 0;
+    text-align: left;
+    padding-left: 5px;
+    
+}
+.err-section{
+    display: flex;
+}
 
 .connect-create-btn{
     background: #5B03F6;
-    width: 75%;
+    width: 100%;
     padding: 10px;
     border-radius: 25px;
     border: none;
     color: #fff;
     font-size: 20px;
+}
+
+
+.signup-input-box{
+    background-color: #fff;
+    border: none;
+    margin-top: 0;
+    /* color: #fff; */
+    height:40px;
+    width: 100%;
+    padding-left: 10px
+}
+@media screen and (max-width:1024px) {
+    .signup-right{
+        width: 35%;
+    }
+    }
+@media screen and (max-width:768px) {
+    .signup-right{
+        width: 50%;
+    }
+    }
+@media screen and (max-width:555px) {
+.signup-right{
+    width: 90%;
+}
 }
