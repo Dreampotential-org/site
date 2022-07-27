@@ -1,34 +1,33 @@
-import React, { useRef } from 'react';
-import '../App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import NavbarSection from '../Components/Navbar/Navbar';
-import Hero from '../Components/HeroSection/Hero';
-import Middle from '../Components/MiddleSection/Middle';
-import Select_Partners from '../Components/Select_Partners/Select_Partners';
-import GetInTouch from '../Components/GetInTouch/GetInTouch';
-import Footer from '../Components/Footer/Footer';
-import NewHero from '../Components/NewHeroSection/NewHero';
-import Iframe from '../Components/Iframe/Iframe';
-import MyCarousel from '../Components/Carousel/Carousel';
-import CardSection from '../Components/CardSection/CardSection';
-import Select from '../Components/Select/Select';
-import Lorem from '../Components/Lorem/Lorem';
-import GetIn from '../Components/GetIn/GetIn';
-import FourthSection from '../Components/FourthSection/FourthSection';
-import FifthSection from '../Components/FifthSection/FifthSection';
-import CircleSection from '../Components/CircleSection/CircleSection';
-import JoinUs from '../Components/JoinUs/JoinUs';
-import Products from '../Components/Products/Services';
-import Services from '../Components/Products/Services';
-import TitleandText from '../Components/TitleandText/TitleandText';
-import MemberShipCard from '../Components/MemberShipCard/MemberShipCard';
+import React, { useRef } from "react";
+import "../App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import NavbarSection from "../Components/Navbar/Navbar";
+import Hero from "../Components/HeroSection/Hero";
+import Middle from "../Components/MiddleSection/Middle";
+import Select_Partners from "../Components/Select_Partners/Select_Partners";
+import GetInTouch from "../Components/GetInTouch/GetInTouch";
+import Footer from "../Components/Footer/Footer";
+import NewHero from "../Components/NewHeroSection/NewHero";
+import Iframe from "../Components/Iframe/Iframe";
+import MyCarousel from "../Components/Carousel/Carousel";
+import CardSection from "../Components/CardSection/CardSection";
+import Select from "../Components/Select/Select";
+import Lorem from "../Components/Lorem/Lorem";
+import GetIn from "../Components/GetIn/GetIn";
+import FourthSection from "../Components/FourthSection/FourthSection";
+import FifthSection from "../Components/FifthSection/FifthSection";
+import CircleSection from "../Components/CircleSection/CircleSection";
+import JoinUs from "../Components/JoinUs/JoinUs";
+import Products from "../Components/Products/Services";
+import Services from "../Components/Products/Services";
+import TitleandText from "../Components/TitleandText/TitleandText";
 
 const Home = () => {
   const aboutSection = useRef(null);
   const scrollDown = () => {
     window.scrollTo({
       top: aboutSection.current.offsetTop,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
   return (
@@ -39,29 +38,29 @@ const Home = () => {
           <Hero  onClick={scrollDown}/>
           <Middle onClick={scrollDown}/>
         </div> */}
-        <NewHero onClick={scrollDown}/>
+        <NewHero onClick={scrollDown} />
         {/* <MyCarousel/> */}
-        <TitleandText/>
-        <CardSection onClick={scrollDown}/>
+        <TitleandText />
+        <CardSection onClick={scrollDown} />
         {/* <MemberShipCard/> */}
-        <Select/>
-        <Services/>
-      
+        <Select />
+        <Services />
+
         {/* <FourthSection onClick={scrollDown}/> */}
         {/* <FifthSection/> */}
         {/* <CircleSection/> */}
         {/* <JoinUs onClick={scrollDown}/> */}
         {/* <Lorem /> */}
-        <GetIn/>
+        <GetIn />
         {/* <Select_Partners /> */}
         {/* <Iframe/> */}
         <div className="section section2" ref={aboutSection}>
           {/* <GetInTouch /> */}
         </div>
-        <Footer onClick={scrollDown}/>
+        <Footer onClick={scrollDown} />
       </div>
     </>
   );
-}
+};
 
 export default Home;

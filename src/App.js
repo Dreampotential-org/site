@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Labs from "./Pages/Labs";
 import Education from "./Pages/Education";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Desktop10 from "./Components/Desktop10/Desktop10";
 import LogIn from "./Components/LogIn/LogIn";
 import SignUp from "./Components/SignUp/SignUp";
@@ -13,20 +12,19 @@ import AboutUs from "./Components/Desktop-11/Desktop11";
 export default function App() {
   return (
     <BrowserRouter>
-    
       <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="labs" element={<Labs />} />
-          <Route path="education" element={<Education />} />
-          <Route path="desktop10" element={<Desktop10 />} />
-          <Route path="aboutus" element={<AboutUs />} />
-          <Route path="LogIn" element={<LogIn />} />
-          <Route path="signup" element={<SignUp />} />
+        <Route path="/" element={<Home />} />
+        <Route path="labs" element={<Labs />} />
+        <Route path="education" element={<Education />} />
+        <Route path="desktop10" element={<Desktop10 />} />
+        <Route path="aboutus" element={<AboutUs />} />
+        <Route path="LogIn" element={<LogIn />} />
+        <Route path="signup" element={<SignUp />} />
       </Routes>
-      <ScrollArrow/>
+      <ScrollArrow />
     </BrowserRouter>
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
