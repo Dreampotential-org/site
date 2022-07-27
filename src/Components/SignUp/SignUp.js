@@ -153,7 +153,7 @@ const SignUp = (props) => {
                       className="signup-input-box"
                       onChange={onChangeregi}
                       value={valuesregi.password}
-                      type="text"
+                      type="password"
                       name="password"
                       placeholder="Password"
                       required

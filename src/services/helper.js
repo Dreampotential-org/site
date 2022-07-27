@@ -28,3 +28,12 @@ export const leadCreateApi = async (payload) => {
         throw error.response.data;
     }
   };
+
+  export const logInApi = async (payload) => {
+    try {
+      const res = await axiosInstance.post("/user/login/", payload);
+      return res;
+    } catch (error) {
+        throw error.response.data;
+    }
+  };
