@@ -76,7 +76,20 @@
     outline: none;
 }
 .iframe_control{
-    margin-top: 3%;
+    margin-top: -2%;
+    border-radius: 25px;
+}
+.iframe_control-header{
+    position: absolute;
+    display: block;
+    right: 0;
+    margin: -8px 8px;
+}
+.iframe_control-header .btn-close{
+    filter: invert();
+}
+.iframe_modal .modal-content{
+    border-radius: 16px;
 }
 
 @media screen and (min-width:320px ) and (max-width:1024px){
