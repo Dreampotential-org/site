@@ -29,11 +29,16 @@ export const leadCreateApi = async (payload) => {
     }
   };
 
-  export const logInApi = async (payload) => {
+  export const logInApi= async (payload) => {
     try {
-      const res = await axiosInstance.post("/user/login/", payload);
+      const res = await axiosInstance.post("/user/login", payload);
       return res;
     } catch (error) {
+      if (error.response) {  
         throw error.response.data;
+      } else if (error.request) {
+      } else {
+      }
     }
   };
+  

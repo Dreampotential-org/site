@@ -91,7 +91,7 @@ const SignUp = (props) => {
               <p className="already">
                 Already a member ?{" "}
                 <span>
-                  <a href="">Log in</a>
+                  <a href="/login">Log in</a>
                 </span>
               </p>
             </div>
@@ -201,7 +201,7 @@ const SignUp = (props) => {
                     </span>{" "}
                     Don't have an account?{" "}
                     <span>
-                      <a href="">Sign Up</a>
+                      <a href="/signup">Sign Up</a>
                     </span>
                   </p>
                 </div>

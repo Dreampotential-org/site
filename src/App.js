@@ -12,8 +12,7 @@ import AboutUs from "./Components/Desktop-11/Desktop11";
 
 export default function App() {
   return (
-    <BrowserRouter>
-    
+    <BrowserRouter>    
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="labs" element={<Labs />} />
