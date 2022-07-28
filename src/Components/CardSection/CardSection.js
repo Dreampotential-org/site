@@ -93,11 +93,11 @@ const CardSection = ({ onClick }) => {
           {/* <div className="row"> */}
           {/* <img className="" src={Sailboat} alt="" /> */}
         </Container>
-        <Modal show={show} onHide={modalClose}>
-          <Modal.Header className="header" closeButton> </Modal.Header>
+        <Modal className="iframe_modal" show={show} onHide={modalClose}>
+          <Modal.Header className="header iframe_control-header" closeButton> </Modal.Header>
 
           {/* <Modal.Body> */}
-          <iframe className="iframe_control" src="https://teacher.dreampotential.org/slide_1.html?lesson_id=1" height="640" width="800" title="Iframe Example"></iframe>
+          <iframe className="iframe_control" src="https://teacher.dreampotential.org/slide.html?lesson_id=1&iFrame=1" height="500" width="100%" title="Iframe Example"></iframe>
           {/* </Modal.Body> */}
 
         
