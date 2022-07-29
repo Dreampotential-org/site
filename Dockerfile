@@ -15,7 +15,7 @@ RUN yarn build
 
 
 # PORTS
-EXPOSE 3000
+EXPOSE 3377
 
 # start app
-CMD ["serve", "-s", "build"]
+CMD ["serve", "-l", "3377", "-s" ,"build"]
