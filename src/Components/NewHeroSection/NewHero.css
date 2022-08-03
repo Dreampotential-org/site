@@ -28,7 +28,8 @@
     font-style: normal;
     font-weight: 900;
     font-size: 45px;
-    line-height: 20px;
+    line-height: 40px;
+    /* line-height: 20px; */
     text-transform: none;
 }
 
@@ -124,12 +125,15 @@
    
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:760px) {
     .text-one{
         /* font-size: 56px;
         line-height: 65px; */
         font-size: 34px;
         line-height: 34px;
+    }
+    .text-section{
+        margin-top: 20%;
     }
     .Layer_1{
         height: 300px!important;

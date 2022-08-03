@@ -11,7 +11,7 @@ const NewHero = ({onClick}) => {
         <div className="container">
           <div className="row">
             <div className="col-md-6 pt-5 right-text-center">
-              <div>
+              <div className="text-section">
               <p className="text-one">
                 Bring us your dreams.
               </p>
