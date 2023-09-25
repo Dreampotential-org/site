@@ -140,9 +140,11 @@ import "./LogIn.css";
 import NewNav from "../Nav/Nav";
 import logo from "../../assets/logo_login.png";
 import { AiOutlineWarning ,AiOutlineMail,AiOutlineLock} from "react-icons/ai";
+import { BrowserRouter, Routes, Route, useNavigate} from "react-router-dom";
 import { BsFillPersonFill } from "react-icons/bs";
 import { logInApi } from "../../services/helper";
 import { ToastContainer, toast } from "react-toastify";
+
 import "react-toastify/dist/ReactToastify.css";
 
 const LogIn = (props) => {
@@ -151,6 +153,8 @@ const LogIn = (props) => {
     email: "",
     password: "",
   });
+
+  const navigate = useNavigate();
 
   const [errorCreate, setErrorCreate] = useState({});
 
@@ -195,6 +199,7 @@ const LogIn = (props) => {
               email: "",
               password: "",
             });
+            navigate('/');
           } 
         })
         .catch((err) => {

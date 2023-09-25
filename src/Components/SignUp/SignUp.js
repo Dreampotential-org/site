@@ -5,18 +5,25 @@ import logo from "../../assets/logo_login.png";
 import msg from "../../assets/msg-icon.png";
 import lock from "../../assets/Secure_Security_Lock-2.png";
 import google from "../../assets/google.png";
+import { BrowserRouter, Routes, Route, useNavigate} from "react-router-dom";
 import { AiOutlineWarning ,AiOutlineMail,AiOutlineLock} from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import { signUPApi } from "../../services/helper";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
+
+
 
 const SignUp = (props) => {
+  
+
+  
   const [valuesregi, setValuesregi] = useState({
     name: "",
     email: "",
     password: "",
   });
+  const navigate = useNavigate();
 
   const [errorCreate, setErrorCreate] = useState({});
 
@@ -26,6 +33,7 @@ const SignUp = (props) => {
     setValuesregi((valuesregi) => ({
       ...valuesregi,
       [event.target.name]: event.target.value,
+      
     }));
   };
 
@@ -71,6 +79,7 @@ const SignUp = (props) => {
               email: "",
               password: "",
             });
+            navigate('/');
           } 
         })
         .catch((err) => {
@@ -78,6 +87,9 @@ const SignUp = (props) => {
         });
     }
   };
+
+
+
 
   return (
     <>
@@ -105,6 +117,7 @@ const SignUp = (props) => {
                     <input
                       className="signup-input-box"
                       onChange={onChangeregi}
+                      // onChange={(e)=>setName(e.target.value)}
                       value={valuesregi.name}
                       placeholder="Username"
                       type="text"
@@ -129,6 +142,7 @@ const SignUp = (props) => {
                     <input
                       className="signup-input-box"
                       onChange={onChangeregi}
+                      // onChange={(e)=>setEmail(e.target.value)}
                       value={valuesregi.email}
                       placeholder="Email address"
                       type="text"
@@ -152,6 +166,7 @@ const SignUp = (props) => {
                     <input
                       className="signup-input-box"
                       onChange={onChangeregi}
+                      // onChange={(e)=>setPassword(e.target.value)}
                       value={valuesregi.password}
                       type="password"
                       name="password"
@@ -173,7 +188,10 @@ const SignUp = (props) => {
                   className="connect-create-btn mt-5"
                   type="submit"
                   onClick={handleSubmit}
+                  // onClick={handleSignUp}
                 >
+                 {/* Create an account */}
+
                   {" "}
                   Create an account
                 </button>
