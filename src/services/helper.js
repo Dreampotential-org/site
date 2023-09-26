@@ -23,7 +23,8 @@ export const leadCreateApi = async (payload) => {
   export const signUPApi = async (payload) => {
     try {
       // const res = await axiosInstance.post("/user/register/", payload);
-      const res = await axiosInstance.post("http://app.realtorstat.com:8021/usersystem/user/register", payload);
+      // const res = await axiosInstance.post("http://app.realtorstat.com:8021/usersystem/user/register", payload);
+      const res = await axiosInstance.post("https://api.dreampotential.org/usersystem/user/register", payload);
       return res;
     } catch (error) {
         throw error.response.data;
@@ -32,7 +33,8 @@ export const leadCreateApi = async (payload) => {
 
   export const logInApi= async (payload) => {
     try {
-      const res = await axiosInstance.post("http://app.realtorstat.com:8021/usersystem/user/login", payload);
+      // const res = await axiosInstance.post("http://app.realtorstat.com:8021/usersystem/user/login", payload);
+      const res = await axiosInstance.post("https://api.dreampotential.org/usersystem/user/login", payload);
       return res;
     } catch (error) {
       if (error.response) {  
