@@ -18,10 +18,10 @@ const Services = () => {
     <>
       <div className="product-back">
         <div className="container pt-5">
-        
+
           <TitleandText
             // title="Services"
-            content="We create software solutions that make jobs easier"
+            content="Some project we are building"
             className="abc"
           />
 

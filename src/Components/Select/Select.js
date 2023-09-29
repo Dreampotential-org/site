@@ -52,7 +52,7 @@ const Select = () => {
 
           <TitleandText 
           className="select-title"
-          title="Trusted By" content="We have access to 3500 offices spaces wide."/>
+          title="Some of our Projects" content=""/>
 
           <CenteredModal
             show={modalShow}
