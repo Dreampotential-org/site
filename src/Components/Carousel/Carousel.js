@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import ReactCardCarousel from "react-card-carousel";
+//import ReactCardCarousel from "react-card-carousel";
 import { Modal,Button } from "react-bootstrap";
 import Icon1 from "../../assets/Icon1.png";
 
@@ -59,9 +59,9 @@ class MyCarousel extends Component {
   render() {
     return (
       <div style={MyCarousel.CONTAINER_STYLE}>
+        /*
         <ReactCardCarousel autoplay={false} autoplay_speed={2000}>
           <div style={MyCarousel.CARD_STYLE}>
-            {/* <div style={MyCarousel.CARD_STYLE_Heading}>Heading</div> */}
             <div>
                 <img src={Icon1} alt=""/>
             </div>
@@ -71,15 +71,12 @@ class MyCarousel extends Component {
             <Button >Build vision</Button>
           </div>
           <div style={MyCarousel.CARD_STYLE}>
-            {/* <div style={MyCarousel.CARD_STYLE_Heading}>Heading</div> */}
             Second Card
           </div>
           <div style={MyCarousel.CARD_STYLE}>
-            {/* <div style={MyCarousel.CARD_STYLE_Heading}>Heading</div> */}
             Third Card
           </div>
           <div style={MyCarousel.CARD_STYLE}>
-            {/* <div style={MyCarousel.CARD_STYLE_Heading}>Heading</div> */}
             Fourth Card
           </div>
           <div style={MyCarousel.CARD_STYLE}>
