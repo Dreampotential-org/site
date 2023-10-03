@@ -27,11 +27,6 @@ export default function App() {
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="LogIn" element={<LogIn />} />
         <Route path="signup" element={<SignUp />} />
-
-        // <Route path="create-new-project" element={<PostDataForm  />} />
-        //              <Route path="projectlists" element={<ProjectLists />} />
-
-
       </Routes>
       <ScrollArrow />
     </BrowserRouter>
