@@ -64,22 +64,22 @@ const NewNav = ({ onClick }) => {
                     <label className="txtLabel1"> EDUCATIONS </label>
                   </div>
               </NavLink>
-              {/* <Link to="/education" className="nav-item-text">
-                EDUCATIONS
-              </Link> */}
-              {/* <Link to="/LogIn" className="nav-item-text">
-                LOGIN
-              </Link> */}
-              {/* <NavLink to="/signup" className="nav-item-text">
-                 <div
+
+
+              <NavLink to="/projectlists"  className="nav-item-text">
+                    <div
                     className={
-                      isSelected === "SIGNUP " ? "label-div active" : "label-div"
+                      isSelected === "Dashboard " ? "label-div active" : "label-div"
                     }
-                    onClick={() => handleSelection("SIGNUP")}
+                    onClick={() => 
+                    
+                    handleSelection("Dashboard")}
                   >
-                    <label className="txtLabel1"> SIGNUP </label>
+                    <label className="txtLabel1"> PROJECTLISTS </label>
                   </div>
-              </NavLink> */}
+              </NavLink>
+
+              
               <NavLink to="/aboutus" className="nav-item-text">
                  <div
                     className={
@@ -90,9 +90,7 @@ const NewNav = ({ onClick }) => {
                     <label className="txtLabel1"> ABOUTUS </label>
                   </div>
               </NavLink>
-              {/* <Link to="/desktop11" className="nav-item-text">
-                Design
-              </Link> */}
+              
 
               <NavLink to="/signup" className="nav-item-text">
                 <div
@@ -105,15 +103,6 @@ const NewNav = ({ onClick }) => {
                 </div>
               </NavLink>
 
-              {/* <NavLink to="/signup" className="nav-item-button">
-                <button
-                  type="button"
-                  onClick={onClick}
-                  className="join btn-primary "
-                >
-                  SIGN UP
-                </button>
-              </NavLink> */}
             </Nav>
           </Navbar.Collapse>
         </Navbar>

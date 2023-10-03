@@ -1,5 +1,6 @@
 
 import axiosInstance from "../services/axios";
+import axios from "axios";
 
 export const leadCreateApi = async (payload) => {
 
@@ -22,20 +23,64 @@ export const leadCreateApi = async (payload) => {
 
   export const signUPApi = async (payload) => {
     try {
-      // const res = await axiosInstance.post("/user/register/", payload);
+      
       // const res = await axiosInstance.post("http://app.realtorstat.com:8021/usersystem/user/register", payload);
       const res = await axiosInstance.post("https://api.dreampotential.org/usersystem/user/register", payload);
+      // const res = await axiosInstance.post("/usersystem/user/register/", payload);
+      localStorage.setItem('Token', JSON.stringify(res.token));
       return res;
     } catch (error) {
         throw error.response.data;
     }
   };
 
+
+
+export const createProjectService = async (payload) => {
+  const token = localStorage.getItem("Token")
+  try {
+    // const res = await axiosInstance.post("https://api.dreampotential.org/api/project-service", payload);
+   const res = await axios.post("https://api.dreampotential.org/api/project-service", payload, {
+  headers: {
+    'Authorization': `Token ${token}` 
+  }
+})
+    
+    return res;
+  } catch (error) {
+    if (error.response) {  
+      throw error.response.data;
+    } else if (error.request) {
+    } else {
+    }
+  }
+
+} 
+
+export const list_project_services = async(payload) => {
+  try {
+    const res = await axiosInstance.get("https://api.dreampotential.org/api/list-project-services", payload);
+    return res;
+  } catch (error) {
+    if (error.response) {  
+      throw error.response.data;
+    } else if (error.request) {
+    } else {
+    }
+  }
+
+} 
+
+
+
+
   export const logInApi= async (payload) => {
     try {
       // const res = await axiosInstance.post("http://app.realtorstat.com:8021/usersystem/user/login", payload);
       const res = await axiosInstance.post("https://api.dreampotential.org/usersystem/user/login", payload);
+      localStorage.setItem('Token', JSON.stringify(res.token));
       return res;
+      
     } catch (error) {
       if (error.response) {  
         throw error.response.data;
@@ -44,4 +89,7 @@ export const leadCreateApi = async (payload) => {
       }
     }
   };
+
+
+  
   

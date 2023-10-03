@@ -3,13 +3,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Labs from "./Pages/Labs";
 import Education from "./Pages/Education";
+
+import PostDataForm from "./Pages/CreateNewProject";
 import Desktop10 from "./Components/Desktop10/Desktop10";
 import LogIn from "./Components/LogIn/LogIn";
 import SignUp from "./Components/SignUp/SignUp";
 import ScrollArrow from "./Components/ScrollToTop/ScrollToTop";
 import AboutUs from "./Components/Desktop-11/Desktop11";
+import { useState } from "react";
+import ProjectLists from "./Pages/ProjectLists";
+
 
 export default function App() {
+
+
   return (
     <BrowserRouter>    
       <Routes>
@@ -20,6 +27,11 @@ export default function App() {
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="LogIn" element={<LogIn />} />
         <Route path="signup" element={<SignUp />} />
+       
+        <Route path="create-new-project" element={<PostDataForm  />} />
+                     <Route path="projectlists" element={<ProjectLists />} />
+
+
       </Routes>
       <ScrollArrow />
     </BrowserRouter>

@@ -16,7 +16,11 @@ const NavbarSection = ({ onClick }) => {
         <div className="nav-menu-2 col-xl-4 col-lg-6 col-md-12 col-sm-12">
           <Link to="/labs" className="nav-item" >LABS</Link>
           <Link to="/education" className="nav-item" >EDUCATIONS</Link>
+         
+          
+          <Link to="/users" className="nav-item" >Users</Link>
           <li className="join_buttton" onClick={onClick}>JOIN US</li>
+          
         </div>
         <div onClick={onClick} className="mob_join_buttton">JOIN US</div>
       </div>
