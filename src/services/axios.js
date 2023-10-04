@@ -3,9 +3,9 @@ const baseURL = process.env.REACT_APP_SERVER_URL;
 console.log("BASEURL", baseURL);
 let headers = {};
 
-if (localStorage.token) {
-  headers.Authorization = `Token ${localStorage.token}`;
-}
+// if (localStorage.token) {
+//   headers.Authorization = `Token ${localStorage.token}`;
+// }
 
 const axiosInstance = axios.create({
   baseURL: baseURL,
