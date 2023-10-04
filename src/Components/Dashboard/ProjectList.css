@@ -1,0 +1,48 @@
+.hey{
+    margin-top: 100px;
+    margin-right: 500px !important;
+    background-color: blue;
+}
+
+.top-div{
+    height: 50px;
+    background-color: black;
+}
+
+.data-name{
+    color: black !important;
+    font-weight: bold !important;
+}
+.data-repo{
+    color: black !important;
+    font-weight: bold !important;
+   margin-right: 420px;
+}
+
+.navDiv{
+    margin: 100px 200px;
+}
+
+.inpt{
+    margin-right: 200px;
+    width: 600px !important;
+}
+
+.main{
+    margin: 100px 200px;
+    border: 1px solid rgb(231, 222, 222);
+    padding: 30px 50px;
+}
+
+.leter-div{
+    background-color: gray;
+    height: 80px ;
+    width: 80px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.user-div{
+    padding: 0px 50px;
+}

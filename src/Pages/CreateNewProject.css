@@ -1,0 +1,31 @@
+
+.new-form{
+
+background-color: rgb(241, 224, 224);
+height: 1000vh;
+display: flex;
+
+justify-content: center;
+padding-top: 100px;
+
+}
+
+.new-form-container{
+    background-color: beige;
+    border-radius: 10%;
+    padding: 30px 30px;
+    height: 350px;
+}
+
+
+
+#repo, #name{
+width: 450px;
+}
+
+#submit-btn{
+    width: 450px;
+    height: 30px;
+    background-color: rgb(36, 114, 36);
+    border-radius: 10%;
+}
