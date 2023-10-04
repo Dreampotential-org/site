@@ -37,12 +37,17 @@ export const leadCreateApi = async (payload) => {
 
 
 export const createProjectService = async (payload) => {
-  const token = localStorage.getItem("Token")
+  const tokenWithQuotes = localStorage.getItem('Token');
+  const token = tokenWithQuotes.replace(/^"(.*)"$/, '$1');
+  console.log(token);
+  
   try {
-    // const res = await axiosInstance.post("https://api.dreampotential.org/api/project-service", payload);
+   
    const res = await axios.post("https://api.dreampotential.org/api/project-service", payload, {
   headers: {
-    'Authorization': `Token ${token}` 
+            // "Authorization": "Token d86c1dced838c8cd3ce5cd902ba9ad4af397d4b9cf8c443beb316e35b2cce5d8"
+     'Authorization': `Token ${token}`,
+   
   }
 })
     
@@ -56,6 +61,9 @@ export const createProjectService = async (payload) => {
   }
 
 } 
+
+
+
 
 export const list_project_services = async(payload) => {
   try {
@@ -78,7 +86,8 @@ export const list_project_services = async(payload) => {
     try {
       // const res = await axiosInstance.post("http://app.realtorstat.com:8021/usersystem/user/login", payload);
       const res = await axiosInstance.post("https://api.dreampotential.org/usersystem/user/login", payload);
-      localStorage.setItem('Token', JSON.stringify(res.token));
+     localStorage.setItem('Token', JSON.stringify(res.data.token));
+     console.log(JSON.stringify(res.data.token));
       return res;
       
     } catch (error) {
