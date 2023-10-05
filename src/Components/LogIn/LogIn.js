@@ -166,12 +166,12 @@ const LogIn = (props) => {
       [event.target.name]: event.target.value,
     }));
   };
-
   const handleSubmit = (event) => {
     event.preventDefault();
     setErrorCreate(validateregi(valuesregi));
     let errorCreate = {};
-    let passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/; 
+    let passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+  
     if (!valuesregi.email) {
       errorCreate.email = "Email address is required";
     } else if (
@@ -182,13 +182,12 @@ const LogIn = (props) => {
     }
     if (!valuesregi.password) {
       errorCreate.password = "Password is required";
-    }
-    else {
+    } else {
       const payload = {
         email: valuesregi.email,
         password: valuesregi.password,
       };
-
+  
       logInApi(payload)
         .then((res) => {
           console.log("response==>" + JSON.stringify(res));
@@ -199,8 +198,8 @@ const LogIn = (props) => {
               email: "",
               password: "",
             });
-            navigate('/');
-          } 
+            navigate('/project-services'); // Redirect to the desired route
+          }
         })
         .catch((err) => {
           toast.error(err.msg);

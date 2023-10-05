@@ -1,0 +1,100 @@
+.mainDiv {
+  display: flex;
+  height: 100vh;
+}
+.div1 {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.minidiv1ofdiv1 {
+  background-color: black;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.input {
+  background-color: gray;
+  color: white;
+  border: 3px solid blue;
+  border-radius: 8px;
+  height: 40px;
+  width: 90%;
+  padding: 0px 20px;
+  margin-bottom: 20px;
+}
+.input::placeholder{
+    color: white;
+}
+.minidiv2ofdiv1{
+    background-color: rgb(221, 221, 221);
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+.minidiv2ofdiv1 button{
+    margin-top: 10px;
+    border: none;
+    height: 40px;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.minidiv2ofdiv1 button:active{
+background-color: gray;
+color: white;
+}
+.minidiv2ofdiv1 h2{
+    border-bottom: none;
+    color: black;
+    text-align: left;
+}
+
+.div2 {
+  width: 100%;
+}
+.btnsOfHeading {
+  display: flex;
+  justify-content: space-around;
+}
+.headinng {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.headinng h2{
+    border-bottom: none;
+    width: 10%;
+    color: black;
+}
+.btnsOfHeading button{
+   height: 30px;
+   background-color: transparent;
+   border: none;
+   color: blue;
+   font-size: 12px;
+   border-radius: 7px;
+   background-color: rgba(188, 181, 181, 0.611);
+   width: 140px;
+   margin: 0 20px 0 20px;
+}
+
+.tags{
+    display: flex;
+    flex-direction: column;
+}
+.tags div{
+    height: 40px;
+    margin: 0 40px 0 40px;
+    border-bottom: 3px solid rgba(166, 166, 166, 0.396);
+    display: flex;
+    align-items: center;
+}
+.tags div a{
+    margin: 20px;
+}

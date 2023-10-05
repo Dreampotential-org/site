@@ -11,7 +11,8 @@ import SignUp from "./Components/SignUp/SignUp";
 import ScrollArrow from "./Components/ScrollToTop/ScrollToTop";
 import AboutUs from "./Components/Desktop-11/Desktop11";
 import { useState } from "react";
-//import ProjectLists from "./Pages/ProjectLists";
+import ProjectLists from "./Pages/ProjectLists";
+import Project_services from "./Pages/project-services";
 
 
 export default function App() {
@@ -27,6 +28,8 @@ export default function App() {
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="LogIn" element={<LogIn />} />
         <Route path="signup" element={<SignUp />} />
+        <Route path="projectlists" element={<ProjectLists />} />
+        <Route path="project-services" element={<Project_services />} />
       </Routes>
       <ScrollArrow />
     </BrowserRouter>
