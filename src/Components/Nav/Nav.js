@@ -66,7 +66,7 @@ const NewNav = ({ onClick }) => {
               </NavLink>
 
 
-              <NavLink to="/projectlists"  className="nav-item-text">
+              <NavLink to="/dashboard"  className="nav-item-text">
                     <div
                     className={
                       isSelected === "Dashboard " ? "label-div active" : "label-div"
@@ -75,7 +75,7 @@ const NewNav = ({ onClick }) => {
                     
                     handleSelection("Dashboard")}
                   >
-                    <label className="txtLabel1"> PROJECTLISTS </label>
+                    <label className="txtLabel1"> DASHBOARD </label>
                   </div>
               </NavLink>
 

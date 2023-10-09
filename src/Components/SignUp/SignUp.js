@@ -5,14 +5,19 @@ import logo from "../../assets/logo_login.png";
 import msg from "../../assets/msg-icon.png";
 import lock from "../../assets/Secure_Security_Lock-2.png";
 import google from "../../assets/google.png";
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-import { AiOutlineWarning, AiOutlineMail, AiOutlineLock } from "react-icons/ai";
+import { BrowserRouter, Routes, Route, useNavigate} from "react-router-dom";
+import { AiOutlineWarning ,AiOutlineMail,AiOutlineLock} from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 import { signUPApi } from "../../services/helper";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 
+
+
 const SignUp = (props) => {
+  
+
+  
   const [valuesregi, setValuesregi] = useState({
     name: "",
     email: "",
@@ -28,6 +33,7 @@ const SignUp = (props) => {
     setValuesregi((valuesregi) => ({
       ...valuesregi,
       [event.target.name]: event.target.value,
+      
     }));
   };
 
@@ -38,6 +44,7 @@ const SignUp = (props) => {
     let passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
     if (!valuesregi.name) {
       errorCreate.name = "Name is required";
+      console.log("valuesregi dsdads" + JSON.stringify(errorCreate.name));
     } else if (!/^[a-zA-Z]/.test(valuesregi.name)) {
       errorCreate.name = "Name is invalid";
     }
@@ -51,7 +58,11 @@ const SignUp = (props) => {
     }
     if (!valuesregi.password) {
       errorCreate.password = "Password is required";
-    } else {
+    }
+    // else if (valuesregi.password.match(passw)) {
+    //   errorCreate.password = "phone number is invalid";
+    // }
+    else {
       const payload = {
         name: valuesregi.name,
         email: valuesregi.email,
@@ -61,22 +72,25 @@ const SignUp = (props) => {
       signUPApi(payload)
         .then((res) => {
           console.log("response==>" + JSON.stringify(res));
-          if (res?.status === 200) {
+          if (res?.status == 200) {
             toast.success("SignUp Successfully !");
-            localStorage.setItem("token", res.data.token);
+            localStorage.setItem("token", res.data.token)
             setValuesregi({
               name: "",
               email: "",
               password: "",
             });
-            navigate("/project-services"); // Redirect to /projectlists upon successful signup
-          }
+            navigate('/');
+          } 
         })
         .catch((err) => {
           toast.error(err.msg);
         });
     }
   };
+
+
+
 
   return (
     <>
@@ -99,14 +113,12 @@ const SignUp = (props) => {
                 <div className="input-container">
                   <div class="right-inner-addon input-container">
                     <i class="fa fa-search">
-                      <BsFillPersonFill
-                        size={25}
-                        style={{ color: "gray" }}
-                      />
+                    <BsFillPersonFill size={25} style={{ color: "gray" }} />
                     </i>
                     <input
                       className="signup-input-box"
                       onChange={onChangeregi}
+                      // onChange={(e)=>setName(e.target.value)}
                       value={valuesregi.name}
                       placeholder="Username"
                       type="text"
@@ -126,11 +138,12 @@ const SignUp = (props) => {
                 <div className="input-container">
                   <div className="right-inner-addon input-container">
                     <i className="fa fa-search">
-                      <AiOutlineMail size={25} style={{ color: "gray" }} />
+                    <AiOutlineMail size={25} style={{ color: "gray" }} />
                     </i>
                     <input
                       className="signup-input-box"
                       onChange={onChangeregi}
+                      // onChange={(e)=>setEmail(e.target.value)}
                       value={valuesregi.email}
                       placeholder="Email address"
                       type="text"
@@ -149,14 +162,12 @@ const SignUp = (props) => {
                 <div className="input-container">
                   <div className="right-inner-addon input-container">
                     <i className="fa fa-search">
-                      <AiOutlineLock
-                        size={30}
-                        style={{ color: "gray", paddingBottom: "3px" }}
-                      />
+                    <AiOutlineLock size={30} style={{ color: "gray" ,paddingBottom:'3px'}} />
                     </i>
                     <input
                       className="signup-input-box"
                       onChange={onChangeregi}
+                      // onChange={(e)=>setPassword(e.target.value)}
                       value={valuesregi.password}
                       type="password"
                       name="password"
@@ -178,18 +189,31 @@ const SignUp = (props) => {
                   className="connect-create-btn mt-5"
                   type="submit"
                   onClick={handleSubmit}
+                  // onClick={handleSignUp}
                 >
+                 {/* Create an account */}
+
+                  {" "}
                   Create an account
                 </button>
 
+                {/* <button className="mt-4 connect-Google" type="submit">
+                  {" "}
+                  <div className="google-icon">
+                    <img src={google} alt="" />
+                    Sign up with Google
+                  </div>
+                </button> */}
                 <div className="pt-5">
                   <p className="login-footer">
+                    {" "}
                     By signing in you agree to our{" "}
                     <span>
                       <a href="">Terms of Service</a>
                     </span>{" "}
                   </p>
                   <p className="login-footer">
+                    {" "}
                     and{" "}
                     <span>
                       <a href="">Privacy Policy.</a>
@@ -211,6 +235,7 @@ const SignUp = (props) => {
 };
 
 function validateregi(valuesregi) {
+  //   console.log("valuesregi :- " + JSON.stringify(valuesregi));
   let errorCreate = {};
   let passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
   if (!valuesregi.name) {
@@ -228,8 +253,11 @@ function validateregi(valuesregi) {
   }
   if (!valuesregi.password) {
     errorCreate.password = "Password is required";
-  } 
+  }
+  //   else if (valuesregi.password.match(passw)) {
+  //     errorCreate.password = "Password is invalid";
+  //   }
+
   return errorCreate;
 }
-
 export default SignUp;
