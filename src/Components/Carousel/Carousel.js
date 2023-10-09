@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import ReactCardCarousel from "react-card-carousel";
-import { Modal, Button } from "react-bootstrap";
+import { Modal,Button } from "react-bootstrap";
 import Icon1 from "../../assets/Icon1.png";
 
 class MyCarousel extends Component {
-  constructor() {
-    super();
-    this.state = {
-      show: false,
-    };
-  }
-  handleModal() {
-    this.setState({ show: !this.state.show });
+  constructor(){ 
+    super(); 
+    this.state={ 
+      show:false 
+    } 
+  } 
+  handleModal(){ 
+    this.setState({show:!this.state.show}) 
   }
   static get CONTAINER_STYLE() {
     return {
@@ -22,7 +22,7 @@ class MyCarousel extends Component {
       display: "flex",
       flex: 1,
       justifyContent: "center",
-      alignItems: "flex-start",
+      alignItems: "flex-start"
     };
   }
 
@@ -39,7 +39,7 @@ class MyCarousel extends Component {
       borderRadius: "10px",
       boxSizing: "border-box",
       margin: "40px 330px",
-      boxShadow: "0px 2px 22px -3px rgba(0,0,0,0.27)",
+      boxShadow: "0px 2px 22px -3px rgba(0,0,0,0.27)"
     };
   }
 
@@ -51,10 +51,11 @@ class MyCarousel extends Component {
       fontSize: "18px",
       padding: "20px",
       boxSizing: "border-box",
-      borderRadius: "10px 10px 0 0",
+      borderRadius: "10px 10px 0 0"
     };
   }
 
+ 
   render() {
     return (
       <div style={MyCarousel.CONTAINER_STYLE}>
@@ -62,36 +63,41 @@ class MyCarousel extends Component {
         <ReactCardCarousel autoplay={false} autoplay_speed={2000}>
           <div style={MyCarousel.CARD_STYLE}>
             <div>
-              <img src={Icon1} alt="" />
+                <img src={Icon1} alt=""/>
             </div>
             <div>
-              <p style={{ color: "#fff" }}>
-                Bring your vison we manifest your projects.
-              </p>
+                <p style={{color:'#fff'}}>Bring your vison we manifest your projects.</p>
             </div>
-            <Button>Build vision</Button>
+            <Button >Build vision</Button>
           </div>
-          <div style={MyCarousel.CARD_STYLE}>Second Card</div>
-          <div style={MyCarousel.CARD_STYLE}>Third Card</div>
-          <div style={MyCarousel.CARD_STYLE}>Fourth Card</div>
+          <div style={MyCarousel.CARD_STYLE}>
+            Second Card
+          </div>
+          <div style={MyCarousel.CARD_STYLE}>
+            Third Card
+          </div>
+          <div style={MyCarousel.CARD_STYLE}>
+            Fourth Card
+          </div>
           <div style={MyCarousel.CARD_STYLE}>
             {/* <div style={MyCarousel.CARD_STYLE_Heading}>Heading</div> */}
             Fifth Card
           </div>
         </ReactCardCarousel>
-        <Modal show={this.state.show} onHide={() => this.handleModal()}>
-          <Modal.Header closeButton>This is a Modal Heading</Modal.Header>
-          <Modal.Body>This is a Modal Body</Modal.Body>
-          <Modal.Footer>
-            <Button onClick={() => this.handleModal()}>Close</Button>
-            <Button onClick={() => this.handleModal()}>Save</Button>
-          </Modal.Footer>
-        </Modal>
+        <Modal show={this.state.show} onHide={()=>this.handleModal()}> 
+          <Modal.Header closeButton>This is a Modal Heading</Modal.Header> 
+          <Modal.Body>This is a Modal Body</Modal.Body> 
+          <Modal.Footer> 
+            <Button onClick={()=>this.handleModal()}>Close</Button> 
+            <Button onClick={()=>this.handleModal()}>Save</Button> 
+          </Modal.Footer> 
+        </Modal> 
       </div>
     );
   }
 }
 
-export default MyCarousel;
+
+export default MyCarousel
 // const rootElement = document.getElementById("root");
 // ReactDOM.render(<Carousel />, rootElement);

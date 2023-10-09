@@ -1,0 +1,83 @@
+.firstdiv{
+    background-color: rgb(241, 237, 237);
+    height: 100vh;
+    padding: 10px 10px;
+ 
+}
+
+.top-row{
+    background-color: rgb(224, 217, 217);
+    height: 150px;
+    margin: 0px 0px;
+    /* width: 335px; */
+     /* padding: 10px 5px; */
+    /* padding: 5px 20px !important; */
+    
+}
+
+.top-row .search-inpt{
+    margin-top: 100px;
+    height: 40px !important;
+    margin-left: 10px;
+    text-align: center;
+    width: 300px;
+   
+    
+ 
+    
+}
+
+.bottom-row{
+    padding: 10px 10px;
+}
+
+.lists{
+     height: 100vh;
+    background-color: white;
+ 
+    padding: 10px 20px;
+}
+
+.project-list{
+    height: 50px;
+    background-color: white;
+   display: flex;
+   justify-content: last baseline;
+    padding-top: 10px;
+}
+
+.project-list.first{
+    background-color: rgb(226, 222, 222);
+    border-radius: 5%;
+      
+}
+
+
+.project{
+    background-color: beige;
+}
+
+.icon{
+    height: 20px;
+    width: 20px;
+
+    background-color: rgb(114, 110, 110);
+    display: inline-block;
+    margin: 0px 10px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.seconddiv .row{
+    height: 160px;
+    background-color: rgb(190, 181, 181);
+    padding: 60px 50px;
+}
+
+.seconddiv .row h1{
+    color: black;
+}

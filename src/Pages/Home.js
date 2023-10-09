@@ -21,8 +21,6 @@ import JoinUs from "../Components/JoinUs/JoinUs";
 import Products from "../Components/Products/Services";
 import Services from "../Components/Products/Services";
 import TitleandText from "../Components/TitleandText/TitleandText";
-import Problem from "../Components/Problem/Problem";
-import HowDoesItWork from "../Components/HowDoesItWork/HowDoesItWork";
 
 const Home = () => {
   const aboutSection = useRef(null);
@@ -41,8 +39,6 @@ const Home = () => {
           <Middle onClick={scrollDown}/>
         </div> */}
         <NewHero onClick={scrollDown} />
-        <Problem></Problem>
-        <HowDoesItWork />
         {/* <MyCarousel/> */}
         <TitleandText />
         <CardSection onClick={scrollDown} />
