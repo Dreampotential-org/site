@@ -3,31 +3,69 @@ import axios from 'axios';
 import '../../App.css';
 
 import "./ProjectList.css";
-// import "/ListProjectServices.css";
-
-
-
 
 const ListProjectServicesAPI = () => {
-  const [data, setData] = useState(null);
+  const [projectServicesData, setProjectServicesData] = useState(null);
+  const [projectCommandsData, setProjectCommandsData] = useState(null);
 
   useEffect(() => {
-    const apiUrl = 'https://api.dreampotential.org/api/list-project-services';
+    // API URL for project services
+    const projectServicesApiUrl = 'https://api.dreampotential.org/api/list-project-services';
+    // API URL for project commands
+    const projectCommandsApiUrl = 'https://api.dreampotential.org/api/list-project-commands';
 
     axios
-      .get(apiUrl)
+      .get(projectServicesApiUrl)
       .then(response => {
-        setData(response.data);
+        setProjectServicesData(response.data);
       })
       .catch(error => {
-        console.error('Error fetching data:', error);
+        console.error('Error fetching project services data:', error);
+      });
+
+    axios
+      .get(projectCommandsApiUrl)
+      .then(response => {
+        setProjectCommandsData(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching project commands data:', error);
       });
   }, []);
 
+  // Function to count occurrences of statuses
+  const countStatusOccurrences = () => {
+    if (projectCommandsData) {
+      const statusList = projectCommandsData.map(command => command.status);
+      let statusCount = {};
+
+      statusList.forEach(status => {
+        if (statusCount[status]) {
+          statusCount[status]++;
+        } else {
+          statusCount[status] = 1;
+        }
+      });
+
+      return statusCount;
+    }
+    return {};
+  };
+
+  const generateButtons = (count) => {
+    const buttons = [];
+    for (let i = 0; i < count; i++) {
+      buttons.push(
+        <button key={i} className="status-button"></button>
+      );
+    }
+    return buttons;
+  };
+
   return (
     <div>
-      {data ? (
-        data.map((curElem) => (
+      {projectServicesData ? (
+        projectServicesData.map((curElem) => (
           <div className='row main' key={curElem.id}>
             <div className='alphabate-container col-1'>
               <div className='leter-div'>
@@ -37,6 +75,11 @@ const ListProjectServicesAPI = () => {
             <div className="user-div col">
               <h3 className='data-name'>{curElem.name}</h3>
               <h4 className='data-repo'>{curElem.repo}</h4>
+              {Object.keys(countStatusOccurrences()).map((status, index) => (
+                <div key={index} className='sts'>
+                 {generateButtons(countStatusOccurrences()[status])}
+                </div>
+              ))}
             </div>
           </div>
         ))
@@ -44,11 +87,7 @@ const ListProjectServicesAPI = () => {
         <p>Loading data...</p>
       )}
     </div>
-  );            
+  );
 };
 
 export default ListProjectServicesAPI;
-
-
-
-

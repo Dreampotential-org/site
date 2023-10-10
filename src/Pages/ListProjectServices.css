@@ -39,7 +39,15 @@
     color: black !important;
     font-weight: bold !important;
 }
-
+.sts{
+    color: black;
+}
+.sts button{
+    background-color: red;
+    height: 40px;
+    border: none;
+    margin: 1px;
+}
 /* Responsive styles using media queries */
 @media (max-width: 575px) {
     .hey {
