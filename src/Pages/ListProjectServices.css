@@ -1,43 +1,43 @@
 /* Base styles */
 .hey {
-    background-color: blue;
+  background-color: blue;
 }
 
 .navDiv {
-    height: 100px !important;
+  height: 100px !important;
 }
 
 .navbar-brand {
-    margin-left: 30px;
-    margin: 0px 0px !important;
+  margin-left: 30px;
+  margin: 0px 0px !important;
 }
 
 .navbar {
-    background-color: rgb(252, 240, 240) !important;
-    margin: 0px;
-    height: 100px;
+  /* background-color: rgb(252, 240, 240) !important; */
+  margin: 0px;
+  /* height: 100px; */
 }
 
 .btn-outline-success {
-    margin-right: 30px !important;
+  margin-right: 30px !important;
 }
 
 .inpt {
-    margin-left: 50px !important;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-    padding-right: 50px !important;
+  margin-left: 50px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding-right: 50px !important;
 }
 
 .top-div {
-    height: 50px;
-    background-color: black;
+  height: 50px;
+  background-color: black;
 }
 
 .data-name,
 .data-repo {
-    color: black !important;
-    font-weight: bold !important;
+  color: black !important;
+  font-weight: bold !important;
 }
 .sts{
     color: black;
@@ -50,82 +50,82 @@
 }
 /* Responsive styles using media queries */
 @media (max-width: 575px) {
-    .hey {
-        margin-right: 0 !important;
-    }
+  .hey {
+    margin-right: 0 !important;
+  }
 
-    .main,
-    .navDiv,
-    .inpt {
-        margin: 20px;
-    }
+  .main,
+  .navDiv,
+  .inpt {
+    margin: 20px;
+  }
 
-    .data-repo {
-        margin-right: 0;
-    }
+  .data-repo {
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .hey {
-        margin-right: 100px !important;
-    }
+  .hey {
+    margin-right: 100px !important;
+  }
 
-    .main,
-    .navDiv,
-    .inpt {
-        margin: 30px;
-    }
+  .main,
+  .navDiv,
+  .inpt {
+    margin: 30px;
+  }
 
-    .data-repo {
-        margin-right: 50px;
-    }
+  .data-repo {
+    margin-right: 50px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .hey {
-        margin-right: 200px !important;
-    }
+  .hey {
+    margin-right: 200px !important;
+  }
 
-    .main,
-    .navDiv,
-    .inpt {
-        margin: 40px;
-    }
+  .main,
+  .navDiv,
+  .inpt {
+    margin: 40px;
+  }
 
-    .data-repo {
-        margin-right: 100px;
-    }
+  .data-repo {
+    margin-right: 100px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .hey {
-        margin-right: 300px !important;
-    }
+  .hey {
+    margin-right: 300px !important;
+  }
 
-    .main,
-    .navDiv,
-    .inpt {
-        margin: 50px;
-    }
+  .main,
+  .navDiv,
+  .inpt {
+    margin: 50px;
+  }
 
-    .data-repo {
-        margin-right: 150px;
-    }
+  .data-repo {
+    margin-right: 150px;
+  }
 }
 
 /* Larger desktop screens */
 @media (min-width: 1200px) {
-    .hey {
-        margin-right: 500px !important;
-    }
+  .hey {
+    margin-right: 500px !important;
+  }
 
-    .main,
-    .navDiv,
-    .inpt {
-        margin: 100px;
-    }
+  .main,
+  .navDiv,
+  .inpt {
+    margin: 100px;
+  }
 
-    .data-repo {
-        margin-right: 300px;
-    }
+  .data-repo {
+    margin-right: 300px;
+  }
 }
