@@ -47,7 +47,7 @@ const Home = () => {
         <TitleandText />
         <CardSection onClick={scrollDown} />
         {/* <MemberShipCard/> */}
-        <Select />
+        {/* <Select /> */}
         <Services />
         {/* <FourthSection onClick={scrollDown}/> */}
         {/* <FifthSection/> */}
