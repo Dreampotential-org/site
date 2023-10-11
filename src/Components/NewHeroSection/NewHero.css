@@ -24,8 +24,9 @@
   .middle {
     display: block;
   }
+
   .btn-slack {
-    margin-left: 25px;
+    margin-left: 80px;
   }
 }
 
@@ -70,8 +71,16 @@
   margin: 0;
   text-transform: none;
 }
-
+@media screen and (min-width: 768px) and (max-width: 823px) {
+  .container {
+    max-width: 635px;
+  }
+}
 @media screen and (max-width: 768px) {
+  .container {
+    max-width: 635px;
+  }
+
   .text-one {
     /* font-size: 48px;
         line-height: 55px; */

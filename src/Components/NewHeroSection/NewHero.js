@@ -37,7 +37,7 @@ const NewHero = ({ onClick }) => {
                   <div className="col-sm-6 mb-3">
                     <button
                       type="button"
-                      className="btn-join btn-primary btn-block btn-slack"
+                      className="btn-join btn-primary  btn-block btn-slack"
                       onClick={onClickHandler}
                     >
                       CONNECT TO SLACK
