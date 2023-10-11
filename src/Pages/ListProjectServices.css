@@ -1,123 +1,71 @@
-/* Base styles */
-.hey {
-    background-color: blue;
+
+/* @media only screen and (max-width: 991px) {
+  ul.navbar-nav {
+ margin-right: 400px !important;
+  
+  }
+} */
+
+
+
+/* .top-div{
+    padding: 20px 20px;
+} */
+
+/* .second-top-div{
+     padding: 20px 20px;
+} */
+
+.top-div{
+    background-color: rgb(224, 230, 230) !important;
+    padding-left: 37px;
 }
 
-.navDiv {
-    height: 100px !important;
+.navbar-expand-lg{
+    justify-content: space-between;
+    padding-left: 50px;
+  
 }
 
-.navbar-brand {
-    margin-left: 30px;
-    margin: 0px 0px !important;
+.navbar-nav{
+    flex-direction: row;
+    justify-content: space-between !important;
+   
+    
 }
 
-.navbar {
-    background-color: rgb(252, 240, 240) !important;
-    margin: 0px;
-    height: 100px;
+@media (max-width: 400px){
+    .navbar-expand-lg {
+        justify-content: left;
+    /* flex-wrap: nowrap;
+    justify-content: flex-start; */
+}
 }
 
-.btn-outline-success {
-    margin-right: 30px !important;
+.bottom{
+    margin: 30px 200px;
+    /* padding: 20px 100px; */
 }
 
-.inpt {
-    margin-left: 50px !important;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-    padding-right: 50px !important;
-}
-
-.top-div {
-    height: 50px;
-    background-color: black;
-}
-
-.data-name,
-.data-repo {
-    color: black !important;
-    font-weight: bold !important;
-}
-
-/* Responsive styles using media queries */
-@media (max-width: 575px) {
-    .hey {
-        margin-right: 0 !important;
+@media (max-width: 760px){
+    .bottom{
+        margin: 30px 100px;
     }
-
-    .main,
-    .navDiv,
-    .inpt {
-        margin: 20px;
-    }
-
-    .data-repo {
-        margin-right: 0;
-    }
+    
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
-    .hey {
-        margin-right: 100px !important;
-    }
 
-    .main,
-    .navDiv,
-    .inpt {
-        margin: 30px;
-    }
+.inpt{
+    width: 500px;
+}
 
-    .data-repo {
-        margin-right: 50px;
+@media (max-width: 1047px){
+ .inpt{
+        width: 200px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    .hey {
-        margin-right: 200px !important;
-    }
+/* ul.li:first-child{
+    margin-left: 0px !important;
+} */
 
-    .main,
-    .navDiv,
-    .inpt {
-        margin: 40px;
-    }
-
-    .data-repo {
-        margin-right: 100px;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .hey {
-        margin-right: 300px !important;
-    }
-
-    .main,
-    .navDiv,
-    .inpt {
-        margin: 50px;
-    }
-
-    .data-repo {
-        margin-right: 150px;
-    }
-}
-
-/* Larger desktop screens */
-@media (min-width: 1200px) {
-    .hey {
-        margin-right: 500px !important;
-    }
-
-    .main,
-    .navDiv,
-    .inpt {
-        margin: 100px;
-    }
-
-    .data-repo {
-        margin-right: 300px;
-    }
-}

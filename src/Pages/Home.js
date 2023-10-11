@@ -14,6 +14,7 @@ import CardSection from "../Components/CardSection/CardSection";
 import Select from "../Components/Select/Select";
 import Lorem from "../Components/Lorem/Lorem";
 import GetIn from "../Components/GetIn/GetIn";
+import Problem from "../Components/Problem/Problem";
 import FourthSection from "../Components/FourthSection/FourthSection";
 import FifthSection from "../Components/FifthSection/FifthSection";
 import CircleSection from "../Components/CircleSection/CircleSection";
@@ -21,6 +22,7 @@ import JoinUs from "../Components/JoinUs/JoinUs";
 import Products from "../Components/Products/Services";
 import Services from "../Components/Products/Services";
 import TitleandText from "../Components/TitleandText/TitleandText";
+import HowDoesItWork from "../Components/HowDoesItWork/HowDoesItWork";
 
 const Home = () => {
   const aboutSection = useRef(null);
@@ -39,13 +41,14 @@ const Home = () => {
           <Middle onClick={scrollDown}/>
         </div> */}
         <NewHero onClick={scrollDown} />
+        <Problem></Problem>
+        <HowDoesItWork />
         {/* <MyCarousel/> */}
         <TitleandText />
         <CardSection onClick={scrollDown} />
         {/* <MemberShipCard/> */}
         <Select />
         <Services />
-
         {/* <FourthSection onClick={scrollDown}/> */}
         {/* <FifthSection/> */}
         {/* <CircleSection/> */}
@@ -62,5 +65,46 @@ const Home = () => {
     </>
   );
 };
+
+// const Home = () => {
+//   const aboutSection = useRef(null);
+//   const scrollDown = () => {
+//     window.scrollTo({
+//       top: aboutSection.current.offsetTop,
+//       behavior: "smooth",
+//     });
+//   };
+//   return (
+//     <>
+//       <div className="App">
+//         {/* <div className="back">
+//           <NavbarSection onClick={scrollDown}/>
+//           <Hero  onClick={scrollDown}/>
+//           <Middle onClick={scrollDown}/>
+//         </div> */}
+//         <NewHero onClick={scrollDown} />
+//         {/* <MyCarousel/> */}
+//         <TitleandText />
+//         <CardSection onClick={scrollDown} />
+//         {/* <MemberShipCard/> */}
+//         <Select />
+//         <Services />
+
+//         {/* <FourthSection onClick={scrollDown}/> */}
+//         {/* <FifthSection/> */}
+//         {/* <CircleSection/> */}
+//         {/* <JoinUs onClick={scrollDown}/> */}
+//         {/* <Lorem /> */}
+//         <GetIn />
+//         {/* <Select_Partners /> */}
+//         {/* <Iframe/> */}
+//         <div className="section section2" ref={aboutSection}>
+//           {/* <GetInTouch /> */}
+//         </div>
+//         <Footer onClick={scrollDown} />
+//       </div>
+//     </>
+//   );
+// };
 
 export default Home;

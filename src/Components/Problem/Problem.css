@@ -1,0 +1,16 @@
+h2 {
+  line-height: inherit;
+  border-bottom: none;
+  text-align: inherit;
+}
+
+/* @media (max-width: 767px) {
+  .heading {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .heading {
+    text-align: left;
+  }
+} */

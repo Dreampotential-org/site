@@ -175,3 +175,106 @@
     display: flex;
     align-items: center;
 }
+
+
+
+
+/* my code */
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .middle {
+    display: block;
+  }
+  .btn-slack {
+    margin-left: 25px;
+  }
+}
+
+/* @media screen and(max-width:573px) and(min-width:425px) {
+  .btn-slack {
+    margin-left: 0px !important;
+  }
+} */
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .left-text {
+    text-align: left;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .left-text{
+        text-align: left;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    .text-one{
+        /* font-size: 65px;
+  .text-one {
+    /* font-size: 65px;
+        line-height: 70px; */
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    /* font-size: 40px;
+    line-height: 40px; */
+  }
+  .btn-slack {
+    margin-left: 3rem !important;
+  }
+  .dtn-div {
+    gap: 20px;
+  }
+}
+
+
+@media screen and(min-width:425) {
+  .btn-slack {
+    margin-left: 0px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .text-one {
+    /* font-size: 49px;
+        line-height: 55px; */
+        font-size: 30px;
+        line-height: 30px;
+    }
+    /* font-size: 30px;
+    line-height: 30px; */
+  
+  .btn-slack {
+    margin-left: 0px !important;
+  }
+}
+
+
+@media screen and (max-width:320px) {
+    .text-one{
+        /* font-size: 40px;
+@media screen and (max-width: 320px) {
+  .text-one {
+    /* font-size: 40px;
+        line-height: 50px; */
+        font-size: 25px;
+        line-height: 30px
+    }
+    .text-sub-para{
+        font-size: 15px;
+    }
+    /* font-size: 25px;
+    line-height: 30px; */
+  
+  .text-sub-para {
+    font-size: 15px;
+  }
+  .btn-slack {
+    margin-left: 0px !important;
+  }
+}

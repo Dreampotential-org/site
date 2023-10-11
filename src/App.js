@@ -51,11 +51,8 @@ export default function App() {
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="LogIn" element={<LogIn />} />
         <Route path="signup" element={<SignUp />} />
-        {/* <Route path="/dashboard" element={<ProjectLists />} /> */}
-        {/* <Route path="/Create-new-project" element={<PostDataForm />} /> */}
-         <Route path="/Settings" element={<Settings />} />
-         {/* <Route path="/Settings/projects" element={<Projects />} /> */}
-         <Route path="/Settings/create-org" element={<CreateOrg />} />
+        <Route path="/Settings" element={<Settings />} />
+        <Route path="/Settings/create-org" element={<CreateOrg />} />
            <Route path="/Settings/orgs-list" element={<ListOrgs />} />
          <Route path="/Settings/create-sshkey" element={<PostDataFormnew />} />
         <Route path="/Settings/sshkey-list" element={<SSHKeyList />} />
@@ -64,8 +61,7 @@ export default function App() {
          <Route path="/Settings/create-project" element={<CreateProject />} />
          <Route path="/Settings/projects-list" element={<ListProjects />} />
           <Route path="/create-project-service" element={<CreateProjectService />} />
-         {/* <Route path="/Settings/project-services-list" element={<ListProjectServices />} /> */}
-         <Route path="/dashboard" element={<ListProjectServices />} />
+          <Route path="/dashboard" element={<ListProjectServices />} />
          <Route path="/Settings/create-api-key" element={<CreateAPIKey />} />
          <Route path="/Settings/api-keys-list" element={<ListAPIKeys />} />
          <Route path="/Settings/create-project-command" element={<CreateProjectCommand />} />
