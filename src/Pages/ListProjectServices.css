@@ -20,10 +20,15 @@
     background-color: rgb(224, 230, 230) !important;
     padding-left: 37px;
 }
-
+.sts{
 .navbar-expand-lg{
     justify-content: space-between;
     padding-left: 50px;
+    background-color: red;
+    height: 40px;
+    border: none;
+    margin: 1px;
+}
   
 }
 
@@ -50,7 +55,7 @@
 @media (max-width: 760px){
     .bottom{
         margin: 30px 100px;
-    }
+  }
     
 }
 
@@ -62,7 +67,7 @@
 @media (max-width: 1047px){
  .inpt{
         width: 200px;
-    }
+  }
 }
 
 /* ul.li:first-child{

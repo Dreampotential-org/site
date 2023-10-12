@@ -4,7 +4,6 @@
     background-color: white;
        margin: 30px 200px;
        padding: 30px 50px;
-       /* border: 1px solid; */
        border: 1px solid rgb(231, 222, 222);
        border-radius: 10px;
     
@@ -16,8 +15,7 @@
         padding-bottom: 0px;
         padding-right: 0px !important;
         padding-left: 50px !important;
-  /* padding: 0px 50px !important;
-  padding-right: 0px; */
+ 
     }
 }
 
@@ -31,43 +29,7 @@
     display: inline-block;
 } 
 
-/* .hey{
-    margin-top: 100px;
-    margin-right: 500px !important;
-    background-color: blue;
-}
 
-.top-div{
-    height: 50px;
-    background-color: black;
-}
-
-.data-name{
-    color: black !important;
-    font-weight: bold !important;
-}
-
-
-.navDiv{
-    margin: 100px 200px;
-}
-
-.inpt{
-    margin-right: 200px;
-    width: 600px !important;
-}
-
-.main{
-    margin: 100px 200px;
-    border: 1px solid rgb(231, 222, 222);
-    padding: 30px 50px;
-}
-
- 
-
-.remove{
-    width: 45px;
-} */
 
 .user-div{
     padding: 0px 50px;
@@ -76,7 +38,6 @@
 
 .data-repo{
     color: black !important;
-    /* font-weight: bold !important; */
      margin-right: 420px;
      margin: 0px;
      padding: 0px;

@@ -1,0 +1,17 @@
+.background-img {
+  max-width: 100%;
+  height: 400px;
+  display: block;
+}
+/* @media (max-width: 767px) {
+  .heading {
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .heading {
+    text-align: left;
+  }
+} */

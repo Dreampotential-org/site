@@ -23,6 +23,7 @@ import Products from "../Components/Products/Services";
 import Services from "../Components/Products/Services";
 import TitleandText from "../Components/TitleandText/TitleandText";
 import HowDoesItWork from "../Components/HowDoesItWork/HowDoesItWork";
+// import HowDoesItWork from "../Components/HowDoesItWork/HowDoesItWork";
 
 const Home = () => {
   const aboutSection = useRef(null);

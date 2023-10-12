@@ -80,7 +80,7 @@ const SignUp = (props) => {
               email: "",
               password: "",
             });
-            navigate('/');
+            navigate('/dashboard');
           } 
         })
         .catch((err) => {
@@ -126,12 +126,12 @@ const SignUp = (props) => {
                       required
                     />
 
-                    {errorCreate.name && (
+                    {/* {errorCreate.name && (
                       <div className="err-section">
                         <AiOutlineWarning size={25} style={{ color: "red" }} />
                         <p className="signup-err-msg">{errorCreate.name}</p>
                       </div>
-                    )}
+                    )} */}
                   </div>
                 </div>
 
@@ -151,12 +151,12 @@ const SignUp = (props) => {
                       required
                     />
 
-                    {errorCreate.email && (
+                    {/* {errorCreate.email && (
                       <div className="err-section">
                         <AiOutlineWarning size={25} style={{ color: "red" }} />
                         <p className="signup-err-msg">{errorCreate.email}</p>
                       </div>
-                    )}
+                    )} */}
                   </div>
                 </div>
                 <div className="input-container">
@@ -175,12 +175,12 @@ const SignUp = (props) => {
                       required
                     />
 
-                    {errorCreate.password && (
+                    {/* {errorCreate.password && (
                       <div className="err-section">
                         <AiOutlineWarning size={25} style={{ color: "red" }} />
                         <p className="signup-err-msg">{errorCreate.password}</p>
                       </div>
-                    )}
+                    )} */}
                   </div>
                 </div>
                 <p className="forgot-pass">Forgot Password ?</p>

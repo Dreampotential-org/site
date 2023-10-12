@@ -1,5 +1,9 @@
 import React from "react";
+<<<<<<< HEAD
+import "./Problem.css";
+=======
 import "./problem.css";
+>>>>>>> master
 const Problem = () => {
   return (
     <div className="container  text-dark mb-5 problem-section">
@@ -20,4 +24,8 @@ const Problem = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Problem;
+=======
+export default Problem;
+>>>>>>> master

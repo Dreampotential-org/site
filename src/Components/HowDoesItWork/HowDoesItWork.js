@@ -1,5 +1,6 @@
 import React from "react";
-import "./HowDoesItWork.css";
+// import "./HowDoesItWork.css";
+import "./howdoesitwork.css"
 const HowDoesItWork = () => {
   return (
     <div className="container  text-dark text-decoration-none">

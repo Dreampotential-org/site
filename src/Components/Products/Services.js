@@ -131,7 +131,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="row py-5">
+          <div className="row ">
             <div className="col-md-6 product-right">
               <div>
                 <h3 className="services-title">Conference-Base</h3>

@@ -90,9 +90,9 @@ input[type="password"] {
     pointer-events: none;
 }
 
-span{
-    color: #5B03F6;
-    text-decoration: underline;
+span a{
+    color: #0400f1;
+    text-decoration: none;
     font-weight: 600;
 }
 

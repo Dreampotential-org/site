@@ -11,13 +11,11 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const NewNav = ({ onClick }) => {
-
   const [isSelected, setIsSelected] = useState("");
   const handleSelection = (text) => {
     console.log("============================>" + text);
     setIsSelected(text);
   };
-
 
   return (
     <>
@@ -25,7 +23,7 @@ const NewNav = ({ onClick }) => {
         <Navbar
           collapseOnSelect
           expand="lg"
-          className="nav-bg"
+          className="nav-bg p-2"
           bg="#1B0839"
           variant="dark"
           fluid="md"
@@ -34,63 +32,61 @@ const NewNav = ({ onClick }) => {
           <div className="top">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <div className="icon-name">
-            <Link to="/">
-              <img className="logo-icon" src={logo} alt="icon" />
-              {/* <img className="logo-name" src={Icon} alt="icon" /> */}
-            </Link>  
+              <Link to="/">
+                <img className="logo-icon" src={logo} alt="icon" />
+                {/* <img className="logo-name" src={Icon} alt="icon" /> */}
+              </Link>
             </div>
           </div>
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-            </Nav>
+            <Nav className="me-auto"></Nav>
             <Nav className="nav-center">
               <NavLink to="/labs" className="nav-item-text">
-                    <div
-                    className={
-                      isSelected === "LABS" ? "label-div active" : "label-div"
-                    }
-                    onClick={() => handleSelection("LABS")}
-                  >
-                    <label className="txtLabel1"> LABS </label>
-                  </div>
+                <div
+                  className={
+                    isSelected === "LABS" ? "label-div active" : "label-div"
+                  }
+                  onClick={() => handleSelection("LABS")}
+                >
+                  <label className="txtLabel1"> LABS </label>
+                </div>
               </NavLink>
-              <NavLink to="/education"  className="nav-item-text">
-                    <div
-                    className={
-                      isSelected === "EDUCATIONS " ? "label-div active" : "label-div"
-                    }
-                    onClick={() => handleSelection("EDUCATIONS")}
-                  >
-                    <label className="txtLabel1"> EDUCATIONS </label>
-                  </div>
-              </NavLink>
-
-
-              <NavLink to="/dashboard"  className="nav-item-text">
-                    <div
-                    className={
-                      isSelected === "Dashboard " ? "label-div active" : "label-div"
-                    }
-                    onClick={() => 
-                    
-                    handleSelection("Dashboard")}
-                  >
-                    <label className="txtLabel1"> DASHBOARD </label>
-                  </div>
+              <NavLink to="/education" className="nav-item-text">
+                <div
+                  className={
+                    isSelected === "EDUCATIONS "
+                      ? "label-div active"
+                      : "label-div"
+                  }
+                  onClick={() => handleSelection("EDUCATIONS")}
+                >
+                  <label className="txtLabel1"> EDUCATIONS </label>
+                </div>
               </NavLink>
 
-              
+              <NavLink to="/dashboard" className="nav-item-text">
+                <div
+                  className={
+                    isSelected === "Dashboard "
+                      ? "label-div active"
+                      : "label-div"
+                  }
+                  onClick={() => handleSelection("Dashboard")}
+                >
+                  <label className="txtLabel1"> DASHBOARD </label>
+                </div>
+              </NavLink>
+
               <NavLink to="/aboutus" className="nav-item-text">
-                 <div
-                    className={
-                      isSelected === "ABOUTUS " ? "label-div active" : "label-div"
-                    }
-                    onClick={() => handleSelection("ABOUTUS")}
-                  >
-                    <label className="txtLabel1"> ABOUTUS </label>
-                  </div>
+                <div
+                  className={
+                    isSelected === "ABOUTUS " ? "label-div active" : "label-div"
+                  }
+                  onClick={() => handleSelection("ABOUTUS")}
+                >
+                  <label className="txtLabel1"> ABOUTUS </label>
+                </div>
               </NavLink>
-              
 
               <NavLink to="/signup" className="nav-item-text">
                 <div
@@ -102,7 +98,6 @@ const NewNav = ({ onClick }) => {
                   <div className="txtLabel1"> SIGNUP </div>
                 </div>
               </NavLink>
-
             </Nav>
           </Navbar.Collapse>
         </Navbar>
