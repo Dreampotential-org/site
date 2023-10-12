@@ -9,6 +9,8 @@ h2 {
     text-align: center;
   }
 }
+
+
 @media (min-width: 768px) {
   .heading {
     text-align: left;
