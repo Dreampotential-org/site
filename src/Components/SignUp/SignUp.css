@@ -1,62 +1,75 @@
-.sign-up-back{
-    /* background-color: coral; */
-     /* height: 100vh;  */
-    /* background-color: white;  */
+.sign-up-back {
+    /* background-color: coral; 
+      height: 100vh;  
+     background-color: white;  */
 }
-.main-section{
+
+.main-section {
     position: absolute;
     left: 0;
     right: 0;
     top: 15%;
     /* bottom: 0; */
     background: #1b0839;
-    padding-bottom: 2% ;
-}
-.signup-logo{
-    padding-top: 5% ;
-    text-align: center;
-}
-.signup-right{
-    /* height: 775px; */
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    border-radius: 25px;
-    background-color: #fff;
-    width: 28%;
-    margin:0 auto;
+    padding-bottom: 2%;
 }
 
-.forgot-pass{
+.signup-logo {
+    padding-top: 5%;
+    text-align: center;
+}
+
+.signup-right {
+    /* height: 775px; */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 30px;
+    background-color: #fff;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.already {
+    font-size: 16px;
+}
+
+.forgot-pass {
     color: #000;
     text-align: right;
     /* padding-right: 12%; */
     margin: 0;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: -15px;
+    /* margin-top: 10px; */
 }
 
-.signUp-bg{
+.signUp-bg {
     background-color: #1b0839;
     height: 100vh;
 }
 
-.google-icon{
+.google-icon {
     display: flex;
     justify-content: space-evenly;
 }
 
-.form-getInTouch-sign{
+.form-getInTouch-sign {
     text-align: -webkit-center;
 }
-.signup-err-msg{
-    color: red;
+
+.signup-err-msg {
+    color: #ff0000;
     margin: 0;
+    margin-bottom: 8px;
     text-align: left;
     padding-left: 5px;
-    
 }
-.err-section{
+
+.err-section {
     display: flex;
 }
 
-.connect-create-btn{
+.connect-create-btn {
     background: #5B03F6;
     width: 100%;
     padding: 10px;
@@ -67,27 +80,44 @@
 }
 
 
-.signup-input-box{
+.signup-input-box {
     background-color: #fff;
     border: none;
     margin-top: 0;
     /* color: #fff; */
-    height:40px;
+    height: 40px;
     width: 100%;
     padding-left: 10px
 }
-@media screen and (max-width:1024px) {
-    .signup-right{
-        width: 35%;
-    }
-    }
-@media screen and (max-width:768px) {
-    .signup-right{
-        width: 50%;
-    }
-    }
-@media screen and (max-width:555px) {
-.signup-right{
-    width: 90%;
+
+.passworerror {
+    margin-top: -30px;
 }
+
+.pt-5 {
+    text-align: center;
+    font-size: 16px;
+}
+
+.linksingup {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:1024px) {
+    .signup-right {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .signup-right {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:555px) {
+    .signup-right {
+        width: 90%;
+    }
 }
