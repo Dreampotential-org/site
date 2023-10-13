@@ -336,3 +336,4 @@ function validateregi(valuesregi) {
 }
 
 export default LogIn;
+
