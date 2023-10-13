@@ -139,8 +139,8 @@ import React, { useRef, useState, useEffect } from "react";
 import "./LogIn.css";
 import NewNav from "../Nav/Nav";
 import logo from "../../assets/logo_login.png";
-import { AiOutlineWarning ,AiOutlineMail,AiOutlineLock} from "react-icons/ai";
-import { BrowserRouter, Routes, Route, useNavigate} from "react-router-dom";
+import { AiOutlineWarning, AiOutlineMail, AiOutlineLock } from "react-icons/ai";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { BsFillPersonFill } from "react-icons/bs";
 import { logInApi } from "../../services/helper";
 import { ToastContainer, toast } from "react-toastify";
@@ -171,7 +171,7 @@ const LogIn = (props) => {
     setErrorCreate(validateregi(valuesregi));
     let errorCreate = {};
     let passw = /^(?=.\d)(?=.[a-z])(?=.*[A-Z]).{6,20}$/;
-  
+
     if (!valuesregi.email) {
       errorCreate.email = "Email address is required";
     } else if (
@@ -187,7 +187,7 @@ const LogIn = (props) => {
         email: valuesregi.email,
         password: valuesregi.password,
       };
-  
+
       logInApi(payload)
         .then((res) => {
           console.log("response==>" + JSON.stringify(res));
@@ -215,15 +215,20 @@ const LogIn = (props) => {
           <div className="signup-right">
             <div className="signup-logo">
               <img src={logo} alt="logo" />
-              <p className="label-login">Login to Dreampotential</p>         
+              <p className="label-login">Login to Dreampotential</p>
             </div>
             <div className="signup-form-section">
-              <form className="touch_form mt-2">          
-
+              <form className="touch_form mt-2">
+                {errorCreate.email && (
+                  <div className="err-section">
+                    <AiOutlineWarning size={25} style={{ color: "red" }} />
+                    <p className="signup-err-msg">{errorCreate.email}</p>
+                  </div>
+                )}
                 <div className="input-container">
                   <div className="right-inner-addon input-container">
                     <i className="fa fa-search">
-                    <AiOutlineMail size={25} style={{ color: "gray" }} />
+                      <AiOutlineMail size={25} style={{ color: "black" }} />
                     </i>
                     <input
                       className="signup-input-box"
@@ -235,18 +240,19 @@ const LogIn = (props) => {
                       required
                     />
 
-                    {errorCreate.email && (
-                      <div className="err-section">
-                        <AiOutlineWarning size={25} style={{ color: "red" }} />
-                        <p className="signup-err-msg">{errorCreate.email}</p>
-                      </div>
-                    )}
                   </div>
                 </div>
                 <div className="input-container">
                   <div className="right-inner-addon input-container">
-                    <i className="fa fa-search">
-                    <AiOutlineLock size={30} style={{ color: "gray" ,paddingBottom:'3px'}} />
+                   
+                    {errorCreate.password && (
+                      <div className="err-section">
+                        <AiOutlineWarning size={25} style={{ color: "red" }} />
+                        <p className="signup-err-msg">{errorCreate.password}</p>
+                      </div>
+                    )}
+                     <i className="fa fa-search">
+                      <AiOutlineLock size={30} style={{ color: "black", paddingBottom: '3px' }} />
                     </i>
                     <input
                       className="signup-input-box"
@@ -258,12 +264,7 @@ const LogIn = (props) => {
                       required
                     />
 
-                    {errorCreate.password && (
-                      <div className="err-section">
-                        <AiOutlineWarning size={25} style={{ color: "red" }} />
-                        <p className="signup-err-msg">{errorCreate.password}</p>
-                      </div>
-                    )}
+               
                   </div>
                 </div>
                 <p className="forgot-pass">Forgot Password ?</p>
@@ -320,7 +321,7 @@ function validateregi(valuesregi) {
   if (!valuesregi.email) {
     errorCreate.email = "Email address is required";
   } else if (
-    !/\S+@\S+\.\S+/.test(valuesregi.email) 
+    !/\S+@\S+\.\S+/.test(valuesregi.email)
   ) {
     errorCreate.email = "Email address is invalid";
   }
