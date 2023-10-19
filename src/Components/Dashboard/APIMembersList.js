@@ -15,8 +15,7 @@ const MembersListAPI = () => {
     axios
       .get((apiUrl), {
         headers: {
-            // "Authorization": " Token 7f579f80d9efc1f1f5b19763cc88ad4773f87fad9f3e3589e881739d0f843e5e",
-     'Authorization': `Token ${token}`,
+          'Authorization': `Token ${token}`,
    
   }
       })
