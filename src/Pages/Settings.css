@@ -63,7 +63,7 @@ a {
 
 /* Styles for seconddiv */
 .seconddiv .row {
-    background-color: rgb(190, 181, 181);
+    /* background-color: rgb(190, 181, 181); */
     padding: 40px;
 }
 
@@ -91,7 +91,8 @@ a {
     }
 
     .seconddiv .row {
-        padding: 40px;
+        /* padding: 40px; */
+        padding: 0px;
     }
 }
 
@@ -106,8 +107,6 @@ a {
 @media (min-width: 992px) {
     /* Add styles for desktop if needed */
 }
-
-
 
 
 
@@ -192,7 +191,7 @@ a{
     color: black;
 }
 
-.seconddiv .row{
+.seconddiv .row1{
     height: 160px;
     background-color: rgb(190, 181, 181);
     padding: 60px 50px;

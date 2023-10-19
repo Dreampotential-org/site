@@ -12,12 +12,17 @@
 
 }
 
+.conference-text{
+    padding-left: 0px;
+}
+
 .services-title{
     color: #25305A;
     font-size: 35px;
     font-style: normal;
     font-weight: 700;
     margin: 0 auto;
+    /* padding-left: 0px !important; */
 }
 /* .desktop11-text{
     margin: 0 auto;
@@ -127,4 +132,8 @@
     font-weight: 700;
     text-align: center;
     margin: 0 auto
+}
+
+.new{
+    text-align: left;
 }

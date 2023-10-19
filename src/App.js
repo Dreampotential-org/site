@@ -51,29 +51,25 @@ export default function App() {
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="LogIn" element={<LogIn />} />
         <Route path="signup" element={<SignUp />} />
-        {/* <Route path="/dashboard" element={<ProjectLists />} /> */}
-        {/* <Route path="/Create-new-project" element={<PostDataForm />} /> */}
-         <Route path="/Settings" element={<Settings />} />
-         {/* <Route path="/Settings/projects" element={<Projects />} /> */}
-         <Route path="/Settings/create-org" element={<CreateOrg />} />
+        <Route path="/dashboard/Settings/project-services" element={<Settings />} />
+        <Route path="/Settings/create-org" element={<CreateOrg />} />
            <Route path="/Settings/orgs-list" element={<ListOrgs />} />
          <Route path="/Settings/create-sshkey" element={<PostDataFormnew />} />
-        <Route path="/Settings/sshkey-list" element={<SSHKeyList />} />
+        <Route path="/dashboard/Settings/sshkey-list" element={<SSHKeyList />} />
         <Route path="/Settings/add-member" element={<AddMember />} />
          <Route path="/Settings/members-list" element={<MembersList />} />
          <Route path="/Settings/create-project" element={<CreateProject />} />
          <Route path="/Settings/projects-list" element={<ListProjects />} />
           <Route path="/create-project-service" element={<CreateProjectService />} />
-         {/* <Route path="/Settings/project-services-list" element={<ListProjectServices />} /> */}
-         <Route path="/dashboard" element={<ListProjectServices />} />
+          <Route path="/dashboard" element={<ListProjectServices />} />
          <Route path="/Settings/create-api-key" element={<CreateAPIKey />} />
          <Route path="/Settings/api-keys-list" element={<ListAPIKeys />} />
          <Route path="/Settings/create-project-command" element={<CreateProjectCommand />} />
          <Route path="/Settings/project-commands-list" element={<ListProjectCommands />} />
          <Route path="/Settings/create-server" element={<CreateServer />} />
-         <Route path="/Settings/servers-list" element={<ListServers />} />
+         <Route path="/dashboard/Settings/servers-list" element={<ListServers />} />
          <Route path="/Settings/create-server-group" element={<CreateServerGroup />} />
-         <Route path="/Settings/server-groups-list" element={<ListServerGroups />} />
+         <Route path="/dashboard/Settings/server-groups-list" element={<ListServerGroups />} />
          <Route path="/Settings/create-org" element={<CreateOrg />} />
          <Route path="/Settings/orgs-list" element={<ListOrgs />} />
       </Routes>

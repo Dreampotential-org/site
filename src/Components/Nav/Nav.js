@@ -6,11 +6,22 @@ import Nav from "react-bootstrap/Nav";
 import { Container, Button } from "react-bootstrap";
 import Icon from "../../assets/dreampotential.png";
 import logo from "../../assets/White.png";
-// import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { getToken } from "../../services/helper";
+
 
 const NewNav = ({ onClick }) => {
+
+  const isLoggedin = getToken() !== '';
+
+  // var isLoggedin = false;
+  //  if(getToken() != ""){
+  //               isLoggedin = true
+  //             }
+
+  //             console.log(getToken());
+
   const [isSelected, setIsSelected] = useState("");
   const handleSelection = (text) => {
     console.log("============================>" + text);
@@ -64,7 +75,7 @@ const NewNav = ({ onClick }) => {
                 </div>
               </NavLink>
 
-              <NavLink to="/dashboard" className="nav-item-text">
+              <NavLink to="/dashboard/Settings/project-services" className="nav-item-text">
                 <div
                   className={
                     isSelected === "Dashboard "
@@ -72,6 +83,7 @@ const NewNav = ({ onClick }) => {
                       : "label-div"
                   }
                   onClick={() => handleSelection("Dashboard")}
+
                 >
                   <label className="txtLabel1"> DASHBOARD </label>
                 </div>
@@ -87,17 +99,17 @@ const NewNav = ({ onClick }) => {
                   <label className="txtLabel1"> ABOUTUS </label>
                 </div>
               </NavLink>
-
-              <NavLink to="/signup" className="nav-item-text">
-                <div
-                  className={
-                    isSelected === "SIGNUP" ? "label-div active" : "label-div"
-                  }
-                  onClick={() => handleSelection("SIGNUP")}
-                >
-                  <div className="txtLabel1"> SIGNUP </div>
-                </div>
-              </NavLink>
+      {!isLoggedin && (
+        <NavLink to="/signup" className="nav-item-text">
+          <div
+            className={isSelected === 'SIGNUP' ? 'label-div active' : 'label-div'}
+            onClick={() => handleSelection('SIGNUP')}
+          >
+            <div className="txtLabel1"> SIGNUP </div>
+          </div>
+        </NavLink>
+      )}
+            
             </Nav>
           </Navbar.Collapse>
         </Navbar>

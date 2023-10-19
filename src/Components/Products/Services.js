@@ -6,7 +6,9 @@ import Circle from "../../assets/Circle.png";
 import Conference_base from "../../assets/Conference_base_New.png";
 import teacher_ui_logo from "../../assets/teacher-ui-new.png";
 import chrome_extension from "../../assets/chrome-extension.png";
-import Socket_Link from "../../assets/Socket_Link_New.png";
+// import Socket_Link from "../../assets/Socket_Link_New.png";
+import Socket_Link_New from "../../assets/Socket_Link_New.png";
+import Socket_Link from "../../assets/Socket_Link.png";
 import right_arrow from "../../assets/right_arrow.png";
 import TitleandText from "../TitleandText/TitleandText";
 import checkmark from "../../assets/checkmark.png";
@@ -24,10 +26,62 @@ const Services = () => {
             content="Some project we are building"
             className="abc"
           />
-
-          <div className="row">
+         <div className="row ">
             <div className="col-md-6 product-right">
+              <div className="new">
+                <h3 className="services-title">Meylor Drive</h3>
+                <div className="my-5">
+                  <div className="img-icon mt-2">
+                    <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
+                    <div className="img-icon-text">
+                      <p className="conference-text">Enables turnkey project & device management</p>
+                    </div>
+                  </div>
+
+                  <div className="img-icon mt-2">
+                    <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
+                    <div className="img-icon-text">
+                      <p className="conference-text">
+                        {/* Allows multiple conference room */}
+                       Automate the workflow of your projects
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="img-icon mt-2">
+                    <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
+                    <div className="img-icon-text">
+                      <p className="conference-text">
+                        Ability to search all nodes and files
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="img-icon mt-2">
+                    <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
+                    <div>
+                      <p className="conference-text">
+                         Get useful information and easily navigate
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" className="btn-learn-more btn-primary ">
+                  LEARN MORE
+                  <img style={{ marginLeft: 15 }} src={right_arrow} alt="" />
+                </button>
+              </div>
+            </div>
+            <div className="col-md-6 product-left mt-5">
               <div>
+                <img style={{ width: "100%" }} src={Socket_Link} alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className="row ">
+            <div className="col-md-6 product-right">
+              <div className="new">
                 <h3 className="services-title">Socket-Link API</h3>
                 <div className="my-5">
                   <div className="img-icon mt-2">
@@ -77,9 +131,9 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="row py-5">
+          <div className="row py-5 ">
             <div className="col-md-6 product-right">
-              <div>
+              <div className="new">
                 <h3 className="services-title">Conference-Base</h3>
                 <div className="my-5">
                 <div className="img-icon mt-2">
@@ -110,9 +164,9 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="row py-5">
+          <div className="row ">
             <div className="col-md-6 product-right">
-              <div>
+              <div className="new">
                 <h3 className="services-title">Teacher-UI</h3>
                 <div className="my-5">
                 <div className="img-icon mt-2">
@@ -152,9 +206,9 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="row py-5">
+          <div className="row">
             <div className="col-md-6 product-right">
-              <div>
+              <div className="new">
                 <h3 className="services-title">Chrome Extension-Base</h3>
                 <div className="my-5">
                   <div className="img-icon mt-2">
