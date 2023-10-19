@@ -33,6 +33,16 @@ export const leadCreateApi = async (payload) => {
     }
   };
 
+//get token
+
+export const getToken = () => {
+  const tokenWithQuotes = localStorage.getItem('Token') ?? "";
+  const token = tokenWithQuotes.replace(/^"(.*)"$/, '$1');
+  return token ?? "";
+  
+}
+
+
 //create project service API
 
 export const createProjectServiceAPI = async (payload) => {
@@ -44,8 +54,7 @@ export const createProjectServiceAPI = async (payload) => {
    
    const res = await axios.post("https://api.dreampotential.org/api/project-service", payload, {
   headers: {
-            // "Authorization": "Token d86c1dced838c8cd3ce5cd902ba9ad4af397d4b9cf8c443beb316e35b2cce5d8"
-     'Authorization': `Token ${token}`,
+            'Authorization': `Token ${token}`,
    
   }
 })

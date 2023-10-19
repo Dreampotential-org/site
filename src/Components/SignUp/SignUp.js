@@ -80,7 +80,7 @@ const SignUp = (props) => {
               email: "",
               password: "",
             });
-            navigate('/dashboard');
+            navigate('/');
           } 
         })
         .catch((err) => {

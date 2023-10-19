@@ -20,8 +20,10 @@ const CreateSSHKeyList = () => {
       };
 
       // Send a DELETE request to delete the key pair with the given ID
-      const response = await axios.delete(`https://api.dreampotential.org/api/delete-keypair/${keypairId}`, {
-        headers,
+      const response = await axios.delete(`https://api.dreampotential.org/api/delete-keypair/${keypairId}/`, {
+      headers: {
+          'Authorization': `Token ${token}`,
+        }
       });
 
       console.log('Key pair deleted:', response.data);

@@ -19,7 +19,7 @@ const navigate = useNavigate();
 
     return(
         <div >
-        <div className="row top-div ">
+        {/* <div className="row top-div ">
         <nav className="navbar navbar-expand-lg navbar-light ">
         <a className="navbar-brand" href="#">dreampotential</a>
         <ul className="navbar-nav">
@@ -32,8 +32,8 @@ const navigate = useNavigate();
             
         </ul>
     </nav>
-    </div>
-    <div className='row second-top-div'>
+    </div> */}
+    {/* <div className='row second-top-div'>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
         
         <ul className="navbar-nav mr-auto">
@@ -48,11 +48,12 @@ const navigate = useNavigate();
             </li>
         </ul>
     </nav>
-    </div>
+    </div> */}
+    
     <div className='row bottom'>
     <div className="navDiv">
         <nav className="navbar mynav justify-content-between">
-            <a className="navbar-brand">Projects</a>
+            <a className="navbar-brand">Project Services</a>
           <form className="d-flex">
                 <input className="form-control  inpt" type="search" placeholder="Search" aria-label="Search" />
                 

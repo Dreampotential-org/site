@@ -1,12 +1,15 @@
 import React, {useEffect, useRef, useState } from 'react';
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-
+import ListProjectServices from "./ListProjectServices"
+import "./ListProjectServices.css"
 
 import "./Settings.css"
 
 
 
 const Settings = () => {
+
+
  return(<div>
   <div className='row'>
   <div className='col-3 firstdiv'>
@@ -21,12 +24,12 @@ const Settings = () => {
    <div className='project-list first'>
    <div className='icon'>
    </div>
-   <a href='/Settings/projects'>Projects </a>
+  <a href='/dashboard/Settings/project-services'>Projects Services </a>
    </div>
    <div className='project-list '>
    <div className='icon'>
    </div>
-   <a href='/Settings/sshkey-list'>SSH Key </a>
+   <a href='/dashboard/Settings/sshkey-list'>SSH Key </a>
    </div>
    <div className='project-list'>
    <div className='icon'>
@@ -38,11 +41,7 @@ const Settings = () => {
    </div>
    <a href='/Settings/members-list'>Members List </a>
    </div>
-   <div className='project-list'>
-   <div className='icon'>
-   </div>
-  <a href='/Settings/projects-list'>Projects List </a>
-   </div>
+   
    <div className='project-list'>
    <div className='icon'>
    </div>
@@ -56,12 +55,12 @@ const Settings = () => {
    <div className='project-list'>
    <div className='icon'>
    </div>
-  <a href='/Settings/servers-list'>Servers List </a>
+  <a href='/dashboard/Settings/servers-list'>Servers List </a>
    </div>
    <div className='project-list'>
    <div className='icon'>
    </div>
-  <a href='/Settings/server-groups-list'>Server Groups List </a>
+  <a href='/dashboard/Settings/server-groups-list'>Server Groups List </a>
    </div>
    </div>
    
@@ -71,9 +70,13 @@ const Settings = () => {
   
   </div>
   <div className='col-9 seconddiv'>
-  <div className='row'>
+  <div className='row1'>
     <h1>Setting Page</h1>
   </div>
+  <div className='row2'>
+  <ListProjectServices />
+ </div>
+  
 
   </div>
   </div>
