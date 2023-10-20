@@ -1,6 +1,6 @@
 import axiosInstance from "../services/axios";
 import axios from "axios";
-
+const SERVER = "https://api.dreampotential.org/"
 export const leadCreateApi = async (payload) => {
 
     try {
@@ -24,7 +24,7 @@ export const leadCreateApi = async (payload) => {
     try {
       
       // const res = await axiosInstance.post("http://app.realtorstat.com:8021/usersystem/user/register", payload);
-      const res = await axiosInstance.post("https://api.dreampotential.org/usersystem/user/register", payload);
+      const res = await axiosInstance.post(`${SERVER}usersystem/user/register`, payload);
       // const res = await axiosInstance.post("/usersystem/user/register/", payload);
       localStorage.setItem('Token', JSON.stringify(res.token));
       return res;
@@ -52,7 +52,7 @@ export const createProjectServiceAPI = async (payload) => {
   
   try {
    
-   const res = await axios.post("https://api.dreampotential.org/api/project-service", payload, {
+   const res = await axios.post( `${SERVER}api/project-service`, payload, {
   headers: {
             'Authorization': `Token ${token}`,
    
@@ -77,7 +77,7 @@ export const createProjectServiceAPI = async (payload) => {
 
 export const list_project_services = async(payload) => {
   try {
-    const res = await axiosInstance.get("https://api.dreampotential.org/api/list-project-services", payload);
+    const res = await axiosInstance.get( `${SERVER}api/list-project-services`, payload);
     return res;
   } catch (error) {
     if (error.response) {  
@@ -98,7 +98,7 @@ export const CreateSSHKey = async (payload) => {
   
   try {
    
-   const res = await axios.post("https://api.dreampotential.org/api/create-keypair", payload, {
+   const res = await axios.post( `${SERVER}api/create-keypair`, payload, {
   headers: {
             // "Authorization": " Token 7f579f80d9efc1f1f5b19763cc88ad4773f87fad9f3e3589e881739d0f843e5e",
      'Authorization': `Token ${token}`,
@@ -128,7 +128,7 @@ export const AddMemberAPI = async (payload) => {
   
   try {
    
-   const res = await axios.post("https://api.dreampotential.org/api/add_member/", payload, {
+   const res = await axios.post( `${SERVER}api/add_member/`, payload, {
   headers: {
             // "Authorization": " Token 7f579f80d9efc1f1f5b19763cc88ad4773f87fad9f3e3589e881739d0f843e5e",
      'Authorization': `Token ${token}`,
@@ -157,7 +157,7 @@ export const CreateProjectAPI = async (payload) => {
   
   try {
    
-   const res = await axios.post("https://api.dreampotential.org/api/project", payload, {
+   const res = await axios.post( `${SERVER}api/project`, payload, {
   headers: {
             // "Authorization": " Token 7f579f80d9efc1f1f5b19763cc88ad4773f87fad9f3e3589e881739d0f843e5e",
      'Authorization': `Token ${token}`,
@@ -187,7 +187,7 @@ export const CreateAPIKeyAPI = async (payload) => {
   
   try {
    
-   const res = await axios.post("https://api.dreampotential.org/api/create-api-key", payload, {
+   const res = await axios.post( `${SERVER}api/create-api-key`, payload, {
   headers: {
             // "Authorization": " Token 7f579f80d9efc1f1f5b19763cc88ad4773f87fad9f3e3589e881739d0f843e5e",
      'Authorization': `Token ${token}`,
@@ -217,7 +217,7 @@ export const CreateProjectCommandAPI = async (payload) => {
   
   try {
    
-   const res = await axios.post("https://api.dreampotential.org/api/project-command", payload, {
+   const res = await axios.post( `${SERVER}api/project-command`, payload, {
   headers: {
             // "Authorization": " Token 7f579f80d9efc1f1f5b19763cc88ad4773f87fad9f3e3589e881739d0f843e5e",
      'Authorization': `Token ${token}`,
@@ -247,7 +247,7 @@ export const CreateServerAPI = async (payload) => {
   
   try {
    
-   const res = await axios.post("https://api.dreampotential.org/api/server", payload, {
+   const res = await axios.post( `${SERVER}api/server`, payload, {
   headers: {
             // "Authorization": " Token 7f579f80d9efc1f1f5b19763cc88ad4773f87fad9f3e3589e881739d0f843e5e",
      'Authorization': `Token ${token}`,
@@ -276,7 +276,7 @@ export const CreateServerGroupAPI = async (payload) => {
   
   try {
    
-   const res = await axios.post("https://api.dreampotential.org/api/server-group", payload, {
+   const res = await axios.post( `${SERVER}api/server-group`, payload, {
   headers: {
             // "Authorization": " Token 7f579f80d9efc1f1f5b19763cc88ad4773f87fad9f3e3589e881739d0f843e5e",
      'Authorization': `Token ${token}`,
@@ -306,7 +306,7 @@ export const CreateOrgAPI = async (payload) => {
   
   try {
    
-   const res = await axios.post("https://api.dreampotential.org/api/create-org", payload, {
+   const res = await axios.post( `${SERVER}api/create-org`, payload, {
   headers: {
             // "Authorization": " Token 7f579f80d9efc1f1f5b19763cc88ad4773f87fad9f3e3589e881739d0f843e5e",
      'Authorization': `Token ${token}`,
@@ -334,7 +334,7 @@ export const CreateProjectServiceAPI = async (payload) => {
   
   try {
    
-   const res = await axios.post("https://api.dreampotential.org/api/project-service", payload, {
+   const res = await axios.post( `${SERVER}api/project-service`, payload, {
   headers: {
             // "Authorization": " Token 7f579f80d9efc1f1f5b19763cc88ad4773f87fad9f3e3589e881739d0f843e5e",
      'Authorization': `Token ${token}`,
@@ -357,7 +357,7 @@ export const CreateProjectServiceAPI = async (payload) => {
   export const logInApi= async (payload) => {
     try {
       // const res = await axiosInstance.post("http://app.realtorstat.com:8021/usersystem/user/login", payload);
-      const res = await axiosInstance.post("https://api.dreampotential.org/usersystem/user/login", payload);
+      const res = await axiosInstance.post(`${SERVER}usersystem/user/login`, payload);
      localStorage.setItem('Token', JSON.stringify(res.data.token));
      console.log(JSON.stringify(res.data.token));
       return res;
