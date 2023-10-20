@@ -69,7 +69,7 @@ const SignUp = (props) => {
               email: "",
               password: "",
             });
-            navigate("/project-services"); // Redirect to /projectlists upon successful signup
+            navigate("/"); // Redirect to /projectlists upon successful signup
           }
         })
         .catch((err) => {

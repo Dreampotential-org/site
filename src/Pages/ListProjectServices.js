@@ -12,43 +12,13 @@ const navigate = useNavigate();
 
   const navigateToCreateProjectService = () => {
     // 👇️ navigate to /
-    navigate('/create-project-service');
+    navigate('/Settings/create-project-service');
   };
 
 
     return(
         <div >
-        {/* <div className="row top-div ">
-        <nav className="navbar navbar-expand-lg navbar-light ">
-        <a className="navbar-brand" href="#">dreampotential</a>
-        <ul className="navbar-nav">
-            <li className="nav-item">
-                <a className="nav-link" href="#">My Builds</a>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link" href="#">help</a>
-            </li>
-            
-        </ul>
-    </nav>
-    </div> */}
-    {/* <div className='row second-top-div'>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        
-        <ul className="navbar-nav mr-auto">
-            <li className="nav-item">
-                <a className="nav-link" href="#">Agents</a>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link" href="#">Test suites</a>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link" href="/Settings">Settings</a>
-            </li>
-        </ul>
-    </nav>
-    </div> */}
-    
+       
     <div className='row bottom'>
     <div className="navDiv">
         <nav className="navbar mynav justify-content-between">
@@ -72,13 +42,7 @@ const navigate = useNavigate();
         </div>
         
         )
-        //   return (
-        //     <div>
-        //       <h1>Dashboard Page</h1>
-        
-        //       <Dashboard />
-        //     </div>
-        //   );
+      
     };
     
     export default ListProjectServices;

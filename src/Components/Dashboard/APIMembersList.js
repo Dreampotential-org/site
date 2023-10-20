@@ -15,8 +15,7 @@ const MembersListAPI = () => {
     axios
       .get((apiUrl), {
         headers: {
-            // "Authorization": " Token 7f579f80d9efc1f1f5b19763cc88ad4773f87fad9f3e3589e881739d0f843e5e",
-     'Authorization': `Token ${token}`,
+          'Authorization': `Token ${token}`,
    
   }
       })
@@ -47,41 +46,3 @@ const MembersListAPI = () => {
 
 export default MembersListAPI;
 
-
-// const CreateSSHKeyList = () => {
-
-//     const[key, setKey] = useState([]);
-
-//     const getKey = async () => {
-//         const response = await fetch("https://api.dreampotential.org/api/list-keypairs");
-//          setKey(await response.json());
-       
-//     }
-
-//     useEffect(() => {
-//         getKey();
-//     }, [])
-
-// return (
-// <div>
-// {
-//     key.map((curElem) => {
-//         return(
-//             <div>
-//             <div className='row main' key={curElem.id}>
-//             <div className='user-div col'>
-//               <h3 className='data-value'>{curElem.value}</h3>
-//             </div>
-//           </div>
-//             </div>
-//         )
-//     })
-// }
-// </div>
-
-//   );
-
-// }
-
-
-// export default CreateSSHKeyList;

@@ -29,7 +29,7 @@ const Settings = () => {
    <div className='project-list '>
    <div className='icon'>
    </div>
-   <a href='/dashboard/Settings/sshkey-list'>SSH Key </a>
+   <a href='/Settings/sshkey-list'>SSH Key </a>
    </div>
    <div className='project-list'>
    <div className='icon'>
@@ -47,6 +47,11 @@ const Settings = () => {
    </div>
   <a href='/Settings/api-keys-list'>API Keys List </a>
    </div>
+    <div className='project-list'>
+   <div className='icon'>
+   </div>
+  <a href='/Settings/projects-list'>Projects List </a>
+   </div>
    <div className='project-list'>
    <div className='icon'>
    </div>
@@ -55,12 +60,12 @@ const Settings = () => {
    <div className='project-list'>
    <div className='icon'>
    </div>
-  <a href='/dashboard/Settings/servers-list'>Servers List </a>
+  <a href='/Settings/servers-list'>Servers List </a>
    </div>
    <div className='project-list'>
    <div className='icon'>
    </div>
-  <a href='/dashboard/Settings/server-groups-list'>Server Groups List </a>
+  <a href='/Settings/server-groups-list'>Server Groups List </a>
    </div>
    </div>
    

@@ -14,7 +14,6 @@ import AboutUs from "./Components/Desktop-11/Desktop11";
 import { useState } from "react";
 // import ProjectLists from "./Pages/ProjectLists";
 // import Projects from "./Pages/SettingPages/Projects";
-import Groups from "./Pages/SettingPages/Groups";
 import SSHKeyList from "./Pages/SettingPages/SSHKeyList";
 import PostDataFormnew from "./Pages/SettingPages/CreateSSHKey";
 import AddMember from "./Pages/SettingPages/AddMember";
@@ -24,7 +23,6 @@ import ListProjects from "./Pages/SettingPages/ListProjects";
 import CreateAPIKey from "./Pages/SettingPages/CreateAPIKey";
 import ListAPIKeys from "./Pages/SettingPages/ListAPIKeys";
 import CreateProjectCommand from "./Pages/SettingPages/CreateProjectCommand";
-
 import ListProjectCommands from "./Pages/SettingPages/ListProjectCommands";
 import CreateServer from "./Pages/SettingPages/CreateServer";
 import ListServers from "./Pages/SettingPages/ListServers";
@@ -51,25 +49,26 @@ export default function App() {
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="LogIn" element={<LogIn />} />
         <Route path="signup" element={<SignUp />} />
+        <Route path="/Settings/create-project-service" element={<CreateProjectService />} />
         <Route path="/dashboard/Settings/project-services" element={<Settings />} />
         <Route path="/Settings/create-org" element={<CreateOrg />} />
            <Route path="/Settings/orgs-list" element={<ListOrgs />} />
          <Route path="/Settings/create-sshkey" element={<PostDataFormnew />} />
-        <Route path="/dashboard/Settings/sshkey-list" element={<SSHKeyList />} />
+        <Route path="/Settings/sshkey-list" element={<SSHKeyList />} />
         <Route path="/Settings/add-member" element={<AddMember />} />
          <Route path="/Settings/members-list" element={<MembersList />} />
          <Route path="/Settings/create-project" element={<CreateProject />} />
          <Route path="/Settings/projects-list" element={<ListProjects />} />
-          <Route path="/create-project-service" element={<CreateProjectService />} />
+          
           <Route path="/dashboard" element={<ListProjectServices />} />
          <Route path="/Settings/create-api-key" element={<CreateAPIKey />} />
          <Route path="/Settings/api-keys-list" element={<ListAPIKeys />} />
          <Route path="/Settings/create-project-command" element={<CreateProjectCommand />} />
          <Route path="/Settings/project-commands-list" element={<ListProjectCommands />} />
          <Route path="/Settings/create-server" element={<CreateServer />} />
-         <Route path="/dashboard/Settings/servers-list" element={<ListServers />} />
+         <Route path="/Settings/servers-list" element={<ListServers />} />
          <Route path="/Settings/create-server-group" element={<CreateServerGroup />} />
-         <Route path="/dashboard/Settings/server-groups-list" element={<ListServerGroups />} />
+         <Route path="/Settings/server-groups-list" element={<ListServerGroups />} />
          <Route path="/Settings/create-org" element={<CreateOrg />} />
          <Route path="/Settings/orgs-list" element={<ListOrgs />} />
       </Routes>

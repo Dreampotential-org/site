@@ -198,7 +198,7 @@ const LogIn = (props) => {
               email: "",
               password: "",
             });
-            navigate('/project-services'); // Redirect to the desired route
+            navigate('/'); // Redirect to the desired route
           }
         })
         .catch((err) => {

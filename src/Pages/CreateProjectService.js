@@ -36,7 +36,7 @@ const navigate = useNavigate();
     alert('Error: ' + error.message);
   }
 
-  navigate('/dashboard');
+  navigate('/dashboard/Settings/project-services');
 };
 
 
@@ -67,6 +67,3 @@ const navigate = useNavigate();
 };
 
 export default CreateProjectService;
-
-
-
