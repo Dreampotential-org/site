@@ -3,6 +3,7 @@ import "./Nav.css";
 import NavbarSection from "../Navbar/Navbar";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import { useNavigate } from "react-router-dom";
 import { Container, Button } from "react-bootstrap";
 import Icon from "../../assets/dreampotential.png";
 import logo from "../../assets/White.png";
@@ -14,6 +15,15 @@ import { getToken } from "../../services/helper";
 const NewNav = ({ onClick }) => {
 
   const isLoggedin = getToken() !== '';
+  
+
+  const navigate = useNavigate();
+
+const handleLogout = () => {
+  localStorage.removeItem('Token');
+  navigate('/'); // Navigate to the home page
+};
+
 
   // var isLoggedin = false;
   //  if(getToken() != ""){
@@ -109,6 +119,27 @@ const NewNav = ({ onClick }) => {
           </div>
         </NavLink>
       )}
+    {isLoggedin && (
+        <div
+            className={`nav-item-text ${isSelected === 'LOGOUT' ? 'label-div active' : 'label-div'}`}
+            onClick={handleLogout}
+        >
+       <div className="txtLabel1"> LOGOUT </div>
+     </div>
+      )}
+   
+
+      {/* {isLoggedin && (
+        <NavLink to="" className="nav-item-text">
+          <div
+            className={isSelected === 'LOGOUT' ? 'label-div active' : 'label-div'}
+            // onClick={() => handleSelection('LOGOUT')}
+            onClick={handleLogout}
+          >
+            <div className="txtLabel1"> LOGOUT </div>
+          </div>
+        </NavLink>
+      )} */}
             
             </Nav>
           </Navbar.Collapse>
