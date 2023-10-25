@@ -1,7 +1,9 @@
 .App {
   height: 100%;
-  background: linear-gradient(100.54deg, #0F2455 2.77%, #0A1736 21.93%, #060D20 60.12%, #422246 101.5%);
-  /* background-color: #260f43; */
+  /* background: linear-gradient(100.54deg, #0F2455 2.77%, #0A1736 21.93%, #060D20 60.12%, #422246 101.5%); */
+  /* background-color: rgb(220, 219, 226); */
+  background-color: #E1DEFF ;
+ 
   /* padding: 30px; */
   /* background-image: url("./assets/Hero-Graphic-01.png"); */
 }

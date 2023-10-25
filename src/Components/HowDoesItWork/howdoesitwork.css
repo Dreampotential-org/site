@@ -3,6 +3,13 @@
   height: 400px;
   display: block;
 }
+
+
+.solution{
+  color: rgb(4, 165, 4)  !important;
+}
+
+
 /* @media (max-width: 767px) {
   .heading {
     text-align: center;

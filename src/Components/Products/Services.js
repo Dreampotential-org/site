@@ -16,6 +16,16 @@ import checkmark from "../../assets/checkmark.png";
 import { BsCheckCircleFill } from "react-icons/bs";
 
 const Services = () => {
+
+  const onClickHandler = () => {
+    window.open(
+      // "https://join.slack.com/t/realtorstat/shared_invite/zt-23rpwwaid-KUCF74Zep7Nu5ZFvo5JGdA"
+      // "https://app.slack.com/client/T05PGT5P5FV/D05SZUGV1HB"
+      " https://github.com/orgs/Dreampotential-org/repositories"
+    );
+  };
+
+
   return (
     <>
       <div className="product-back">
@@ -66,7 +76,7 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <button type="button" className="btn-learn-more btn-primary ">
+                <button type="button" onClick={onClickHandler} className="btn-learn-more btn-primary ">
                   LEARN MORE
                   <img style={{ marginLeft: 15 }} src={right_arrow} alt="" />
                 </button>
@@ -118,7 +128,7 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <button type="button" className="btn-learn-more btn-primary ">
+                <button type="button" onClick={onClickHandler} className="btn-learn-more btn-primary ">
                   LEARN MORE
                   <img style={{ marginLeft: 15 }} src={right_arrow} alt="" />
                 </button>
@@ -151,7 +161,7 @@ const Services = () => {
                   </div>
                 </div>
                 </div>
-                <button type="button" className="btn-learn-more btn-primary ">
+                <button type="button" onClick={onClickHandler} className="btn-learn-more btn-primary ">
                   LEARN MORE
                   <img style={{ marginLeft: 15 }} src={right_arrow} alt="" />
                 </button>
@@ -193,7 +203,7 @@ const Services = () => {
                   </div>
                 </div>
                 </div>
-                <button type="button" className="btn-learn-more btn-primary ">
+                <button type="button" onClick={onClickHandler} className="btn-learn-more btn-primary ">
                   LEARN MORE
                   <img style={{ marginLeft: 15 }} src={right_arrow} alt="" />
                 </button>
@@ -227,7 +237,7 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <button type="button" className="btn-learn-more btn-primary ">
+                <button type="button" onClick={onClickHandler} className="btn-learn-more btn-primary ">
                   LEARN MORE
                   <img style={{ marginLeft: 15 }} src={right_arrow} alt="" />
                 </button>

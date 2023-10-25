@@ -3,9 +3,10 @@ import "./howdoesitwork.css";
 const HowDoesItWork = () => {
   return (
     <div className="container  text-dark text-decoration-none">
-      <h2 className="text-white fw-bolder heading">How does it work</h2>
+      {/* <h2 className="text-white fw-bolder heading">How does it work</h2> */}
+      <h2 className=" solution fw-bolder heading">How does it work</h2>
       <div className="text-white section-ul fs-4">
-        <ul className="m-5">
+        <ul className="m-5 solution">
           <li>
             Entrepreneurs with XYZ idea are invited/apply to Dream Potential
             Safe harbor incubator Program

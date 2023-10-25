@@ -43,7 +43,7 @@ const SignUp = (props) => {
         .then((res) => {
           if (res?.status === 200) {
             toast.success("Sign Up Successful!");
-            localStorage.setItem("token", res.data.token);
+            
             setValuesregi({
               name: "",
               email: "",

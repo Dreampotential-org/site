@@ -29,9 +29,10 @@ import "./problem.css";
 const Problem = () => {
   return (
     <div className="container  text-dark mb-5 problem-section">
-      <h2 className="text-white fw-bolder heading">Problem</h2>
+      {/* <h2 className="text-white fw-bolder heading">Problem</h2> */}
+       <h2 className=" problem fw-bolder heading">Problem</h2>
       <div className="text-white fs-4">
-        <ul className="m-5">
+        <ul className=" problem m-5">
           <li>
             Startup Path exploration generally requires founders to put all of their eggs in one basket - (Who can Risk?)
           </li>

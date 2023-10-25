@@ -2,7 +2,27 @@ h2 {
   line-height: inherit;
   border-bottom: none;
   text-align: inherit;
+ 
 }
+
+.problem{
+  color: red;
+}
+
+li{
+  font-size: 21px;
+    line-height: 30px;
+    font-family: 'Poppins';
+    margin: 10px auto;
+    font-weight: 600;
+    /* padding-left: 10px; */
+}
+
+
+/* li{
+  color: red;
+} */
+
 
 /* @media (max-width: 767px) {
   .heading {

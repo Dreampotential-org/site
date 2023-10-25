@@ -8,10 +8,12 @@ const ListProjectServicesAPI = () => {
 
   const fetchData = async () => {
     try {
-      const tokenWithQuotes = localStorage.getItem('Token');
-      const token = tokenWithQuotes ? tokenWithQuotes.replace(/^"(.*)"$/, '$1') : null;
-      const apiUrl = 'https://api.dreampotential.org/api/list-project-services';
-
+      // const tokenWithQuotes = localStorage.getItem('Token');
+      // const token = tokenWithQuotes ? tokenWithQuotes.replace(/^"(.*)"$/, '$1') : null;
+       
+       const token = localStorage.getItem("token");
+      // const apiUrl = 'https://api.dreampotential.org/api/list-project-services';
+     const apiUrl = 'https://api.dreampotential.org/api/list-project-commands';
       const response = await axios.get(apiUrl, {
         headers: {
           'Authorization': `Token ${token}`,
@@ -69,9 +71,11 @@ const ListProjectServicesAPI = () => {
               </div>
             </div>
             <div className='user-div col-10'>
+              <p className='data-name'>{curElem.project_service_id}</p>
               <p className='data-name'>{curElem.name}</p>
               <p className='data-repo'>{curElem.repo}</p>
             </div>
+          
             <div className='col-1'>
               <button
                 className='btn btn-outline-success remove'

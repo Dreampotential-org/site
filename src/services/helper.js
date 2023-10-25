@@ -26,12 +26,14 @@ export const leadCreateApi = async (payload) => {
       // const res = await axiosInstance.post("http://app.realtorstat.com:8021/usersystem/user/register", payload);
       const res = await axiosInstance.post(`${SERVER}usersystem/user/register`, payload);
       // const res = await axiosInstance.post("/usersystem/user/register/", payload);
-      localStorage.setItem('Token', JSON.stringify(res.token));
+      // localStorage.setItem('Token', JSON.stringify(res.token));
+       localStorage.setItem("token", res.data.token);
       return res;
     } catch (error) {
         throw error.response.data;
     }
   };
+
 
 //get token
 
