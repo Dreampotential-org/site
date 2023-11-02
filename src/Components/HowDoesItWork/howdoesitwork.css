@@ -9,6 +9,12 @@
   color: rgb(4, 165, 4)  !important;
 }
 
+.solution-section{
+  background-color: rgb(214, 214, 236);
+  padding: 10px 0px;
+  margin-top: 0px;
+}
+
 
 /* @media (max-width: 767px) {
   .heading {

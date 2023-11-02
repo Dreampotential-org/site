@@ -18,6 +18,16 @@ li{
     /* padding-left: 10px; */
 }
 
+.problem-section{
+  background-color: rgb(214, 214, 236);
+  margin-bottom: px;
+
+}
+
+.problem-content{
+  padding: 10px 0px;
+  margin-bottom: 0px !important;
+}
 
 /* li{
   color: red;

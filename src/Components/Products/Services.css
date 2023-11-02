@@ -137,3 +137,12 @@
 .new{
     text-align: left;
 }
+ video {
+      max-width: 100%;
+    }
+
+.video-box{
+      max-width: 700px;
+      margin: 0 auto 50px;
+      padding: 0 15px;
+}

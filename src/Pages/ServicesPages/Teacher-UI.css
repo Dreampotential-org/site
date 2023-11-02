@@ -1,0 +1,38 @@
+
+.first{
+    background-color: white;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.second{
+    background-color: rgb(223, 220, 220);
+    height: 100vh;
+}
+
+.header{
+    height: 60px;
+    background-color: rgb(209, 205, 205);
+    display: flex;
+    justify-content: space-between;
+  
+    margin: 0px;
+}
+.img-div{
+    display: flex;
+    justify-content: left;
+}
+
+
+.img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(182, 155, 155);
+}
+
+.icons{
+    background-color: beige;
+}

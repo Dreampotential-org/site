@@ -25,6 +25,14 @@ const Services = () => {
     );
   };
 
+  const onClickHandlerStat = () => {
+    window.open(
+      // "https://join.slack.com/t/realtorstat/shared_invite/zt-23rpwwaid-KUCF74Zep7Nu5ZFvo5JGdA"
+      // "https://app.slack.com/client/T05PGT5P5FV/D05SZUGV1HB"
+      " https://agentstat.com/"
+    );
+  };
+
 
   return (
     <>
@@ -36,7 +44,67 @@ const Services = () => {
             content="Some project we are building"
             className="abc"
           />
+          <div className="row ">
+         
+            <div className="col-md-6 product-right">
+              <div className="new">
+                <h3 className="services-title">AgentStat</h3>
+                <div className="my-5">
+                  <div className="img-icon mt-2">
+                    <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
+                    <div className="img-icon-text">
+                      <p className="conference-text">The Solution to finding you the best real estate agent!</p>
+                    </div>
+                  </div>
+
+                  <div className="img-icon mt-2">
+                    <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
+                    <div className="img-icon-text">
+                      <p className="conference-text">
+                        {/* Allows multiple conference room */}
+                       Hire the best egent every time
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="img-icon mt-2">
+                    <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
+                    <div className="img-icon-text">
+                      <p className="conference-text">
+                        A search engine, uses real data to identify the best agent 
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="img-icon mt-2">
+                    <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
+                    <div>
+                      <p className="conference-text">
+                        AgentStat home evaluation system
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" onClick={onClickHandlerStat} className="btn-learn-more btn-primary ">
+                  LEARN MORE
+                  <img style={{ marginLeft: 15 }} src={right_arrow} alt="" />
+                </button>
+              </div>
+            </div>
+            
+            <div className="col-md-6 product-left mt-5">
+              {/* <div>
+                <img style={{ width: "100%" }} src={Socket_Link} alt="" />
+              
+              </div> */}
+              <div className="video-box">
+                <video id="video-player" src="/video/GETSTAT-7-11.10.2020.mp4" controls muted autoPlay loop
+            playsInline></video>
+              </div>
+            </div>
+          </div>
          <div className="row ">
+         
             <div className="col-md-6 product-right">
               <div className="new">
                 <h3 className="services-title">Meylor Drive</h3>
@@ -82,6 +150,7 @@ const Services = () => {
                 </button>
               </div>
             </div>
+            
             <div className="col-md-6 product-left mt-5">
               <div>
                 <img style={{ width: "100%" }} src={Socket_Link} alt="" />

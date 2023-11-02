@@ -2,7 +2,8 @@ import React from "react";
 import "./howdoesitwork.css";
 const HowDoesItWork = () => {
   return (
-    <div className="container  text-dark text-decoration-none">
+    <div className="solution-section">
+    <div className="container  text-dark text-decoration-none ">
       {/* <h2 className="text-white fw-bolder heading">How does it work</h2> */}
       <h2 className=" solution fw-bolder heading">How does it work</h2>
       <div className="text-white section-ul fs-4">
@@ -27,6 +28,7 @@ const HowDoesItWork = () => {
           </li>
         </ul>
       </div>
+    </div>
     </div>
   );
 };

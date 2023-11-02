@@ -12,7 +12,9 @@ import SignUp from "./Components/SignUp/SignUp";
 import ScrollArrow from "./Components/ScrollToTop/ScrollToTop";
 import AboutUs from "./Components/Desktop-11/Desktop11";
 import { useState } from "react";
-// import ProjectLists from "./Pages/ProjectLists";
+import NewListProjectServices from "./Pages/NewListProjectServices";
+import Test from "./Pages/Test";
+import Build from "./Pages/Build";
 // import Projects from "./Pages/SettingPages/Projects";
 import SSHKeyList from "./Pages/SettingPages/SSHKeyList";
 import PostDataFormnew from "./Pages/SettingPages/CreateSSHKey";
@@ -33,6 +35,8 @@ import ListOrgs from "./Pages/SettingPages/ListOrgs";
 import CreateProjectService from "./Pages/CreateProjectService";
 import ListProjectServicesAPI from "./Components/Dashboard/ListProjectServicesAPI";
 import ListProjectServices from "./Pages/ListProjectServices";
+import TeacherUI from "./Pages/ServicesPages/Teacher-UI";
+
 
 
 
@@ -60,7 +64,12 @@ export default function App() {
          <Route path="/Settings/create-project" element={<CreateProject />} />
          <Route path="/Settings/projects-list" element={<ListProjects />} />
           
-          <Route path="/dashboard" element={<ListProjectServices />} />
+          {/* <Route path="/dashboard" element={<ListProjectServices />} /> */}
+          <Route path="/dashboard" element={<NewListProjectServices />} />
+         
+          <Route path="/teacher-ui" element={<TeacherUI />} />
+           <Route path="/test" element={<Test />} />
+           <Route path="/projectcommand/12" element={<Build />} />
          <Route path="/Settings/create-api-key" element={<CreateAPIKey />} />
          <Route path="/Settings/api-keys-list" element={<ListAPIKeys />} />
          <Route path="/Settings/create-project-command" element={<CreateProjectCommand />} />

@@ -21,12 +21,12 @@ const Settings = () => {
    
    <div className='lists'>
    <h6>Your work </h6>
-   <div className='project-list first'>
+   {/* <div className='project-list first'>
    <div className='icon'>
    </div>
   <a href='/dashboard/Settings/project-services'>Projects Services </a>
-   </div>
-   <div className='project-list '>
+   </div> */}
+   <div className='project-list first'>
    <div className='icon'>
    </div>
    <a href='/Settings/sshkey-list'>SSH Key </a>

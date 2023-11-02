@@ -28,7 +28,8 @@ import React from "react";
 import "./problem.css";
 const Problem = () => {
   return (
-    <div className="container  text-dark mb-5 problem-section">
+     <div className=" problem-section">
+    <div className="container  text-dark mb-5 problem-content">
       {/* <h2 className="text-white fw-bolder heading">Problem</h2> */}
        <h2 className=" problem fw-bolder heading">Problem</h2>
       <div className="text-white fs-4">
@@ -46,6 +47,7 @@ const Problem = () => {
         </ul> */}
       </div>
     </div>
+   </div>
   );
 };
 

@@ -85,7 +85,7 @@ const handleLogout = () => {
                 </div>
               </NavLink>
 
-              <NavLink to="/dashboard/Settings/project-services" className="nav-item-text">
+              <NavLink to="/dashboard" className="nav-item-text">
                 <div
                   className={
                     isSelected === "Dashboard "
