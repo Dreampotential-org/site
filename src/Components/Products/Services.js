@@ -51,7 +51,9 @@ const Services = () => {
                 <h3 className="services-title">AgentStat</h3>
                 <div className="my-5">
                   <div className="img-icon mt-2">
+                  <div style={{ paddingBottom: '20px' }}>
                     <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
+                   </div>
                     <div className="img-icon-text">
                       <p className="conference-text">The Solution to finding you the best real estate agent!</p>
                     </div>
@@ -68,7 +70,9 @@ const Services = () => {
                   </div>
 
                   <div className="img-icon mt-2">
+                    <div style={{ paddingBottom: '20px' }}>
                     <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
+                   </div>
                     <div className="img-icon-text">
                       <p className="conference-text">
                         A search engine, uses real data to identify the best agent 

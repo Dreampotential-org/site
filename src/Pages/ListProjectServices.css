@@ -12,6 +12,10 @@
     padding: 20px 20px;
 } */
 
+.project-list .icon{
+    border-radius: 10%;
+}
+
 .row.bottom{
     padding-top: 20px 0px;
 }
@@ -208,3 +212,8 @@
  .fail{
     padding-top:20px ;
  }
+
+ .project-list.first{
+    height: 40px;
+    padding-top: 5px;
+ } 

@@ -29,11 +29,7 @@ const navigate = useNavigate();
    
    <div className='lists'>
    <h6>Your work </h6>
-   {/* <div className='project-list '>
-   <div className='icon'>
-   </div>
-  <a href='/dashboard/Settings/project-services'>Projects Services </a>
-   </div> */}
+  
    <div className='project-list first '>
    <div className='icon'>
    </div>
