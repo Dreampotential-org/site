@@ -41,17 +41,16 @@ const Services = () => {
 
           <TitleandText
             // title="Services"
-            content="Some project we are building"
+            content="Our Programs"
             className="abc"
           />
           <div className="row ">
-         
             <div className="col-md-6 product-right">
               <div className="new">
                 <h3 className="services-title">AgentStat</h3>
                 <div className="my-5">
                   <div className="img-icon mt-2">
-                  <div style={{ paddingBottom: '20px' }}>
+                  <div style={{ paddingBottom: '0px' }}>
                     <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
                    </div>
                     <div className="img-icon-text">
@@ -63,19 +62,18 @@ const Services = () => {
                     <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
                     <div className="img-icon-text">
                       <p className="conference-text">
-                        {/* Allows multiple conference room */}
-                       Hire the best egent every time
+                       Hire correctly every time
                       </p>
                     </div>
                   </div>
 
                   <div className="img-icon mt-2">
-                    <div style={{ paddingBottom: '20px' }}>
+                    <div style={{ paddingBottom: '0px' }}>
                     <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
                    </div>
                     <div className="img-icon-text">
                       <p className="conference-text">
-                        A search engine, uses real data to identify the best agent 
+                        A search engine, uses real data to identify the best agent for your particular home based on agents previous listings.
                       </p>
                     </div>
                   </div>
@@ -250,7 +248,7 @@ const Services = () => {
           <div className="row ">
             <div className="col-md-6 product-right">
               <div className="new">
-                <h3 className="services-title">Teacher-UI</h3>
+                <h3 className="services-title">Teacher-UI / Teacher-UI-React</h3>
                 <div className="my-5">
                 <div className="img-icon mt-2">
                   <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />

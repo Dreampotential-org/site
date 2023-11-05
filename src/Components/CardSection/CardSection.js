@@ -89,7 +89,7 @@ const CardSection = ({ onClick }) => {
               </Card.Footer>
             </Card>
           </div>
-          <div className="Sailboat"></div>
+          { /* <div className="Sailboat"></div> */ }
           {/* <div className="row"> */}
           {/* <img className="" src={Sailboat} alt="" /> */}
         </Container>
@@ -99,8 +99,6 @@ const CardSection = ({ onClick }) => {
           {/* <Modal.Body> */}
           <iframe className="iframe_control" src="https://teacher.dreampotential.org/slide.html?lesson_id=1&iFrame=1" height="500" width="100%" title="Iframe Example"></iframe>
           {/* </Modal.Body> */}
-
-        
         </Modal>
       </div>
     </>

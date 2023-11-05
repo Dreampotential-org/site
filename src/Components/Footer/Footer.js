@@ -18,12 +18,10 @@ const Footer = ({onClick}) => {
         {/* <a href="mailto:hello@dreampotential.org" className='email'>hello@dreampotential.org</a> */}
         {/* <div>
           <h3 className='follow'>Follow us on</h3>
-       
           <a href='https://twitter.com/' target="_blabk"><img  src={twitter} alt="" /></a>
           <a href='https://linkedin.com/' target="_blabk"><img className='logos' src={In} alt="" /></a>
           <a href='https://www.facebook.com/dreampotential.org' target="_blabk"><img className='logos' src={facebook} alt="" /></a>
           <a href='https://instagram.com/' target="_blabk"><img className='logos' src={instagram} alt="" /></a>
-      
         </div> */}
         <div className='container'>
           <div className='row'>
@@ -49,20 +47,15 @@ const Footer = ({onClick}) => {
 
                   <div className='col-md-5'>
                     <h4>Contact Us</h4>
-                    <h6 className='sub-text-footer'>A@Dreampotential.org</h6>
-                    <h6 className='sub-text-footer'>0917 385 6632</h6>
+                    <h6 className='sub-text-footer'>843-425-9777</h6>
 
                   <div className='mt-5'>
-                      <a href='https://twitter.com/' target="_blabk"><img  src={twitter} alt="" /></a>
-                      <a href='https://linkedin.com/' target="_blabk"><img className='logos' src={In} alt="" /></a>
-                      <a href='https://www.facebook.com/dreampotential.org' target="_blabk"><img className='logos' src={facebook} alt="" /></a>
-                      <a href='https://instagram.com/' target="_blabk"><img className='logos' src={instagram} alt="" /></a>
+                      <a href='https://www.linkedin.com/company/dream-potential-serves-conscious-entrepreneurs/' target="_blabk"><img className='logos' src={In} alt="" /></a>
                   </div>
 
                   </div>
               </div>
-              
-              </div> 
+              </div>
             </div>
 
 
@@ -85,8 +78,6 @@ const Footer = ({onClick}) => {
           </div>
           </div>
         </div>
-       
-
       </div>
     </>
   )

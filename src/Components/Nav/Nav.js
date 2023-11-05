@@ -15,22 +15,12 @@ import { getToken } from "../../services/helper";
 const NewNav = ({ onClick }) => {
 
   const isLoggedin = getToken() !== '';
-  
-
   const navigate = useNavigate();
 
 const handleLogout = () => {
-  localStorage.removeItem('Token');
-  navigate('/'); // Navigate to the home page
+    localStorage.removeItem('Token');
+    navigate('/'); // Navigate to the home page
 };
-
-
-  // var isLoggedin = false;
-  //  if(getToken() != ""){
-  //               isLoggedin = true
-  //             }
-
-  //             console.log(getToken());
 
   const [isSelected, setIsSelected] = useState("");
   const handleSelection = (text) => {
@@ -72,19 +62,8 @@ const handleLogout = () => {
                   <label className="txtLabel1"> LABS </label>
                 </div>
               </NavLink>
-              <NavLink to="/education" className="nav-item-text">
-                <div
-                  className={
-                    isSelected === "EDUCATIONS "
-                      ? "label-div active"
-                      : "label-div"
-                  }
-                  onClick={() => handleSelection("EDUCATIONS")}
-                >
-                  <label className="txtLabel1"> EDUCATIONS </label>
-                </div>
-              </NavLink>
 
+            {isLoggedin && (
               <NavLink to="/dashboard" className="nav-item-text">
                 <div
                   className={
@@ -98,17 +77,8 @@ const handleLogout = () => {
                   <label className="txtLabel1"> DASHBOARD </label>
                 </div>
               </NavLink>
+            )}
 
-              <NavLink to="/aboutus" className="nav-item-text">
-                <div
-                  className={
-                    isSelected === "ABOUTUS " ? "label-div active" : "label-div"
-                  }
-                  onClick={() => handleSelection("ABOUTUS")}
-                >
-                  <label className="txtLabel1"> ABOUTUS </label>
-                </div>
-              </NavLink>
       {!isLoggedin && (
         <NavLink to="/signup" className="nav-item-text">
           <div
@@ -127,7 +97,6 @@ const handleLogout = () => {
        <div className="txtLabel1"> LOGOUT </div>
      </div>
       )}
-   
 
       {/* {isLoggedin && (
         <NavLink to="" className="nav-item-text">
@@ -140,7 +109,6 @@ const handleLogout = () => {
           </div>
         </NavLink>
       )} */}
-            
             </Nav>
           </Navbar.Collapse>
         </Navbar>

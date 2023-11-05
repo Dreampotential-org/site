@@ -5,13 +5,13 @@ export const leadCreateApi = async (payload) => {
 
     try {
     const res = await axiosInstance
-      .post("/lead/", payload);
+      .post("https://py-api.dreampotential.org/lead/", payload);
     console.log("res=>", res);
     return res;
   } catch (err) {
     if (err.res) {
     } else if (err.request) {
-      // The request was made but no response was received   
+      // The request was made but no response was received
       var resp = JSON.parse(err.request.response);
     } else {
       // Something happened in setting up the request that triggered an Error
@@ -22,7 +22,6 @@ export const leadCreateApi = async (payload) => {
 
   export const signUPApi = async (payload) => {
     try {
-      
       // const res = await axiosInstance.post("http://app.realtorstat.com:8021/usersystem/user/register", payload);
       const res = await axiosInstance.post(`${SERVER}usersystem/user/register`, payload);
       // const res = await axiosInstance.post("/usersystem/user/register/", payload);
