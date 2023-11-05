@@ -55,11 +55,11 @@ const handleLogout = () => {
               <NavLink to="/labs" className="nav-item-text">
                 <div
                   className={
-                    isSelected === "LABS" ? "label-div active" : "label-div"
+                    isSelected === "DREAM" ? "label-div active" : "label-div"
                   }
-                  onClick={() => handleSelection("LABS")}
+                  onClick={() => handleSelection("DREAM")}
                 >
-                  <label className="txtLabel1"> LABS </label>
+                  <label className="txtLabel1"> DREAM </label>
                 </div>
               </NavLink>
 
