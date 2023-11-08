@@ -6,7 +6,21 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import TitleandText from "../TitleandText/TitleandText";
 
+import { useNavigate } from 'react-router-dom';
+
+
+
+
 const GetIn = () => {
+
+  const navigate = useNavigate();
+
+  const navigateToLogin = () => {
+    // 👇️ navigate to /
+    navigate('LogIn');
+  };
+
+
   const [valuesregi, setValuesregi] = useState({
     name: "",
     email: "",
@@ -93,7 +107,7 @@ const GetIn = () => {
               <button
                   className="mt-5 member"
                   type="submit"
-                 
+                  onClick={navigateToLogin}
                 >
                   Be A Member !
                 </button>

@@ -6,14 +6,14 @@ const Hero = ({onClick}) => {
     return (
         <div className="mt-5 pb-5">
             <Container>
-                <div>
+                {/* <div>
                     <Row>
                         <Col>
                             <p className='text-one'>Bring us your dreams.</p>
                             <p className='text-second'>We’ll make them a reality.</p>
                         </Col>
                     </Row>
-                </div>
+                </div> */}
                 <div className='mt-5'>
                     <Row>
                         <p className='text-para'>

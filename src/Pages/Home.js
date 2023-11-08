@@ -41,11 +41,11 @@ const Home = () => {
           <Middle onClick={scrollDown}/>
         </div> */}
         <NewHero onClick={scrollDown} />
-        <Problem></Problem>
-        <HowDoesItWork />
+        {/* <Problem></Problem> */}
+        {/* <HowDoesItWork /> */}
         {/* <MyCarousel/> */}
-        <TitleandText />
-        <CardSection onClick={scrollDown} />
+        {/* <TitleandText /> */}
+        {/* <CardSection onClick={scrollDown} /> */}
         {/* <MemberShipCard/> */}
         {/* <Select /> */}
         <Services />

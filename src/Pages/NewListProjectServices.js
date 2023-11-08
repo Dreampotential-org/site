@@ -21,7 +21,7 @@ const navigate = useNavigate();
         <div >
         <div className="row top-div ">
         <nav className="navbar navbar-expand-lg navbar-light ">
-        <a className="navbar-brand" href="#">Dreampotential</a>
+        <a className="navbar-brand" href="/">Dreampotential</a>
         <ul className="navbar-nav">
             <li className="nav-item">
                 <a className="nav-link" href="#">My Builds</a>
@@ -46,6 +46,9 @@ const navigate = useNavigate();
             <li className="nav-item">
                 <a className="nav-link" href="/Settings/sshkey-list">Settings</a>
             </li>
+            {/* <li className="nav-item">
+                <a className="nav-link" href="/">Home</a>
+            </li> */}
         </ul>
     </nav>
     </div>

@@ -31,16 +31,16 @@ const Footer = ({onClick}) => {
             <div className='col-md-6'>
             <div>
               <div className='row'>
-                  <div className='col-md-3'>
+                  {/* <div className='col-md-3'>
                   <h4>About us</h4>
-                  </div>
-                  <div className='col-md-3'>
+                  </div> */}
+                  {/* <div className='col-md-3'>
                   <h4>Resource</h4>
                   <div style={{}}>
                     <h6 className='sub-text-footer'>education</h6>
                     <h6 className='sub-text-footer'>labs</h6>
                   </div>
-                  </div>
+                  </div> */}
                   <div className='col-md-1'>
                     <div class="vl"></div>
                   </div>
@@ -59,23 +59,23 @@ const Footer = ({onClick}) => {
             </div>
 
 
-            <div className='row mt-5' style={{color:"#fff"}}>
+            {/* <div className='row mt-5' style={{color:"#fff"}}>
             <div className='col-md-6'>
               <h6>@ 2022 Dreampotential.org, Inc.All rights reserved</h6>
             </div>
             <div className='col-md-4'>
               {/* <h6>www.dreampotential.org</h6> */}
-            </div>
+            {/* </div>
             <div className='col-md-2'>
                 <div>
-                <h6>www.dreampotential.org</h6>
+                <h6>www.dreampotential.org</h6> */}
                       {/* <a href='https://twitter.com/' target="_blabk"><img  src={twitter} alt="" /></a>
                       <a href='https://linkedin.com/' target="_blabk"><img className='logos' src={In} alt="" /></a>
                       <a href='https://www.facebook.com/dreampotential.org' target="_blabk"><img className='logos' src={facebook} alt="" /></a>
                       <a href='https://instagram.com/' target="_blabk"><img className='logos' src={instagram} alt="" /></a> */}
-                  </div>
+                  {/* </div>
             </div>
-          </div>
+          </div> */} 
           </div>
         </div>
       </div>

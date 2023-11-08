@@ -213,3 +213,20 @@
   display: flex;
   align-items: center;
 }
+
+
+.btndiv{
+  /* padding-top: 40px !important; */
+  padding-left: 40px;
+}
+
+@media only screen and (max-width: 570px) {
+  .btndiv {
+     padding-left: 100px !important;
+  }
+}
+
+.text-sub-para{
+  font-size: 30px;
+  margin-bottom: 100px;
+}

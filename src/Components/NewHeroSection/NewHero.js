@@ -19,8 +19,8 @@ const NewHero = ({ onClick }) => {
           <div className="row">
             <div className="col-md-6 pt-5 right-text-center">
               <div className="text-section">
-                <p className="text-one">Bring us your dreams.</p>
-                <p className="text-one">We’ll make them a reality.</p>
+                {/* <p className="text-one">Bring us your dreams.</p>
+                <p className="text-one">We’ll make them a reality.</p> */}
 
                 <p className="text-sub-para mt-5">
                   We serve conscious entrepreneurs in their ambitions to make
