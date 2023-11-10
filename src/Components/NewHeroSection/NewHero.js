@@ -27,7 +27,7 @@ const NewHero = ({ onClick }) => {
                   meaningful impact in education, e-commerce, and media.
                 </p>
                 <div className=" mt-5 row btndiv">
-                  <div className="col-sm-6 mb-3">
+                  {/* <div className="col-sm-6 mb-3">
                     <button
                       type="button"
                       className="btn-join btn-primary btn-block"
@@ -35,7 +35,7 @@ const NewHero = ({ onClick }) => {
                     >
                       JOIN US
                     </button>
-                  </div>
+                  </div> */}
                   <div className="col-sm-6 mb-3">
                     <button
                       type="button"

@@ -30,7 +30,7 @@ const Footer = ({onClick}) => {
             </div>
             <div className='col-md-6'>
             <div>
-              <div className='row'>
+              <div className='row num'>
                   {/* <div className='col-md-3'>
                   <h4>About us</h4>
                   </div> */}
@@ -45,7 +45,7 @@ const Footer = ({onClick}) => {
                     <div class="vl"></div>
                   </div>
 
-                  <div className='col-md-5'>
+                  <div className='col-md-5 cont-num'>
                     <h4>Contact Us</h4>
                     <h6 className='sub-text-footer'>843-425-9777</h6>
 

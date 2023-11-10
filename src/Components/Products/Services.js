@@ -152,7 +152,7 @@ const Services = () => {
                     </div>
                   </div> */}
                 </div>
-                <button type="button" onClick={onClickHandlerStat} className="btn-learn-more btn-primary ">
+                <button type="button" onClick={onClickHandler} className="btn-learn-more btn-primary ">
                   LEARN MORE
                   <img style={{ marginLeft: 15 }} src={right_arrow} alt="" />
                 </button>
@@ -223,7 +223,7 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <button type="button" onClick={onClickHandlerStat} className="btn-learn-more btn-primary ">
+                <button type="button" onClick={onClickHandler} className="btn-learn-more btn-primary ">
                   LEARN MORE
                   <img style={{ marginLeft: 15 }} src={right_arrow} alt="" />
                 </button>
