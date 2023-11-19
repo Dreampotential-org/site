@@ -7,6 +7,8 @@ import GetInTouch from '../Components/GetInTouch/GetInTouch';
 import Footer from '../Components/Footer/Footer';
 import TextSection from '../Components/TextSection/TextSection';
 import Select from '../Components/Select/Select';
+import Problem from "../Components/Problem/Problem"
+import HowDoesItWork from "../Components/HowDoesItWork/HowDoesItWork"
 import GetIn from '../Components/GetIn/GetIn';
 import NewNav from '../Components/Nav/Nav';
 import TitleandText from '../Components/TitleandText/TitleandText';
@@ -36,6 +38,8 @@ const Labs = () => {
                         <p className='labs-text'>Partners To Drive And Implement Clear Solutions To Often Large Open-Ended Problems.</p>
                     </div>
                 </div>
+                <Problem />
+                <HowDoesItWork />
                 <Select/>
                 <GetIn/>
                 <div className="section section2" ref={aboutSection}>

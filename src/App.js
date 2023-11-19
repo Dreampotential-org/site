@@ -15,6 +15,7 @@ import { useState } from "react";
 import NewListProjectServices from "./Pages/NewListProjectServices";
 import Test from "./Pages/Test";
 import Build from "./Pages/Build";
+import Connect from "./Pages/Connect";
 // import Projects from "./Pages/SettingPages/Projects";
 import SSHKeyList from "./Pages/SettingPages/SSHKeyList";
 import PostDataFormnew from "./Pages/SettingPages/CreateSSHKey";
@@ -66,7 +67,7 @@ export default function App() {
           
           {/* <Route path="/dashboard" element={<ListProjectServices />} /> */}
           <Route path="/dashboard" element={<NewListProjectServices />} />
-         
+           <Route path="/connect" element={<Connect/>} />
           <Route path="/teacher-ui" element={<TeacherUI />} />
            <Route path="/test" element={<Test />} />
            <Route path="/projectcommand/12" element={<Build />} />
