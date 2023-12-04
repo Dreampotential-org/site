@@ -2,6 +2,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Labs from "./Pages/Labs";
+import Pricing from "./Pages/Pricing";
 import Education from "./Pages/Education";
 import Settings  from "./Pages/Setting";
 
@@ -48,7 +49,8 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="labs" element={<Labs />} />
+        <Route path="dream" element={<Labs />} />
+         <Route path="Pricing" element={<Pricing />} />
         <Route path="education" element={<Education />} />
         <Route path="desktop10" element={<Desktop10 />} />
         <Route path="aboutus" element={<AboutUs />} />
@@ -65,7 +67,7 @@ export default function App() {
          <Route path="/Settings/create-project" element={<CreateProject />} />
          <Route path="/Settings/projects-list" element={<ListProjects />} />
           
-          {/* <Route path="/dashboard" element={<ListProjectServices />} /> */}
+         
           <Route path="/dashboard" element={<NewListProjectServices />} />
            <Route path="/connect" element={<Connect/>} />
           <Route path="/teacher-ui" element={<TeacherUI />} />

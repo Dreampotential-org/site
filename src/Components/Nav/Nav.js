@@ -52,7 +52,7 @@ const handleLogout = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto"></Nav>
             <Nav className="nav-center">
-              <NavLink to="/labs" className="nav-item-text">
+              <NavLink to="/dream" className="nav-item-text">
                 <div
                   className={
                     isSelected === "DREAM" ? "label-div active" : "label-div"
@@ -60,6 +60,16 @@ const handleLogout = () => {
                   onClick={() => handleSelection("DREAM")}
                 >
                   <label className="txtLabel1"> DREAM </label>
+                </div>
+              </NavLink>
+               <NavLink to="/pricing" className="nav-item-text">
+                <div
+                  className={
+                    isSelected === "DREAM" ? "label-div active" : "label-div"
+                  }
+                  onClick={() => handleSelection("DREAM")}
+                >
+                  <label className="txtLabel1"> PRICE </label>
                 </div>
               </NavLink>
 
