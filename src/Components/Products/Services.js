@@ -44,6 +44,76 @@ const Services = () => {
             content="Our Programs"
             className="abc"
           />
+
+       <div className="row ">
+            <div className="col-md-6 product-right">
+              <div className="new">
+                <h3 className="services-title">MSARHP</h3>
+                <div className="my-5">
+                  <div className="img-icon mt-2">
+                  <div style={{ paddingBottom: '0px' }}>
+                    <BsCheckCircleFill size={30} style={{ color: "#5DC80A", marginBottom: "20px" }} />
+                   </div>
+                    <div className="img-icon-text">
+                      <p className="conference-text">Proven to strength your fitness, fun to use</p>
+                    </div>
+                  </div>
+
+                  <div className="img-icon mt-2">
+                    <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
+                    <div className="img-icon-text">
+                      <p className="conference-text">
+	  		We are interested in scoring and meaure cardiovascular system.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="img-icon mt-2">
+                    <div style={{ paddingBottom: '0px' }}>
+                    <BsCheckCircleFill size={30} style={{ color: "#5DC80A", marginBottom:"50px" }} />
+                   </div>
+                    <div className="img-icon-text">
+                      <p className="conference-text">
+	  		Set your pace, keep kitten your target:w
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="img-icon mt-2">
+                    <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
+                    <div>
+                      <p className="conference-text">
+                       Check your ARHPMS score. score. 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" onClick={onClickHandler} className="btn-learn-more btn-primary ">
+                  LEARN MORE
+                  <img style={{ marginLeft: 15 }} src={right_arrow} alt="" />
+                </button>
+              </div>
+            </div>
+            
+            <div className="col-md-6 product-left mt-5">
+              {/* <div>
+                <img style={{ width: "100%" }} src={Socket_Link} alt="" />
+              
+              </div> */}
+              <div className="video-box">
+                <video id="video-player" src="/video/GETSTAT-7-11.10.2020.mp4" controls muted autoPlay loop
+            playsInline></video>
+              </div>
+            </div>
+          </div>
+        
+
+          
+
+
+
+
+
           <div className="row ">
             <div className="col-md-6 product-right">
               <div className="new">
