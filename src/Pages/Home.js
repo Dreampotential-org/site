@@ -55,7 +55,7 @@ const Home = () => {
         {/* <CircleSection/> */}
         {/* <JoinUs onClick={scrollDown}/> */}
         {/* <Lorem /> */}
-        <GetIn />
+	  { /* <GetIn /> */ }
         {/* <Select_Partners /> */}
         {/* <Iframe/> */}
         <div className="section section2" ref={aboutSection}>

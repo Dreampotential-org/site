@@ -6,7 +6,7 @@ import NewNav from "../Nav/Nav";
 const NewHero = ({ onClick }) => {
   const onClickHandler = () => {
     window.open(
-      " https://join.slack.com/t/realtorstat/shared_invite/zt-2hpxg1mf9-oN6klvmizEb3yykhPEmVDg"
+      " https://join.slack.com/t/realtorstat/shared_invite/zt-2jr1ynhdx-RlH8HOi1YhQKuGZ2kH9ATA"
     );
   };
   return (

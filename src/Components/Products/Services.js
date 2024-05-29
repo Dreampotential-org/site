@@ -77,29 +77,6 @@ const Services = () => {
                   </div>
 
 
-
-
-              <div className="new">
-                <h3 className="services-title">WDP</h3>
-                <div className="my-5">
-                  <div className="img-icon mt-2">
-                  <div style={{ paddingBottom: '0px' }}>
-                    <BsCheckCircleFill size={30} style={{ color: "#5DC80A", marginBottom: "20px" }} />
-                   </div>
-                    <div className="img-icon-text">
-                      <p className="conference-text">Hear to srwp, </p>
-                    </div>
-                  </div>
-
-                  <div className="img-icon mt-2">
-                    <BsCheckCircleFill size={30} style={{ color: "#5DC80A" }} />
-                    <div className="img-icon-text">
-                      <p className="conference-text">
-	  		our top stories, 
-                      </p>
-                    </div>
-                  </div>
-
                   <div className="img-icon mt-2">
                     <div style={{ paddingBottom: '0px' }}>
                     <BsCheckCircleFill size={30} style={{ color: "#5DC80A", marginBottom:"50px" }} />
