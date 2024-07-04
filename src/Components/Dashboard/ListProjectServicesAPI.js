@@ -16,9 +16,7 @@ const ListProjectServicesAPI = () => {
 
   const handleLetter = () => {
     window.open(
-      // "https://join.slack.com/t/realtorstat/shared_invite/zt-23rpwwaid-KUCF74Zep7Nu5ZFvo5JGdA"
-      // "https://app.slack.com/client/T05PGT5P5FV/D05SZUGV1HB"
-      " https://buildkite.com/test1-1/bulk2"
+      " https://github.com/orgs/Dreampotential-org/repositories"
     );
   };
 
@@ -26,8 +24,6 @@ const ListProjectServicesAPI = () => {
 
    const onClickHandler = () => {
     window.open(
-      // "https://join.slack.com/t/realtorstat/shared_invite/zt-23rpwwaid-KUCF74Zep7Nu5ZFvo5JGdA"
-      // "https://app.slack.com/client/T05PGT5P5FV/D05SZUGV1HB"
       " https://github.com/orgs/Dreampotential-org/repositories"
     );
   };
@@ -38,12 +34,8 @@ const ListProjectServicesAPI = () => {
 
   const fetchData = async () => {
     try {
-      // const tokenWithQuotes = localStorage.getItem('Token');
-      // const token = tokenWithQuotes ? tokenWithQuotes.replace(/^"(.*)"$/, '$1') : null;
-       
-       const token = localStorage.getItem("token");
+      const token = localStorage.getItem("token");
       const apiUrl = 'https://api.dreampotential.org/api/list-project-services';
-    //  const apiUrl = 'https://api.dreampotential.org/api/list-project-commands';
       const response = await axios.get(apiUrl, {
         headers: {
           'Authorization': `Token ${token}`,
@@ -71,7 +63,6 @@ const ListProjectServicesAPI = () => {
 
       // Use SweetAlert for confirmation
       const confirmation = window.confirm('Are you sure you want to delete this post?');
-      
       if (confirmation) {
         const headers = {
           Authorization: `Token ${token}`,
@@ -127,7 +118,7 @@ const ListProjectServicesAPI = () => {
                <div className='command-line1'></div>
                 <div className='command-line1'></div>
                 <div className='command-line1'></div>
-                <div className='command-line1'></div>
+                <div className='command-line'></div>
                <div className='command-line1'></div>
                 <div className='command-line1'></div>
                 <div className='command-line1'></div>
