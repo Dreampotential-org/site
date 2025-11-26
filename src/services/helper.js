@@ -1,10 +1,9 @@
-import axiosInstance from "../services/axios";
 import axios from "axios";
 const SERVER = "https://api.dreampotential.org/"
 export const leadCreateApi = async (payload) => {
 
     try {
-    const res = await axiosInstance
+    const res = await axios
       .post("https://py-api.dreampotential.org/lead/", payload);
     console.log("res=>", res);
     return res;
@@ -22,10 +21,7 @@ export const leadCreateApi = async (payload) => {
 
   export const signUPApi = async (payload) => {
     try {
-      // const res = await axiosInstance.post("http://app.realtorstat.com:8021/usersystem/user/register", payload);
-      const res = await axiosInstance.post(`${SERVER}usersystem/user/register`, payload);
-      // const res = await axiosInstance.post("/usersystem/user/register/", payload);
-      // localStorage.setItem('Token', JSON.stringify(res.token));
+      const res = await axios.post(`${SERVER}usersystem/user/register`, payload);
        localStorage.setItem("token", res.data.token);
       return res;
     } catch (error) {
@@ -78,7 +74,7 @@ export const createProjectServiceAPI = async (payload) => {
 
 export const list_project_services = async(payload) => {
   try {
-    const res = await axiosInstance.get( `${SERVER}api/list-project-services`, payload);
+    const res = await axios.get( `${SERVER}api/list-project-services`, payload);
     return res;
   } catch (error) {
     if (error.response) {  
@@ -357,8 +353,7 @@ export const CreateProjectServiceAPI = async (payload) => {
 
   export const logInApi= async (payload) => {
     try {
-      // const res = await axiosInstance.post("http://app.realtorstat.com:8021/usersystem/user/login", payload);
-      const res = await axiosInstance.post(`${SERVER}usersystem/user/login`, payload);
+      const res = await axios.post(`${SERVER}usersystem/user/login`, payload);
      localStorage.setItem('Token', JSON.stringify(res.data.token));
      console.log(JSON.stringify(res.data.token));
       return res;
